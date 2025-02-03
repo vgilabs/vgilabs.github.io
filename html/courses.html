@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>AGI @ KHU </title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="../css/academicons.css" />
+  <link rel="stylesheet" href="../styles/styles_courses.css">
+</head>
+
+<body>
+  <header id="header">
+    <nav class="welcome">
+      <div class="logo">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../images/logo/left_logo.png" class="img-logo">
+        </a>
+      </div>
+      <ul class="nav-links"> <!-- ul: unordered list -->
+        <li><a href="../index.html">Home</a></li>
+        <li>
+          <a href="members.html">Members</a>
+          <ul class="Style1">
+            <li><a href="members.html#section1">Professor</a></li>
+            <li><a href="members.html#section2">Students</a></li>
+            <!-- <li><a href="html/members.html#undergrad">Undergraduate Student</a></li> -->
+            <li><a href="members.html#section4">Research Advisor</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="publications_selected.html">Publications</a>
+          <ul class="Style1">
+            <li><a href="publications.html#section1">Conferences</a></li>
+            <li><a href="publications.html#section2">Journals</a></li>
+            <li><a href="publications.html#section3">Patents</a></li>
+        </ul>
+      </li>
+        <li><a class="current" href="courses.html">Courses</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+
+    <script src="../app.js"></script>
+  </header>
+  <div class="banner-area">
+    <h1><span>COURSES</span></h1> <!-- span: shadow effect -->
+  </div>
+
+  <section class="courses-area" id="courses">
+    <!-- <div class="courses-content">
+      <div class="courses-left">
+        <h2>2022</h2>
+      </div>
+
+      <div class="courses-right">
+        <div class="course">
+          <h2>Deep Learning</h2>
+          <p>
+            <span>Overview.</span>
+          </p>
+        </div>
+
+        <div class="course">
+          <h2>Linear Algebra</h2>
+          <p>
+            <span>Overview.</span>
+          </p>
+        </div>
+      </div>
+    
+    </div> -->
+    <div class="courses-content">
+      <div class="courses-left">
+        <h2>2022 - Fall</h2>
+      </div>
+
+      <div class="courses-right">
+        <div class="course">
+          <h2>Computer Architecture</h2>
+          <h2>Advanced Probability and Statistics</h2>
+          <!-- <p>
+            <span>TBU.</span>
+          </p> -->
+        </div>
+      </div>      
+    </div>
+
+
+    <div class="courses-content">
+      <div class="courses-left">
+        <h2>2022 - Spring</h2>
+      </div>
+
+      <div class="courses-right">
+        <div class="course">
+          <h2>Computer Architecture</h2>
+          <!-- <p>
+            <span>TBU.</span>
+          </p> -->
+        </div>
+      </div>      
+    </div>
+
+    <div class="courses-content">
+      <div class="courses-left">
+        <h2>2021 - Fall</h2>
+      </div>
+
+      <div class="courses-right">
+        <div class="course">
+          <h2>Computer Architecture</h2>
+          <h2>Advanced Probability and Statistics</h2>
+          <!-- <p>
+            <span>TBU.</span>
+          </p> -->
+        </div>
+      </div>      
+    </div>
+
+    <div class="courses-content">
+      <div class="courses-left">
+        <h2>2021 - Spring</h2>
+      </div>
+
+      <div class="courses-right">
+        <div class="course">
+          <h2>Computer Architecture</h2>
+          <!-- <p>
+            <span>TBU.</span>
+          </p> -->
+        </div>
+      </div>      
+    </div>
+    
+
+    
+  </section>
+
+  <footer>
+    <p class="footer-bottom-text">All Rights reserved by &copy;AGILAB</p>
+  </footer>
+
+  <script>
+
+    var header = document.getElementById('header')
+    var welcome = document.getElementsByClassName('welcome')[0]
+
+    function changeHeaderCollapsed(collapseState) {
+      if (collapseState) {
+        header.classList.add('collapsed')
+        welcome.classList.remove('with-fixed-header')
+      } else if (!collapseState) {
+        header.classList.remove('collapsed')
+        welcome.classList.add('with-fixed-header')
+      }
+    }
+
+    window.addEventListener('scroll', function(e) {
+      if (window.scrollY > 0) {
+        changeHeaderCollapsed(false)
+      } else {
+        changeHeaderCollapsed(true)
+      }
+    })
+  
+  </script>
+</body>
+
+</html>

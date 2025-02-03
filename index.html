@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <title>VGI @ KU </title>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/academicons.css" />
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+  <header id="header">
+    <nav class="welcome">
+      <div class="logo">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo/left_logo.png" class="img-logo">
+        </a>
+      </div>
+      <ul class="nav-links"> <!-- ul: unordered list -->
+        <li><a class="current" href="index.html">Home</a></li>
+        <li>
+          <a href="html/members.html">Members</a>
+          <ul class="Style1">
+            <li><a href="html/members.html#section1">Professor</a></li>
+            <li><a href="html/members.html#section2">Students</a></li>
+            <!-- <li><a href="html/members.html#undergrad">Undergraduate Student</a></li> -->
+            <li><a href="html/members.html#section4">Research Advisor</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="html/publications_selected.html">Publications</a>
+          <ul class="Style1">
+            <li><a href="html/publications.html#section1">Conferences</a></li>
+            <li><a href="html/publications.html#section2">Journals</a></li>
+            <li><a href="html/publications.html#section3">Patents</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="html/research.html">Research</a>
+          <ul class="Style1">
+            <!-- <li><a href="html/research.html#section1">Topics</a></li>
+            <li><a href="html/research.html#section2">Projects</a></li> -->
+          </ul>
+        </li>
+        <li><a href="html/contact.html">Contact</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+    </nav>
+    <script src="app.js"></script>
+  </header>
+
+  <div class="banner-area">
+    <h1><span>Visual & General Intelligence Lab.</span></h1> <!-- span: shadow effect -->
+  </div>
+  
+  <section class="index-area" id="index">
+    <div class="area-main">
+      <div class="area-name">RESEARCH  <a href="html/research.html#section1">(MORE)</a></div>
+      <div class="area-divider-welcome"></div>
+
+      <!-- <div class="area-content">
+        <p>
+          <span>Our group aims to develop Artificial General Intelligence (AGI) technologies.
+            We research not only cutting-edge AI algorithms in the classical AI fields like computer vision and natural language processing,
+            but also study future AI technologies, especially like incremental learning, continual (lifelong) learning, unsupervised representation learning, and memory networks.
+            We have interested in the various research topics including but not limited to:<br><br>
+            <ol>
+              <li>Continual Learning for Artificial General Intelligence</li>
+                <ol type="A" class="topic">
+                  <li>Online incremental and few-shot learning</li>
+                  <li>Continual unsupervised domain adaptation</li>
+                  <li>Generative models: Lifelong GAN, designing GAN encoder for image manipulation</li>
+                  <li>Lifelong language learning and its applications: question answering, goal-oriented dialogues, text classification, language generation, etc.</li>
+                  <li>Universal continual learning for multi-domain tasks</li>
+                </ol><br>
+              <li>Memory Networks for Autonomous Intelligent Agent</li>
+                <ol type="A" class="topic">
+                  <li>Advanced developmental memory networks</li>
+                  <li>Memory-based personalized recommendation systems</li>
+                </ol><br>
+              <li>Medical AI</li>
+                <ol type="A" class="topic">
+                  <li>Anomaly detection of Arrhythmia using electrocardiogram (ECG)</li>
+                </ol>
+            </ol>
+          </span>
+          <br>
+        </p>
+      </div> -->
+
+
+      <div class="research-area">
+        <div class="research">
+          <div class="pics" style="background-image: url('images/CL.png');"></div>
+          <h2><a href="html/research.html#section1">Continual Learning</a></h2>
+        </div>
+        <div class="research">
+          <div class="pics" style="background-image: url('images/DA.png');"></div>
+          <h2><a href="html/research.html#section1">Learning Methods for Future AI</a></h2>
+        </div>
+        <div class="research">
+          <div class="pics" style="background-image: url('images/GM.png');"></div>
+          <h2><a href="html/research.html#section1">Deep Generative AI</a></h2>
+        </div>
+        <div class="research">
+          <div class="pics" style="background-image: url('images/MM.png');"></div>
+          <h2><a href="html/research.html#section1">Multi-Modal AI</a></h2>
+        </div>
+      </div>
+    
+    </div> <!-- Welcome-end -->
+
+    <div class="area-main">
+      <div class="area-name">SELECTED PUBLICATIONS</div>
+      <div class="area-divider-publication"></div>
+      <div class="outer-button">
+        <div class="button-list-left">
+          <button class="button-left">
+            <img src="images/left-arrow.png">
+          </button>
+        </div>
+        <div class="outer">
+          <div class="inner-list">
+
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/MPAW.png');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>Multispectral Pedestrian Detection with Sparsely Annotated Label</b></span>
+                  <span>Chan Lee*, Seungho Shin*, <u><b>G.-M. Park</b></u><sup>†</sup>, Jung Uk Kim<sup>†</sup></span>
+                  <span><b>AAAI 2025</b></span>
+                  <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span>
+                </p>
+              </div>
+            </div>
+
+
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/fig1_wine.png');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>WINE : Wavelet-Guided GAN Inversion and Editing for High-Fidelity Refinement</b></span>
+                  <span>Seung-Jun Moon*, Chaewon Kim*, and <u><b>G.-M. Park</b></u></span>
+                  <span><b>WACV 2025</b></span>
+                  <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span>
+                </p>
+              </div>
+            </div>
+
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/main_figure_CHANGER2.png');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>Towards High-fidelity Head Blending with Chroma Keying for Industrial Applications</b></span>
+                  <span>Hah Min Lew*, Sahngmin Yoo*, Hyunwoo Kang*, and <u><b>G.-M. Park</b></u></span>
+                  <span><b>WACV 2025</b></span>
+                  <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span>
+                </p>
+              </div>
+            </div>
+
+
+
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/OCGCD.png');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>Online Continuous Generalized Category Discovery</b></span>
+                  <span>K.-H. Park, Hakyung Lee, Kyungwoo Song<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                  <span><b>ECCV 2024</b></span>
+                  <span><u><a href="https://arxiv.org/abs/2408.13492">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/OCGCD">Code Link</a></u></span>
+                </p>
+              </div>
+            </div>
+
+
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/ICON.png');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>Versatile Incremental Learning: Towards Class and Domain-Agnostic Incremental Learning</b></span>
+                  <span>M.-Y. Park*, J.-H. Lee*, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                  <span><b>ECCV 2024</b></span>
+                  <span><u><a href="https://arxiv.org/abs/2409.10956">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/VIL">Code Link</a></u></span>
+                </p>
+              </div>
+            </div>
+
+            
+
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/HDMC.png');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>Towards Model-Agnostic Dataset Condensation by Heterogeneous Models</b></span>
+                  <span>J.-Y. Moon, Jung Uk Kim<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                  <span><b>ECCV 2024</b> (<b>Oral presentation</b>)</span>
+                  <span><u><a href="https://arxiv.org/abs/2409.14538">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/HMDC">Code Link</a></u></span>
+                </p>
+              </div>
+            </div>
+
+
+
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/PriViLege.png');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>Pre-trained Vision and Language Transformers Are Few-Shot Incremental Learners</b></span>
+                  <span><span>K.-H. Park, Kyungwoo Song<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                  <span><b>CVPR 2024</b></span>
+                  <!-- <span><u><a href="https://arxiv.org/abs/2309.01950">Paper Link</a></u></span> -->
+                  <span><u><a href="https://arxiv.org/abs/2404.02117">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/PriViLege">Code Link</a></u></span>
+                </p>
+              </div>
+            </div>
+
+
+
+            <div class="inner">
+                <div class="inner_column">
+                  <div class="inner_pic" style="background-image: url('../images/GUIDE.png');"></div>
+                </div>
+                <div class="inner_desc">
+                  <p>
+                    <span><b>Generative Unlearning for Any Identity</b></span>
+                    <span><span>J. Seo*, S.-H. Lee*, T.-Y. Lee*, Seung-Jun Moon, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                    <span><b>CVPR 2024</b></span>
+                    <!-- <span><u><a href="https://arxiv.org/abs/2309.01950">Paper Link</a></u></span> -->
+                    <span><u><a href="https://arxiv.org/abs/2405.09879">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/GUIDE">Code Link</a></u></span>
+                  </p>
+                </div>
+              </div>
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/BUS.png');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>Open-Set Domain Adaptation for Semantic Segmentation</b></span>
+                  <span><span>S.-A. Choe*, A.-H. Shin*, K.-H. Park,  Jinwoo Choi<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                  <span><b>CVPR 2024</b></span>
+                  <!-- <span><u><a href="https://arxiv.org/abs/2309.01950">Paper Link</a></u></span> -->
+                  <span><u><a href="https://arxiv.org/abs/2405.19899">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/BUS">Code Link</a></u></span>
+                </p>
+              </div>
+            </div>
+            
+            <!----------------------------------------------------------------------------------------------------------------->
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/inner6.jpg');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>RADIO: Reference-Agnostic Dubbing Video Synthesis</b></span>
+                  <span><span>Dongyeun Lee*, Chaewon Kim*, Sangjoon Yu, Jaejun Yoo<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                  <span><b>WACV 2024</b></span> 
+                  <span><u><a href="https://arxiv.org/abs/2309.01950">Paper Link</a></u></span>
+                  <!-- <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span> -->
+                </p>
+              </div>
+            </div>
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/inner5.jpg');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>GLAD: Global-Local View Alignment and Background Debiasing for Video Domain Adaptation</b></span>
+                  <span>Hyogun Lee*, Kyungho Bae*, Seong Jong Ha, Yumin Ko, <u><b>G.-M. Park</b></u><sup>†</sup>, and Jinwoo Choi<sup>†</sup></span>
+                  <span><b>WACV 2024</b></span>
+                  <!-- <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span> -->
+                </p>
+              </div>
+            </div>
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/inner4.jpg');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>Online Class Incremental Learning on Stochastic Blurry Task Boundary via Mask and Visual Prompt Tuning</b></span>
+                  <span>J.-Y. Moon*, K.-H. Park*, Jung Uk Kim<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                  <span><b>ICCV 2023</b></span>
+                  <span><u><a href="https://arxiv.org/abs/2308.09303">Paper Link</a></u> | <u><a href="https://github.com/moonjunyyy/Si-Blurry">Code Link</a></u></span>
+                </p>
+              </div>
+            </div>
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/inner3.jpg');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>LFS-GAN: Lifelong Few-Shot Image Generation</b></span>
+                  <span>J. Seo*, Ji-Su Kang*, and <u><b>G.-M. Park</b></u></span>
+                  <span><b>ICCV 2023</b></span>
+                  <span><u><a href="https://arxiv.org/abs/2308.11917">Paper Link</a></u> | <u><a href="http://github.com/JJuOn/LFS-GAN">Code Link</a></u></span>
+                </p>
+              </div>
+            </div>
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/inner1.jpg');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>LINe: Out-of-Distribution Detection by Leveraging Important Neurons</b></span>
+                  <span>Yong Hyun Ahn, <u><b>G.-M. Park</b></u><sup>†</sup>, and Seong Tae Kim<sup>†</sup></span>
+                  <span><b>CVPR 2023</b></span>
+                  <span><u><a href="https://arxiv.org/abs/2303.13995">Paper Link</a></u> | <u><a href="https://github.com/YongHyun-Ahn/LINe-Out-of-Distribution-Detection-by-Leveraging-Important-Neurons">Code Link</a></u></span>
+                </p>
+              </div>
+            </div>
+            <div class="inner">
+              <div class="inner_column">
+                <div class="inner_pic" style="background-image: url('../images/inner2.jpg');"></div>
+              </div>
+              <div class="inner_desc">
+                <p>
+                  <span><b>IntereStyle: Encoding an Interest Region for Robust StyleGAN Inversion</b></span>
+                  <span>Seungjun Moon and <u><b>G.-M. Park</b></u></span>
+                  <span><b>ECCV 2022</b></span>
+                  <span><u><a href="https://arxiv.org/abs/2209.10811">Paper Link</a></u> | <u><a href="https://github.com/seungjun-moon/interestyle">Code Link</a></u></span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="button-list-right">
+          <button class="button-right">
+            <img src="images/right-arrow.png">
+          </button>
+        </div>
+      </div>
+      <div class="button-list-num">
+        <button class="button-num1"></button>
+        <button class="button-num2"></button>
+        <button class="button-num3"></button>
+        <button class="button-num4"></button>
+        <button class="button-num5"></button>
+        <button class="button-num6"></button>
+        <button class="button-num7"></button>
+        <button class="button-num8"></button>
+        <button class="button-num9"></button>
+        <button class="button-num10"></button>
+        <button class="button-num11"></button>
+        <button class="button-num12"></button>
+        <button class="button-num13"></button>
+        <button class="button-num14"></button>
+        <button class="button-num15"></button>
+      </div>
+    </div>
+
+    <!-- <div class="area-main">
+      <div class="area-name">RECRUITMENT</div>
+      <div class="area-divider-recruit"></div>
+
+      <div class="area-content">
+        <p class="info">
+          <span>We are looking for graduate students to research together in Artificial General Intelligence Laboratory (AGI Lab.) at Computer Science and Engineering, Kyung Hee University.
+            In our lab, we are interested in developing multi-modal AI algorithms associated with computer vision and natural language processing, studing continual learning techniques of modern deep learning algorithms, and medical AI.
+            If you are interested in the above research fields, please contact <b>Prof. Gyeong-Moon Park (gmpark@khu.ac.kr)</b>.</span>
+          <br>
+          <span>경희대학교 컴퓨터공학과 일반인공지능 연구실(AGI Lab.)에서 함께 연구할 대학원생을 모집합니다.
+            AGI 연구실에서는 컴퓨터비전, 자연어처리 등 복합모달 인공지능 알고리즘 개발과 딥러닝의 연속학습 기술, 그리고 의료 인공지능 분야를 연구하고 있습니다.
+            위 연구분야에 관심있거나 진학 관련 상담을 원하는 학생은 <b>박경문 교수(gmpark@khu.ac.kr)</b>에게 연락 바랍니다.</span>
+        </p>
+      </div>
+    </div>  -->
+
+    <div class="area-main">
+      <div class="area-name">NEWS</div>
+      <div class="area-divider-news"></div>
+      <div class="wrap-horizontal">
+
+        <!-- <div class="date">
+          <p>[2023-12-20]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span><b>Three papers</b> got accepted to <b><i>KSC 2023</i></b>.</span>
+            </p>
+        </div> -->
+        <div class="date">
+          <p>[2024-12-11]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>Our paper titled "Multispectral Pedestrian Detection with Sparsely Annotated Label" got accepted to <b><i>AAAI 2025</i></b>.</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2024-10-28]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span><b>Two papers</b> got accepted to <b><i>WACV 2025</i></b>.</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2024-09-23]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>Our paper titled "CED: Comparing Embedding Differences for Detecting Out-of-Distribution and Hallucinated Text" got accepted to <b><i>EMNLP 2024 Findings</i></b>.</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2024-08-12]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>Our paper has been accepted for <b><font color="crimson">Oral presentation</font></b>  at <b><i>ECCV 2024</i></b>! (acceptance rate = <b><font color="crimson">2.33%</font></b>)</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2024-07-02]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span><b>Three papers</b> got accepted to <b><i>ECCV 2024</i></b>.</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2024-06-05]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>Our paper titled "Fisheye Object Detection with Visual Prompting-Aided Finetuning" got accepted to <i>Remote Sensing</i>.</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2024-05-29]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>Our paper titled "Wav2NeRF: Audio-Driven Realistic Talking Head Generation via Wavelet-based NeRF" got accepted to <i>Image and Vision Computing</i>.</span>
+            </p>
+        </div>
+       
+        <div class="date">
+          <p>[2024-02-27]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span><b>Three papers</b> got accepted to <b><i>CVPR 2024</i></b>.</span>
+            </p>
+        </div>
+        <div class="date">
+          <p>[2023-10-25]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span><b>Two papers</b> got accepted to <b><i>WACV 2024</i></b>.</span>
+            </p>
+        </div>
+        
+        <!-- <div class="date">
+          <p>[2023-10-25]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>Our paper titled "GLAD: Global-Local View Alignment and Background Debiasing for Video Domain Adaptation" got accepted to <b><i>WACV 2024</i></b>.</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2023-10-25]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>Our paper titled "RADIO: Reference-Agnostic Dubbing Video Synthesis" got accepted to <b><i>WACV 2024</i></b>.</span>
+            </p>
+        </div> -->
+
+        <div class="date">
+          <p>[2023-09-01]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>A new M.S.-Ph.D. member "Tae-Young Lee" joins our lab. Welcome!</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2023-09-01]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>New M.S. members "Keon-Hee Park", "Seon-An Choe", and "Min-Yeong Park" join our lab. Welcome!</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2023-07-14]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span><b>Two papers</b> got accepted to <b><i>ICCV 2023</i></b>.</span>
+            </p>
+        </div>
+
+        <!-- <div class="date">
+          <p>[2023-07-14]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>Our paper titled "LFS-GAN: Lifelong Few-Shot Image Generation" got accepted to <b><i>ICCV 2023</i></b>.</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2023-07-14]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>Our paper titled "Online Class Incremental Learning on Stochastic Blurry Task Boundary via Mask and Visual Prompt Tuning" got accepted to <b><i>ICCV 2023</i></b>.</span>
+            </p>
+        </div> -->
+
+        <div class="date">
+          <p>[2023-06-20]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>Our paper titled "Time Series Anomaly Detection using Transformer-based GAN with Two-Step Masking" got accepted to <i>IEEE Access</i>.</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2023-03-02]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>A new M.S.-Ph.D. member "Jun-Yeong Moon" joins our lab. Welcome!</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2023-03-02]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>New M.S. members "Jae-Ho Lee", and "Juwon Seo" join our lab. Welcome!</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2023-02-28]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>Our paper titled "LINe: Out-of-Distribution Detection by Leveraging Important Neurons" got accepted to <b><i>CVPR 2023</i></b>.</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2023-02-02]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>We got the <u><a href="./../../images/award/award_230202_jhlee.pdf">award</a></u> in KSC 2022 from the paper titled "Prompt Based Incremental Learning Using Attention Diversity". Congratulations!</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2023-02-02]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>We got the <u><a href="./../../images/award/award_230202_jwseo.pdf">award</a></u> in KSC 2022 from the paper titled "Few-Shot Image Generation via Learning Disentangled Feature". Congratulations!</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2023-02-02]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>We got the <u><a href="./../../images/award/award_230202_khpark_mypark.pdf">award</a></u> in KSC 2022 from the paper titled "Dynamic and Assistant Prompts for Class Incremental Learning". Congratulations!</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2022-09-01]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>A new M.S. member "Jiwon Hwang" joins our lab. Welcome!</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2022-07-22]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>We got the <u><a href="./../../images/award/award_220722_mgcho.pdf">award</a></u> in KCC 2022 from the paper titled "Lifelong Language Learning Using Pretrained Adapters". Congratulations!</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2022-07-04]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>Our paper titled "IntereStyle: Encoding an Interest Region for Robust StyleGAN Inversion" got accepted to <b><i>ECCV 2022</i></b>.</span>
+            </p>
+        </div>
+        
+        <div class="date">
+          <p>[2022-03-02]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>A new M.S. member "Sung-Hoon Lee" joins our lab. Welcome!</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2022-02-03]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>We got the <u><a href="./../../images/award/award_220203_jhlee.pdf">award</a></u> in KSC 2021 from the paper titled "Vision Transformer Based Continual Learning". Congratulations!</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2021-09-01]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>We have got a new research grant titled <i>“Patient-specific General Intelligence for Effective Early Diagnosis of Arrhythmia”</i> (2021.09.01 ~ 2024.02.28, NRF).</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2021-09-01]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>A new M.S. member "Ah-Hyung Shin" joins our lab. Welcome!</span>
+            </p>
+        </div>
+
+
+        <div class="date">
+          <p>[2021-06-16]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>Our paper titled "SR-EM: Episodic Memory Aware of Semantic Relations Based on Hierarchical Clustering Resonance Network" got accepted to <i>IEEE TCYB (IF: 11.1, JCR 0.8%)</i>.</span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2021-05-25]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>We got the <u><a href="./../../images/award/award_210723_ahshin.pdf">award</a></u> in KCC 2021 from the paper titled "AnoFormer: Anomalous Rhythm Detection wth Transformer-based GAN". Congratulations!</i></span>
+            </p>
+        </div>
+
+        <div class="date">
+          <p>[2021-03-01]</p>
+        </div>
+        <div class="news">
+            <p>
+              <span>Assistant professor at KHU (~ 2021).</span>
+            </p>
+        </div>
+      </div>
+      <!-- <div class="date">
+        <p>[2020-08-01]</p>
+      </div>
+      <div class="news">
+          <p>
+            <span>Our paper titled "Adaptive Developmental Resonance Network" got accepted to <i>IEEE TNNLS (IF: 8.8)</i>.</span>
+          </p>
+      </div> -->
+
+      <!-- <div class="date">
+        <p>[2020-06-01]</p>
+      </div>
+      <div class="news">
+          <p>
+            <span>Our paper titled "Convolutional Neural Network with Developmental Memory for Continual Learning" got accepted to <i>IEEE TNNLS (IF: 8.8)</i>.</span>
+          </p>
+      </div> -->
+
+    </div> <!-- NEWS-end -->
+    
+    <div class="area-main">
+      <div class="area-name">RECRUITMENT</div>
+      <div class="area-divider-recruit"></div>
+
+      <div class="area-content">
+        <p class="info">
+          <span>We are looking for graduate/undergraduate students to research together in Visual & General Intelligence Laboratory (VGI Lab.) at Department of AI, Korea University.
+            In our lab, we are interested in developing multi-modal AI algorithms associated with computer vision and natural language processing, studing continual learning techniques of modern deep learning algorithms, learning methods for future AI, deep generative models, embodied AI, and medical AI.
+            If you are interested in the above research fields, please contact <b>Prof. Gyeong-Moon Park (gmpark@khu.ac.kr)</b>.</span>
+          <br>
+          <span>고려대학교 인공지능학과 시각 및 범용지능 연구실(VGI Lab.)에서 함께 연구할 대학원생 및 학부연구생을 모집합니다. 
+            VGI 연구실에서는 컴퓨터비전, 자연어처리 등 복합모달 인공지능 알고리즘 개발과 딥러닝의 연속학습 기술, 강인공지능을 위한 통계적 학습 이론, 심층 생성모델, Embodied AI, 그리고 의료 인공지능 분야를 연구하고 있습니다. 
+            위 연구분야에 관심있거나 진학 관련 상담을 원하는 학생은 <b>박경문 교수(gmpark@khu.ac.kr)</b>에게 연락 바랍니다.</span>
+        </p>
+      </div>
+    </div>
+
+  </section> <!-- section-end -->
+
+  <footer>
+    <p class="footer-bottom-text">All Rights reserved by &copy;VGILAB</p>
+  </footer>
+  
+  <!-- navigation bar 고정 및 색상 변경 -->
+  <script> 
+    var header = document.getElementById('header')
+    var welcome = document.getElementsByClassName('welcome')[0]
+
+    function changeHeaderCollapsed(collapseState) {
+      if (collapseState) {
+        header.classList.add('collapsed')
+        welcome.classList.remove('with-fixed-header')
+      } else if (!collapseState) {
+        header.classList.remove('collapsed')
+        welcome.classList.add('with-fixed-header')
+      }
+    }
+
+    window.addEventListener('scroll', function(e) {
+      if (window.scrollY > 0) {
+        changeHeaderCollapsed(false)
+      } else {
+        changeHeaderCollapsed(true)
+      }
+    })
+  
+  </script>
+  <script>
+    /*
+      div사이즈 동적으로 구하기
+    */
+    const outer = document.querySelector('.outer');
+    const outerButton = document.querySelector('.outer-button');
+    const innerList = document.querySelector('.inner-list');
+    const inners = document.querySelectorAll('.inner');
+    let currentIndex = 0; // 현재 슬라이드 화면 인덱스
+
+    inners.forEach((inner) => {
+      inner.style.width = `${outerButton.clientWidth-6}px`; // inner의 width를 모두 outer-button 의 width로 만들기 (-6은 테두리 두께 빼기)
+    })
+
+    innerList.style.width = `${(outerButton.clientWidth-6) * inners.length}px`; // innerList의 width를 inner의 width * inner의 개수로 만들기 (-6은 테두리 두께 빼기)
+
+    /*
+      버튼에 이벤트 등록하기
+    */
+    const buttonLeft = document.querySelector('.button-left');
+    const buttonRight = document.querySelector('.button-right');
+    const button1 = document.querySelector('.button-num1');
+    const button2 = document.querySelector('.button-num2');
+    const button3 = document.querySelector('.button-num3');
+    const button4 = document.querySelector('.button-num4');
+    const button5 = document.querySelector('.button-num5');
+    const button6 = document.querySelector('.button-num6');
+    const button7 = document.querySelector('.button-num7');
+    const button8 = document.querySelector('.button-num8');
+    const button9 = document.querySelector('.button-num9');
+    const button10 = document.querySelector('.button-num10');
+    const button11 = document.querySelector('.button-num11');
+    const button12 = document.querySelector('.button-num12');
+    const button13 = document.querySelector('.button-num13');
+    const button14 = document.querySelector('.button-num14');
+    const button15 = document.querySelector('.button-num15');
+    button1.style.backgroundColor = "royalblue";
+
+    buttonLeft.addEventListener('click', () => {
+      currentIndex--;
+      if (currentIndex < 0) {
+        currentIndex = inners.length - 1; // Wrap around to the last index if currentIndex is less than 0
+      }
+      //currentIndex = currentIndex < 0 ? 0 : currentIndex; // index값이 0보다 작아질 경우 0으로 변경
+      innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`; // index만큼 margin을 주어 옆으로 밀기
+      clearInterval(interval); // 기존 동작되던 interval 제거
+      interval = getInterval(); // 새로운 interval 등록
+      updateButtonBackground();
+    });
+    var delay = 300;
+    var timer = null;
+    window.addEventListener('resize', function(){
+      clearTimeout(timer);
+      timer = setTimeout(function(){
+        console.log('resize event!');
+        const outer = document.querySelector('.outer');
+      const outerButton = document.querySelector('.outer-button');
+      const innerList = document.querySelector('.inner-list');
+      const inners = document.querySelectorAll('.inner');
+      let currentIndex = 0; // 현재 슬라이드 화면 인덱스
+  
+      inners.forEach((inner) => {
+        inner.style.width = `${outerButton.clientWidth-6}px`; // inner의 width를 모두 outer-button 의 width로 만들기 (-6은 테두리 두께 빼기)
+      })
+  
+      innerList.style.width = `${(outerButton.clientWidth-6) * inners.length}px`; // innerList의 width를 inner의 width * inner의 개수로 만들기 (-6은 테두리 두께 빼기)
+  
+      }, delay);
+      });
+      console.log('resize event!');
+      
+    buttonRight.addEventListener('click', () => {
+      currentIndex++;
+      if (currentIndex >= inners.length) {
+        currentIndex = 0; // Wrap around to the first index if currentIndex is greater than or equal to inners.length
+      }
+      //currentIndex = currentIndex >= inners.length ? inners.length - 1 : currentIndex; // index값이 inner의 총 개수보다 많아질 경우 마지막 인덱스값으로 변경
+      innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`; // index만큼 margin을 주어 옆으로 밀기
+      clearInterval(interval); // 기존 동작되던 interval 제거
+      interval = getInterval(); // 새로운 interval 등록
+      updateButtonBackground();
+    });
+
+    function updateButtonBackground() {
+      // Update button backgrounds based on currentIndex
+      num = 15
+      button1.style.backgroundColor = currentIndex % num === 0 ? "royalblue" : "lightgray";
+      button2.style.backgroundColor = currentIndex % num === 1 ? "royalblue" : "lightgray";
+      button3.style.backgroundColor = currentIndex % num === 2 ? "royalblue" : "lightgray";
+      button4.style.backgroundColor = currentIndex % num === 3 ? "royalblue" : "lightgray";
+      button5.style.backgroundColor = currentIndex % num === 4 ? "royalblue" : "lightgray";
+      button6.style.backgroundColor = currentIndex % num === 5 ? "royalblue" : "lightgray";
+      button7.style.backgroundColor = currentIndex % num === 6 ? "royalblue" : "lightgray";
+      button8.style.backgroundColor = currentIndex % num === 7 ? "royalblue" : "lightgray";
+      button9.style.backgroundColor = currentIndex % num === 8 ? "royalblue" : "lightgray";
+      button10.style.backgroundColor = currentIndex % num === 9 ? "royalblue" : "lightgray";
+      button11.style.backgroundColor = currentIndex % num === 10 ? "royalblue" : "lightgray";
+      button12.style.backgroundColor = currentIndex % num === 11 ? "royalblue" : "lightgray";
+      button13.style.backgroundColor = currentIndex % num === 12 ? "royalblue" : "lightgray";
+      button14.style.backgroundColor = currentIndex % num === 13 ? "royalblue" : "lightgray";
+      button15.style.backgroundColor = currentIndex % num === 14 ? "royalblue" : "lightgray";
+    }
+
+    const buttons = [button1, button2, button3, button4, button5, button6,button7,button8,button9,button10,button11,button12,button13,button14,button15];
+
+    buttons.forEach((button, index) => {
+      button.addEventListener('click', () => {
+        currentIndex = index;
+        innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`;
+        clearInterval(interval);
+        interval = getInterval();
+        updateButtonBackground();
+      });
+    });
+
+    function updateButtonBackground() {
+      buttons.forEach((button, index) => {
+        button.style.backgroundColor = currentIndex === index ? "royalblue" : "lightgray";
+      });
+    }
+
+    /*
+      주기적으로 화면 넘기기
+    */
+
+    const getInterval = () => {
+      return setInterval(() => {
+        currentIndex++;
+        currentIndex = currentIndex >= inners.length ? 0 : currentIndex;
+        innerList.style.marginLeft = `-${outer.clientWidth * currentIndex}px`;
+    
+        const buttons = [button1, button2, button3, button4, button5, button6,button7,button8,button9,button10,button11,button12,button13,button14,button15];
+        buttons.forEach((button, index) => {
+          button.style.backgroundColor = currentIndex % 15 === index ? "royalblue" : "lightgray";
+        });
+      }, 5000);
+    };
+
+    // Add event listeners for hover effect on buttons
+
+    buttons.forEach((button, index) => {
+      button.addEventListener('mouseenter', () => {
+        button.style.backgroundColor = "royalblue";
+      });
+    
+      button.addEventListener('mouseleave', () => {
+        if (currentIndex % 15 !== index) {
+          button.style.backgroundColor = "lightgray";
+        }
+      });
+    });
+
+    let interval = getInterval();
+     // interval 등록
+  </script>
+</body>
+
+</html>
