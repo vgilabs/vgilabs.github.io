@@ -166,13 +166,13 @@ a {
     transition: all 0.3s ease;
 }
 
-.welcome.with-fixed-header {
+/* .welcome.with-fixed-header {
     background-color: rgba(11, 25, 67, 1);
 }
 
 .welcome.with-fixed-header li{
     background-color: rgba(11, 25, 67, 1);
-}
+} */
 
 .about-btn {
     padding: 12px 25px;
@@ -196,7 +196,8 @@ a {
     padding: 12px 25px;
     /* background: rgb(20, 73, 220); */
     display: inline-block;
-    background: rgb(118, 143, 211);
+    /* background: rgb(118, 143, 211); */
+    background: rgba(124, 0, 25, 1);
     border-radius: 30px;
     text-transform: uppercase;
     /* letter-spacing: 1px; */
@@ -279,7 +280,8 @@ a {
         padding: 8px 8px;
         /* background: rgb(20, 73, 220); */
         display: inline-block;
-        background: rgb(118, 143, 211);
+        /* background: rgb(118, 143, 211); */
+        background: rgba(124, 0, 25, 1);
         border-radius: 20px;
         text-transform: uppercase;
         /* letter-spacing: 1px; */
@@ -294,12 +296,19 @@ a {
         color: black;
         text-align: center;
     }
-    .welcome.with-fixed-header {
+    /* .welcome.with-fixed-header {
         background-color: rgba(11, 25, 67, 1);
         
     }
     .welcome.with-fixed-header li{
         background-color: transparent;
+    } */
+    #header.scrolled .nav-links .current { /*home 글씨 */
+        color: rgba(124, 0, 25, 1);
+    }
+    
+    #header.scrolled .nav-links li a { /*다른 항목 글씨 */
+        color: black;  
     }
 }
 
@@ -353,6 +362,7 @@ html {
     background-image: url(../images/Korea_University_Main_Hall.jpg);
     width: 100%;
     height: 400px;
+    /* height: 30vh; */
     
     /* background-color:  rgba(170, 170, 170, 0.3); */
     
@@ -367,11 +377,16 @@ html {
     flex-direction: column;
     justify-content: center;
     flex-grow: 1;
-    background-position: center center;
+    /* background-position: center center; */
+    background-position: top -400px center;
     -webkit-background-size: cover;
     margin-bottom: -20px;
 }
-
+@media screen and (max-width: 1020px) {
+    .banner-area {
+        background-position: center center; 
+    }
+}
 .banner-area h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 50px;
@@ -432,7 +447,8 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-size: 26px;
     font-weight: bold;
-    color: royalblue;
+    /* color: royalblue; */
+    color: rgba(124, 0, 25, 1);
 
     padding-top: 10px;
     padding-bottom: 10px;
@@ -507,7 +523,7 @@ html {
     text-align: left;
     justify-content: center;
     display: flex;
-    flex-direction: column; /
+    flex-direction: column; 
     color: #888;
 }
 
@@ -524,4 +540,155 @@ html {
 .footer-right a:hover {
     /* text-decoration: underline; */
     color: #600000;
+}
+
+
+
+/* -------------- */
+header.collapsed {
+    position:static;
+    background-color: transparent;
+    border-bottom: none;
+}
+
+header nav{
+    display: flex;
+    position:fixed;
+    transition: all 0.01s;
+    background-color: transparent;
+}
+
+.nav-links li, a {
+    color: black;   
+    text-decoration: none; 
+    /* transition: color 0.3s ease-in-out; */
+}
+#header.scrolled .nav-links .current { /*home 글씨 */
+    color: rgba(214, 201, 177, 1);
+}
+
+#header.scrolled .nav-links li a { /*다른 항목 글씨 */
+    color: white;  
+}
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 18px;
+    /* background-color: white; */
+    cursor: pointer;
+}
+
+.nav-links li {
+    list-style: none;
+    padding: 0px 20px;
+    display: inline-block;
+}
+
+.nav-links li a:hover { /*메뉴 안쪽*/ /*마우스 올리면*/
+    /* color: grey; */
+    color: rgba(124, 0, 25, 1);  
+}
+#header.scrolled .nav-links li a:hover { /*메뉴 안쪽*/ /*마우스 올리면 +스크롤시 */
+    color: rgba(214, 201, 177, 1);
+
+}
+
+.nav-links:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.nav-links > li {
+    position: relative;
+    float: left;
+}
+
+.nav-links > li > a {
+    display: block;
+    padding: 0px;
+    /* background: white; */
+    height: 40px;
+    line-height: 40px;
+    /* color: white; */
+    color: black;
+    text-align: center;
+}
+
+.nav-links > li:hover .Style1 {
+    max-height: 200px;
+}
+
+.nav-links .Style1 {
+    font-size: 16px;
+    display: block;
+    position: absolute;
+    list-style: none;
+    line-height: 2em;
+    overflow: hidden;
+    max-height:0;
+    width: 100%;
+    padding-top: 2px;
+    transition: max-height 0.15s ease-in;
+    right: 0%;
+    text-align: center;
+
+}
+@media screen and (max-width: 1020px) {
+    .nav-links.nav-active > li {
+        padding: 5px 0; 
+    }
+    #header.scrolled .nav-links li a {
+        color: black;
+    }
+    #header.scrolled .nav-links .current { /*home 글씨 */
+        color: rgba(124, 0, 25, 1);  
+    }
+
+    .nav-links .Style1 {
+        display: none; 
+    }
+
+    .nav-links li a:hover { /*메뉴 안쪽*/ /*마우스 올리면*/
+        color: grey;
+    }
+    #header.scrolled .nav-links li a:hover { /*메뉴 안쪽*/ /*마우스 올리면 +스크롤시 */
+        color: grey;
+    }
+}
+#header.scrolled .Style1 li { /*style1은 배너 안의 항목들*/
+    background-color: rgba(124, 0, 25, 1);  
+}
+
+.nav-links .Style1 a {
+    display: inline-block;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    /* background: white; */
+    /* color: white; */
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    line-height: 150%;
+    /* box-shadow: 3px 3px 3px gray; */
+
+}
+
+.nav-links .Style1 li {
+    padding: 0px 0px;
+    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 100%;
+}
+#header.scrolled .welcome.with-fixed-header {
+    background-color: rgba(124, 0, 25, 1); 
+}
+.nav-links .current { /*home 색깔*/
+    font-weight: bold;
+    /* color: rgb(111, 205, 249); */
+    /* color: rgba(110, 46, 141, 1) */
+    color: rgba(124, 0, 25, 1);
 }

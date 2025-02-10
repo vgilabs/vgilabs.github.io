@@ -229,15 +229,40 @@ a {
         color: black;
         text-align: center;
     }
-    .welcome.with-fixed-header {
+    /* .welcome.with-fixed-header {
         background-color: rgba(11, 25, 67, 1);
         
     }
     .welcome.with-fixed-header li{
         background-color: transparent;
+    } */
+    #header.scrolled .nav-links .current { /*home 글씨 */
+        color: rgba(124, 0, 25, 1);
+    }
+    
+    #header.scrolled .nav-links li a { /*다른 항목 글씨 */
+        color: black;  
     }
 }
+@media screen and (max-width: 1020px) {
+    #header.scrolled .nav-links li a {
+        color: black;
+    }
+    #header.scrolled .nav-links .current { /*home 글씨 */
+        color: rgba(124, 0, 25, 1);  
+    }
 
+    .nav-links .Style1 {
+        display: none; 
+    }
+
+    .nav-links li a:hover { /*메뉴 안쪽*/ /*마우스 올리면*/
+        color: grey;
+    }
+    #header.scrolled .nav-links li a:hover { /*메뉴 안쪽*/ /*마우스 올리면 +스크롤시 */
+        color: grey;
+    }
+}
 .nav-active {
     transform: translateX(0%);
 }
@@ -321,7 +346,7 @@ html {
     text-align: left;
     justify-content: center;
     display: flex;
-    flex-direction: column; /
+    flex-direction: column; 
     color: #888;
 }
 
@@ -376,6 +401,10 @@ html {
 }
 
 @media screen and (max-width:1020px) {
+    .banner-area {
+        background-position: center center; 
+    }
+
     .banner-area h1 {
         font-family: 'Montserrat', sans-serif;
         font-size: 40px;
@@ -402,7 +431,7 @@ html {
     width:217px;
     height: 5px;
     margin-bottom: 0px;
-    /* background-color: rgb(211, 211, 211); */
+    background-color: rgb(211, 211, 211);
 }
 
 .area-divider-news {
@@ -410,7 +439,7 @@ html {
     width: 85px;
     height: 5px;
     margin-bottom: 30px;
-    /* background-color: rgb(211, 211, 211); */
+    background-color: rgb(211, 211, 211);
 }
 
 .area-divider-recruit {
@@ -418,7 +447,7 @@ html {
     width: 200px;
     height: 5px;
     margin-bottom: 30px;
-    /* background-color: rgb(211, 211, 211); */
+    background-color: rgb(211, 211, 211);
 }
 
 .area-divider-publication { /*selected publications 제목 밑 부분*/
@@ -426,7 +455,7 @@ html {
     width: 355px;
     height: 5px;
     margin-bottom: 30px;
-    /* background-color: rgb(211, 211, 211); */
+    background-color: rgb(211, 211, 211);
 }
 
 
@@ -507,9 +536,8 @@ html {
 .inner-list {
     display: flex;
     /* transition: transform 0.3s ease-out; */
-    width: 100%; /* 정확한 너비 설정 */
-    /* overflow: hidden; 넘치는 요소 숨기기 */
-    white-space: nowrap; /* 한 줄로 표시 */
+    width: 100%; 
+    white-space: nowrap; 
 }
 .inner {
     /* flex: 0 0 100%; */
@@ -556,21 +584,25 @@ html {
     bottom: 0;
     height: 130px;
     width: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    color: white;
+    /* background: rgba(0, 0, 0, 0.6); */
+    /* background: rgba(214, 201, 177, 1); */
+    /* color: white; */
     padding: 15px;
-    text-align: center;
+    /* text-align: center; */
     font-size: 16px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    
 }
 .inner .inner_desc p {
     text-align: left;
+    
     /* margin: 0 auto; */
 }
 
 .inner_desc a {
-    color: white;
+    color: black;
+    
 
   }
 
@@ -908,6 +940,11 @@ button img {
 }
 
 @media (max-width: 1000px) {
+    .slider-container {
+        position: relative;
+        width: 100%;
+        height: 300px;
+    }
     .research{
         flex-basis: 50%;
         padding-bottom: 20px;
@@ -995,6 +1032,7 @@ button img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    /* width: 100vw; */
 }
 
 
@@ -1012,9 +1050,11 @@ button img {
     /* height: 100px; */
     min-height: 100px;
     /* width: 50%; */
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
-    text-align: center;
+    /* background: rgba(0, 0, 0, 0.5); */
+    background-color: rgba(214, 201, 177, 0.5);
+    border-radius: 10px;
+    color: black;
+    text-align: left;
     padding: 10px;
     font-size: 16px;
     /* transform: skew(-20deg); */
@@ -1028,12 +1068,16 @@ button img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* left: 50%; */
+    /* transform: translateX(20%); */
+
         
     /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); */
 }
 
 .inner_desc p {
-    width: 90%; 
+    /* width: 40%;  */
+    margin: 0 auto;
     text-align: left;
     /* line-height: 1.6; */
 }
@@ -1046,13 +1090,77 @@ button img {
 .inner_desc p span:last-child {
     margin-bottom: 0;
 }
+@media screen and (max-width: 1020px) {
+    .slider-container {
+        position: relative;
+        width: 100%;
+        height: 500px;
+    }
+    
+    .slides {
+        transition: transform 0.4s ease-in-out;
+        width: 100%; 
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inner_pic {
+        width: 100%;
+        max-height: 300px;
+        height: auto;
+        object-fit: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        align-self: center;
+    }
+
+    .inner_desc {
+        width: 100%; 
+        min-height: auto; 
+        padding: 10px; 
+        font-size: calc(14px + 0.2vw); /* 화면 크기에 따라 텍스트 크기 조정 */
+        text-align: left; 
+        line-height: 1.6; 
+        margin-top: 10px; 
+        word-wrap: break-word; /* 긴 단어가 잘리지 않게 */
+        overflow-wrap: break-word; /* 긴 단어가 화면을 넘지 않게 */
+        position: absolute;
+    }
+
+    .inner_desc p {
+        width: 100%; 
+        margin: 0; 
+        text-align: left;
+        line-height: 1.4; 
+        font-size: calc(14px + 0.2vw);; 
+        white-space: normal; 
+    }
+
+    .inner_desc p span {
+        display: block; 
+        margin-bottom: 5px; /* 간격 유지 */
+    }
+
+    /* 마지막 span의 여백 없애기 */
+    .inner_desc p span:last-child {
+        margin-bottom: 0;
+    }
+}
 
 .arrow {
     position: absolute;
-    top: 50%;
+    top: 30%;
     transform: translateY(-50%);
-    background: rgba(0, 0, 0, 0.5);
-    color: white;
+    /* background: rgba(0, 0, 0, 0.5); */
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
     border: none;
     padding: 10px;
     cursor: pointer;
@@ -1071,6 +1179,8 @@ button img {
 }
 
 .arrow:hover {
-    background: rgba(255, 255, 255, 0.8);
-    color: black;
+    
+    background-color: rgba(214, 201, 177, 0.5);
+    color: white;
 }
+

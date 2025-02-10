@@ -36,12 +36,12 @@ window.addEventListener("scroll", function() {
         header.classList.add("scrolled");  
         header.classList.remove("collapsed");
         welcome.classList.add("with-fixed-header");
-        logo.src = "../images/logo/ver2/logo_white.png";  // 
+        logo.src = "../../images/logo/ver2/logo_white.png";  // 
     } else {  // 스크롤이 맨 위로 올라가면 원래대로 복귀
         header.classList.remove("scrolled");  
         header.classList.add("collapsed");
         welcome.classList.remove("with-fixed-header");
-        logo.src = "../images/logo/ver2/left_logo.png"; 
+        logo.src = "../../images/logo/ver2/left_logo.png"; 
         
         if (window.innerWidth <= 1020) return;
         banner.style.backgroundPosition = `center calc(-400px)`;
