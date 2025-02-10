@@ -81,7 +81,7 @@ const getInterval = () => {
     currentIndex++;
     currentIndex = currentIndex >= slides.length ? 0 : currentIndex; 
     updateSlide();
-  }, 5000); // 5초 간격으로 슬라이드 변경
+  }, 10000); // 5초 간격으로 슬라이드 변경
 };
 
 let currentIndex = 0;
