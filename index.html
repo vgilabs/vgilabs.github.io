@@ -3,6 +3,7 @@
 
 <head>
   <title>VGI @ KU </title>
+  <link rel="icon" href="images/logo/ver2/logo.png" type="image/png">
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,7 +20,7 @@
     <nav class="welcome">
       <div class="logo">
         <a class="navbar-brand" href="index.html">
-          <img src="images/logo/left_logo.png" class="img-logo">
+          <img src="images/logo/ver2/left_logo.png" class="img-logo">
         </a>
       </div>
       <ul class="nav-links"> <!-- ul: unordered list -->
@@ -56,327 +57,218 @@
         <div class="line"></div>
       </div>
     </nav>
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
   </header>
 
   <div class="banner-area">
     <h1><span>Visual & General Intelligence Lab.</span></h1> <!-- span: shadow effect -->
   </div>
   
-  <section class="index-area" id="index">
-    <div class="area-main">
-      <div class="area-name">RESEARCH  <a href="html/research.html#section1">(MORE)</a></div>
-      <div class="area-divider-welcome"></div>
-
-      <!-- <div class="area-content">
-        <p>
-          <span>Our group aims to develop Artificial General Intelligence (AGI) technologies.
-            We research not only cutting-edge AI algorithms in the classical AI fields like computer vision and natural language processing,
-            but also study future AI technologies, especially like incremental learning, continual (lifelong) learning, unsupervised representation learning, and memory networks.
-            We have interested in the various research topics including but not limited to:<br><br>
-            <ol>
-              <li>Continual Learning for Artificial General Intelligence</li>
-                <ol type="A" class="topic">
-                  <li>Online incremental and few-shot learning</li>
-                  <li>Continual unsupervised domain adaptation</li>
-                  <li>Generative models: Lifelong GAN, designing GAN encoder for image manipulation</li>
-                  <li>Lifelong language learning and its applications: question answering, goal-oriented dialogues, text classification, language generation, etc.</li>
-                  <li>Universal continual learning for multi-domain tasks</li>
-                </ol><br>
-              <li>Memory Networks for Autonomous Intelligent Agent</li>
-                <ol type="A" class="topic">
-                  <li>Advanced developmental memory networks</li>
-                  <li>Memory-based personalized recommendation systems</li>
-                </ol><br>
-              <li>Medical AI</li>
-                <ol type="A" class="topic">
-                  <li>Anomaly detection of Arrhythmia using electrocardiogram (ECG)</li>
-                </ol>
-            </ol>
-          </span>
-          <br>
-        </p>
-      </div> -->
+  <!-- <section class="index-area" id="index"> -->
 
 
-      <div class="research-area">
-        <div class="research">
-          <div class="pics" style="background-image: url('images/CL.png');"></div>
-          <h2><a href="html/research.html#section1">Continual Learning</a></h2>
-        </div>
-        <div class="research">
-          <div class="pics" style="background-image: url('images/DA.png');"></div>
-          <h2><a href="html/research.html#section1">Learning Methods for Future AI</a></h2>
-        </div>
-        <div class="research">
-          <div class="pics" style="background-image: url('images/GM.png');"></div>
-          <h2><a href="html/research.html#section1">Deep Generative AI</a></h2>
-        </div>
-        <div class="research">
-          <div class="pics" style="background-image: url('images/MM.png');"></div>
-          <h2><a href="html/research.html#section1">Multi-Modal AI</a></h2>
-        </div>
-      </div>
-    
-    </div> <!-- Welcome-end -->
+
 
     <div class="area-main">
       <div class="area-name">SELECTED PUBLICATIONS</div>
       <div class="area-divider-publication"></div>
-      <div class="outer-button">
-        <div class="button-list-left">
-          <button class="button-left">
-            <img src="images/left-arrow.png">
-          </button>
-        </div>
-        <div class="outer">
-          <div class="inner-list">
+  
+      <!-- (슬라이드 개수에 맞게 자동 생성됨) -->
+      <div class="dots"></div>
+  
+      <div class="slider-container">
+          <button class="arrow left" onclick="moveSlide(-1)">&#10094;</button>
 
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/MPAW.png');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>Multispectral Pedestrian Detection with Sparsely Annotated Label</b></span>
-                  <span>Chan Lee*, Seungho Shin*, <u><b>G.-M. Park</b></u><sup>†</sup>, Jung Uk Kim<sup>†</sup></span>
-                  <span><b>AAAI 2025</b></span>
-                  <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span>
-                </p>
-              </div>
-            </div>
+          
 
+          
+          <div class="slides">
+              <figure class="slide">
+                <img class="inner_pic" src="images/MPAW.png" alt="Multispectral Pedestrian Detection">  
+                <figcaption class="inner_desc">
+                    <p>
+                        <span><b>Multispectral Pedestrian Detection with Sparsely Annotated Label</b></span>
+                        <span>Chan Lee*, Seungho Shin*, <u><b>G.-M. Park</b></u><sup>†</sup>, Jung Uk Kim<sup>†</sup></span>
+                        <span><b>AAAI 2025</b></span>
+                        <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span>
+                    </p>
+                </figcaption>               
+              </figure>
+  
+              <figure class="slide">
+                <img class="inner_pic" src="images/fig1_wine.png" alt="WINE : Wavelet-Guided GAN Inversion">
+                <figcaption class="inner_desc">
+                    <p>
+                        <span><b>WINE : Wavelet-Guided GAN Inversion and Editing for High-Fidelity Refinement</b></span>
+                        <span>Seung-Jun Moon*, Chaewon Kim*, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                        <span><b>WACV 2025</b></span>
+                        <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span>
+                    </p>
+                </figcaption>
+              </figure>
+  
+              <figure class="slide">
+                <img class="inner_pic" src="images/main_figure_CHANGER2.png" alt="High-fidelity Head Blending">
+                <figcaption class="inner_desc">
+                    <p>
+                        <span><b>Towards High-fidelity Head Blending with Chroma Keying for Industrial Applications</b></span>
+                        <span>Hah Min Lew*, Sahngmin Yoo*, Hyunwoo Kang*, and <u><b>G.-M. Park</b><sup>†</sup></u></span>
+                        <span><b>WACV 2025</b></span>
+                        <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span>
+                    </p>
+                </figcaption>
 
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/fig1_wine.png');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>WINE : Wavelet-Guided GAN Inversion and Editing for High-Fidelity Refinement</b></span>
-                  <span>Seung-Jun Moon*, Chaewon Kim*, and <u><b>G.-M. Park</b></u></span>
-                  <span><b>WACV 2025</b></span>
-                  <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span>
-                </p>
-              </div>
-            </div>
+              </figure>
+  
+              <figure class="slide">
+                <img class="inner_pic" src="images/OCGCD.png">
+                <figcaption class="inner_desc">
+                    <p>
+                      <span><b>Online Continuous Generalized Category Discovery</b></span>
+                      <span>K.-H. Park, Hakyung Lee, Kyungwoo Song<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                      <span><b>ECCV 2024</b></span>
+                      <span><u><a href="https://arxiv.org/abs/2408.13492">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/OCGCD">Code Link</a></u></span>              
+                    </p>
+                </figcaption>
+              </figure>
 
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/main_figure_CHANGER2.png');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>Towards High-fidelity Head Blending with Chroma Keying for Industrial Applications</b></span>
-                  <span>Hah Min Lew*, Sahngmin Yoo*, Hyunwoo Kang*, and <u><b>G.-M. Park</b></u></span>
-                  <span><b>WACV 2025</b></span>
-                  <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span>
-                </p>
-              </div>
-            </div>
+              <figure class="slide">
+                <img class="inner_pic" src="images/ICON.png">
+                <figcaption class="inner_desc">
+                    <p>
+                      <span><b>Versatile Incremental Learning: Towards Class and Domain-Agnostic Incremental Learning</b></span>
+                      <span>M.-Y. Park*, J.-H. Lee*, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                      <span><b>ECCV 2024</b></span>
+                      <span><u><a href="https://arxiv.org/abs/2409.10956">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/VIL">Code Link</a></u></span>
+                    </p>
+                </figcaption>
+              </figure>
 
+              <figure class="slide">
+                <img class="inner_pic" src="images/HDMC.png">
+                <figcaption class="inner_desc">
+                    <p>
+                      <span><b>Towards Model-Agnostic Dataset Condensation by Heterogeneous Models</b></span>
+                      <span>J.-Y. Moon, Jung Uk Kim<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                      <span><b>ECCV 2024</b> (<b>Oral presentation</b>)</span>
+                      <span><u><a href="https://arxiv.org/abs/2409.14538">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/HMDC">Code Link</a></u></span>
+                    </p>
+                </figcaption>
+              </figure>
 
+              <figure class="slide">
+                <img class="inner_pic" src="images/PriViLege.png">
+                <figcaption class="inner_desc">
+                    <p>
+                      <span><b>Pre-trained Vision and Language Transformers Are Few-Shot Incremental Learners</b></span>
+                      <span><span>K.-H. Park, Kyungwoo Song<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                      <span><b>CVPR 2024</b></span>
+                      <span><u><a href="https://arxiv.org/abs/2404.02117">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/PriViLege">Code Link</a></u></span>
+                    </p>
+                </figcaption>
+              </figure>
 
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/OCGCD.png');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>Online Continuous Generalized Category Discovery</b></span>
-                  <span>K.-H. Park, Hakyung Lee, Kyungwoo Song<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
-                  <span><b>ECCV 2024</b></span>
-                  <span><u><a href="https://arxiv.org/abs/2408.13492">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/OCGCD">Code Link</a></u></span>
-                </p>
-              </div>
-            </div>
+              <figure class="slide">
+                <img class="inner_pic" src="images/GUIDE.png">
+                <figcaption class="inner_desc">
+                    <p>
+                      <span><b>Generative Unlearning for Any Identity</b></span>
+                      <span><span>J. Seo*, S.-H. Lee*, T.-Y. Lee*, Seung-Jun Moon, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                      <span><b>CVPR 2024</b></span>
+                      <span><u><a href="https://arxiv.org/abs/2405.09879">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/GUIDE">Code Link</a></u></span>
+                    </p>
+                </figcaption>
+              </figure>
 
+              <figure class="slide">
+                <img class="inner_pic" src="images/BUS.png">
+                <figcaption class="inner_desc">
+                    <p>
+                      <span><b>Open-Set Domain Adaptation for Semantic Segmentation</b></span>
+                      <span><span>S.-A. Choe*, A.-H. Shin*, K.-H. Park,  Jinwoo Choi<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                      <span><b>CVPR 2024</b></span>
+                      <span><u><a href="https://arxiv.org/abs/2405.19899">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/BUS">Code Link</a></u></span>
+                    </p>
+                </figcaption>
+              </figure>
 
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/ICON.png');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>Versatile Incremental Learning: Towards Class and Domain-Agnostic Incremental Learning</b></span>
-                  <span>M.-Y. Park*, J.-H. Lee*, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
-                  <span><b>ECCV 2024</b></span>
-                  <span><u><a href="https://arxiv.org/abs/2409.10956">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/VIL">Code Link</a></u></span>
-                </p>
-              </div>
-            </div>
+              <figure class="slide">
+                <img class="inner_pic" src="images/inner6.jpg">
+                <figcaption class="inner_desc">
+                    <p>
+                      <span><b>RADIO: Reference-Agnostic Dubbing Video Synthesis</b></span>
+                      <span><span>Dongyeun Lee*, Chaewon Kim*, Sangjoon Yu, Jaejun Yoo<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                      <span><b>WACV 2024</b></span> 
+                      <span><u><a href="https://arxiv.org/abs/2309.01950">Paper Link</a></u></span>
+                      </p>
+                </figcaption>
+              </figure>
 
-            
+              <figure class="slide">
+                <img class="inner_pic" src="images/inner5.jpg">
+                <figcaption class="inner_desc">
+                    <p>
+                      <span><b>GLAD: Global-Local View Alignment and Background Debiasing for Video Domain Adaptation</b></span>
+                      <span>Hyogun Lee*, Kyungho Bae*, Seong Jong Ha, Yumin Ko, <u><b>G.-M. Park</b></u><sup>†</sup>, and Jinwoo Choi<sup>†</sup></span>
+                      <span><b>WACV 2024</b></span>
+                      </p>
+                </figcaption>
+              </figure>
 
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/HDMC.png');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>Towards Model-Agnostic Dataset Condensation by Heterogeneous Models</b></span>
-                  <span>J.-Y. Moon, Jung Uk Kim<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
-                  <span><b>ECCV 2024</b> (<b>Oral presentation</b>)</span>
-                  <span><u><a href="https://arxiv.org/abs/2409.14538">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/HMDC">Code Link</a></u></span>
-                </p>
-              </div>
-            </div>
+              <figure class="slide">
+                <img class="inner_pic" src="images/inner4.jpg">
+                <figcaption class="inner_desc">
+                    <p>
+                      <span><b>Online Class Incremental Learning on Stochastic Blurry Task Boundary via Mask and Visual Prompt Tuning</b></span>
+                      <span>J.-Y. Moon*, K.-H. Park*, Jung Uk Kim<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                      <span><b>ICCV 2023</b></span>
+                      <span><u><a href="https://arxiv.org/abs/2308.09303">Paper Link</a></u> | <u><a href="https://github.com/moonjunyyy/Si-Blurry">Code Link</a></u></span>
+                    </p>
+                </figcaption>
+              </figure>
 
+              <figure class="slide">
+                <img class="inner_pic" src="images/inner3.jpg">
+                <figcaption class="inner_desc">
+                    <p>
+                      <span><b>LFS-GAN: Lifelong Few-Shot Image Generation</b></span>
+                      <span>J. Seo*, Ji-Su Kang*, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                      <span><b>ICCV 2023</b></span>
+                      <span><u><a href="https://arxiv.org/abs/2308.11917">Paper Link</a></u> | <u><a href="http://github.com/JJuOn/LFS-GAN">Code Link</a></u></span>
+                    </p>
+                </figcaption>
+              </figure>
 
+              <figure class="slide">
+                <img class="inner_pic" src="images/inner1.jpg">
+                <figcaption class="inner_desc">
+                    <p>
+                      <span><b>LINe: Out-of-Distribution Detection by Leveraging Important Neurons</b></span>
+                      <span>Yong Hyun Ahn, <u><b>G.-M. Park</b></u><sup>†</sup>, and Seong Tae Kim<sup>†</sup></span>
+                      <span><b>CVPR 2023</b></span>
+                      <span><u><a href="https://arxiv.org/abs/2303.13995">Paper Link</a></u> | <u><a href="https://github.com/YongHyun-Ahn/LINe-Out-of-Distribution-Detection-by-Leveraging-Important-Neurons">Code Link</a></u></span>
+                    </p>
+                </figcaption>
+              </figure>
 
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/PriViLege.png');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>Pre-trained Vision and Language Transformers Are Few-Shot Incremental Learners</b></span>
-                  <span><span>K.-H. Park, Kyungwoo Song<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
-                  <span><b>CVPR 2024</b></span>
-                  <!-- <span><u><a href="https://arxiv.org/abs/2309.01950">Paper Link</a></u></span> -->
-                  <span><u><a href="https://arxiv.org/abs/2404.02117">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/PriViLege">Code Link</a></u></span>
-                </p>
-              </div>
-            </div>
-
-
-
-            <div class="inner">
-                <div class="inner_column">
-                  <div class="inner_pic" style="background-image: url('../images/GUIDE.png');"></div>
-                </div>
-                <div class="inner_desc">
-                  <p>
-                    <span><b>Generative Unlearning for Any Identity</b></span>
-                    <span><span>J. Seo*, S.-H. Lee*, T.-Y. Lee*, Seung-Jun Moon, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
-                    <span><b>CVPR 2024</b></span>
-                    <!-- <span><u><a href="https://arxiv.org/abs/2309.01950">Paper Link</a></u></span> -->
-                    <span><u><a href="https://arxiv.org/abs/2405.09879">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/GUIDE">Code Link</a></u></span>
-                  </p>
-                </div>
-              </div>
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/BUS.png');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>Open-Set Domain Adaptation for Semantic Segmentation</b></span>
-                  <span><span>S.-A. Choe*, A.-H. Shin*, K.-H. Park,  Jinwoo Choi<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
-                  <span><b>CVPR 2024</b></span>
-                  <!-- <span><u><a href="https://arxiv.org/abs/2309.01950">Paper Link</a></u></span> -->
-                  <span><u><a href="https://arxiv.org/abs/2405.19899">Paper Link</a></u> | <u><a href="https://github.com/KHU-AGI/BUS">Code Link</a></u></span>
-                </p>
-              </div>
-            </div>
-            
-            <!----------------------------------------------------------------------------------------------------------------->
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/inner6.jpg');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>RADIO: Reference-Agnostic Dubbing Video Synthesis</b></span>
-                  <span><span>Dongyeun Lee*, Chaewon Kim*, Sangjoon Yu, Jaejun Yoo<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
-                  <span><b>WACV 2024</b></span> 
-                  <span><u><a href="https://arxiv.org/abs/2309.01950">Paper Link</a></u></span>
-                  <!-- <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span> -->
-                </p>
-              </div>
-            </div>
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/inner5.jpg');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>GLAD: Global-Local View Alignment and Background Debiasing for Video Domain Adaptation</b></span>
-                  <span>Hyogun Lee*, Kyungho Bae*, Seong Jong Ha, Yumin Ko, <u><b>G.-M. Park</b></u><sup>†</sup>, and Jinwoo Choi<sup>†</sup></span>
-                  <span><b>WACV 2024</b></span>
-                  <!-- <span><u><a href="">Paper Link (TBU)</a></u> | <u><a href="">Code Link (TBU)</a></u></span> -->
-                </p>
-              </div>
-            </div>
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/inner4.jpg');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>Online Class Incremental Learning on Stochastic Blurry Task Boundary via Mask and Visual Prompt Tuning</b></span>
-                  <span>J.-Y. Moon*, K.-H. Park*, Jung Uk Kim<sup>†</sup>, and <u><b>G.-M. Park</b></u><sup>†</sup></span>
-                  <span><b>ICCV 2023</b></span>
-                  <span><u><a href="https://arxiv.org/abs/2308.09303">Paper Link</a></u> | <u><a href="https://github.com/moonjunyyy/Si-Blurry">Code Link</a></u></span>
-                </p>
-              </div>
-            </div>
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/inner3.jpg');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>LFS-GAN: Lifelong Few-Shot Image Generation</b></span>
-                  <span>J. Seo*, Ji-Su Kang*, and <u><b>G.-M. Park</b></u></span>
-                  <span><b>ICCV 2023</b></span>
-                  <span><u><a href="https://arxiv.org/abs/2308.11917">Paper Link</a></u> | <u><a href="http://github.com/JJuOn/LFS-GAN">Code Link</a></u></span>
-                </p>
-              </div>
-            </div>
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/inner1.jpg');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>LINe: Out-of-Distribution Detection by Leveraging Important Neurons</b></span>
-                  <span>Yong Hyun Ahn, <u><b>G.-M. Park</b></u><sup>†</sup>, and Seong Tae Kim<sup>†</sup></span>
-                  <span><b>CVPR 2023</b></span>
-                  <span><u><a href="https://arxiv.org/abs/2303.13995">Paper Link</a></u> | <u><a href="https://github.com/YongHyun-Ahn/LINe-Out-of-Distribution-Detection-by-Leveraging-Important-Neurons">Code Link</a></u></span>
-                </p>
-              </div>
-            </div>
-            <div class="inner">
-              <div class="inner_column">
-                <div class="inner_pic" style="background-image: url('../images/inner2.jpg');"></div>
-              </div>
-              <div class="inner_desc">
-                <p>
-                  <span><b>IntereStyle: Encoding an Interest Region for Robust StyleGAN Inversion</b></span>
-                  <span>Seungjun Moon and <u><b>G.-M. Park</b></u></span>
-                  <span><b>ECCV 2022</b></span>
-                  <span><u><a href="https://arxiv.org/abs/2209.10811">Paper Link</a></u> | <u><a href="https://github.com/seungjun-moon/interestyle">Code Link</a></u></span>
-                </p>
-              </div>
-            </div>
+              <figure class="slide">
+                <img class="inner_pic" src="images/inner2.jpg">
+                <figcaption class="inner_desc">
+                    <p>
+                      <span><b>IntereStyle: Encoding an Interest Region for Robust StyleGAN Inversion</b></span>
+                      <span>Seungjun Moon and <u><b>G.-M. Park</b></u><sup>†</sup></span>
+                      <span><b>ECCV 2022</b></span>
+                      <span><u><a href="https://arxiv.org/abs/2209.10811">Paper Link</a></u> | <u><a href="https://github.com/seungjun-moon/interestyle">Code Link</a></u></span>
+                    </p>
+                </figcaption>
+              </figure>
           </div>
-        </div>
-        <div class="button-list-right">
-          <button class="button-right">
-            <img src="images/right-arrow.png">
-          </button>
-        </div>
-      </div>
-      <div class="button-list-num">
-        <button class="button-num1"></button>
-        <button class="button-num2"></button>
-        <button class="button-num3"></button>
-        <button class="button-num4"></button>
-        <button class="button-num5"></button>
-        <button class="button-num6"></button>
-        <button class="button-num7"></button>
-        <button class="button-num8"></button>
-        <button class="button-num9"></button>
-        <button class="button-num10"></button>
-        <button class="button-num11"></button>
-        <button class="button-num12"></button>
-        <button class="button-num13"></button>
-        <button class="button-num14"></button>
-        <button class="button-num15"></button>
+  
+          <button class="arrow right" onclick="moveSlide(1)">&#10095;</button>
       </div>
     </div>
-
+  
+  
     <!-- <div class="area-main">
       <div class="area-name">RECRUITMENT</div>
       <div class="area-divider-recruit"></div>
@@ -398,6 +290,8 @@
       <div class="area-name">NEWS</div>
       <div class="area-divider-news"></div>
       <div class="wrap-horizontal">
+        
+        <!-- 최신 뉴스-->
 
         <!-- <div class="date">
           <p>[2023-12-20]</p>
@@ -424,7 +318,6 @@
               <span><b>Two papers</b> got accepted to <b><i>WACV 2025</i></b>.</span>
             </p>
         </div>
-
         <div class="date">
           <p>[2024-09-23]</p>
         </div>
@@ -469,7 +362,6 @@
               <span>Our paper titled "Wav2NeRF: Audio-Driven Realistic Talking Head Generation via Wavelet-based NeRF" got accepted to <i>Image and Vision Computing</i>.</span>
             </p>
         </div>
-       
         <div class="date">
           <p>[2024-02-27]</p>
         </div>
@@ -478,6 +370,14 @@
               <span><b>Three papers</b> got accepted to <b><i>CVPR 2024</i></b>.</span>
             </p>
         </div>
+
+      </div>
+
+
+
+      <!-- 숨겨진 뉴스-->
+      <div class="hidden-news">
+
         <div class="date">
           <p>[2023-10-25]</p>
         </div>
@@ -485,7 +385,8 @@
             <p>
               <span><b>Two papers</b> got accepted to <b><i>WACV 2024</i></b>.</span>
             </p>
-        </div>
+        </div>       
+
         
         <!-- <div class="date">
           <p>[2023-10-25]</p>
@@ -704,6 +605,7 @@
             </p>
         </div>
       </div>
+      
       <!-- <div class="date">
         <p>[2020-08-01]</p>
       </div>
@@ -723,7 +625,67 @@
       </div> -->
 
     </div> <!-- NEWS-end -->
+    <button id="read-more-btn">Read More</button>
+
+
+
+
+
+    <div class="area-main">
+      <div class="area-name">RESEARCH  <a href="html/research.html#section1">(MORE)</a></div>
+      <div class="area-divider-welcome"></div>
+
+      <!-- <div class="area-content">
+        <p>
+          <span>Our group aims to develop Artificial General Intelligence (AGI) technologies.
+            We research not only cutting-edge AI algorithms in the classical AI fields like computer vision and natural language processing,
+            but also study future AI technologies, especially like incremental learning, continual (lifelong) learning, unsupervised representation learning, and memory networks.
+            We have interested in the various research topics including but not limited to:<br><br>
+            <ol>
+              <li>Continual Learning for Artificial General Intelligence</li>
+                <ol type="A" class="topic">
+                  <li>Online incremental and few-shot learning</li>
+                  <li>Continual unsupervised domain adaptation</li>
+                  <li>Generative models: Lifelong GAN, designing GAN encoder for image manipulation</li>
+                  <li>Lifelong language learning and its applications: question answering, goal-oriented dialogues, text classification, language generation, etc.</li>
+                  <li>Universal continual learning for multi-domain tasks</li>
+                </ol><br>
+              <li>Memory Networks for Autonomous Intelligent Agent</li>
+                <ol type="A" class="topic">
+                  <li>Advanced developmental memory networks</li>
+                  <li>Memory-based personalized recommendation systems</li>
+                </ol><br>
+              <li>Medical AI</li>
+                <ol type="A" class="topic">
+                  <li>Anomaly detection of Arrhythmia using electrocardiogram (ECG)</li>
+                </ol>
+            </ol>
+          </span>
+          <br>
+        </p>
+      </div> -->
+
+
+      <div class="research-area">
+        <div class="research">
+          <div class="pics" style="background-image: url('images/CL.png');"></div>
+          <h2><a href="html/research.html#section1">Continual Learning</a></h2>
+        </div>
+        <div class="research">
+          <div class="pics" style="background-image: url('images/DA.png');"></div>
+          <h2><a href="html/research.html#section1">Learning Methods for Future AI</a></h2>
+        </div>
+        <div class="research">
+          <div class="pics" style="background-image: url('images/GM.png');"></div>
+          <h2><a href="html/research.html#section1">Deep Generative AI</a></h2>
+        </div>
+        <div class="research">
+          <div class="pics" style="background-image: url('images/MM.png');"></div>
+          <h2><a href="html/research.html#section1">Multi-Modal AI</a></h2>
+        </div>
+      </div>
     
+    </div> <!-- Welcome-end -->    
     <div class="area-main">
       <div class="area-name">RECRUITMENT</div>
       <div class="area-divider-recruit"></div>
@@ -742,13 +704,33 @@
     </div>
 
   </section> <!-- section-end -->
-
-  <footer>
-    <p class="footer-bottom-text">All Rights reserved by &copy;VGILAB</p>
-  </footer>
+  <script src="app.js"></script>
   
+  <!-- <footer>
+    <p class="footer-bottom-text">All Rights reserved by &copy;VGILAB</p>
+  </footer> -->
+
+
+  <footer class="footer">
+    <div class="footer-container">
+        <!-- 왼쪽: 로고 -->
+        <div class="footer-left">
+            <img src="images/logo/ver2/crimson2positive.gif" alt="Korea University Logo" class="footer-logo">
+        </div>
+
+        <!-- 오른쪽: 텍스트 -->
+        <div class="footer-right">
+            <p>Department of <a href="https://xai.korea.ac.kr/">Artificial Intelligence</a>, <a href="https://korea.ac.kr/">Korea University</a></p>
+            <p>(02841) 145 Anam-ro, Seongbuk-gu, Seoul, South Korea</p>
+            <p>All Rights reserved by &copy;<a href="https://vgilab.korea.ac.kr">VGILAB</a></p>
+        </div>
+    </div>
+  </footer>
+
+
+
   <!-- navigation bar 고정 및 색상 변경 -->
-  <script> 
+  <!-- <script> 
     var header = document.getElementById('header')
     var welcome = document.getElementsByClassName('welcome')[0]
 
@@ -770,7 +752,7 @@
       }
     })
   
-  </script>
+  </script> -->
   <script>
     /*
       div사이즈 동적으로 구하기
@@ -925,6 +907,8 @@
 
     let interval = getInterval();
      // interval 등록
+
+  
   </script>
 </body>
 

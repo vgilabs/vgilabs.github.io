@@ -48,12 +48,26 @@ body{
 
 .img-logo {
     width: 180px;
+    /* height: 100px; */
+    background-size: cover; 
+    /* background-position: center;  */
+    /* background-repeat: no-repeat;  */
 }
 
 .nav-links li, a {
-    color: black;
-    text-decoration: none;
+    color: black;   
+    text-decoration: none; 
+    /* transition: color 0.3s ease-in-out; */
 }
+#header.scrolled .nav-links .current { /*home 글씨 */
+    color: rgba(214, 201, 177, 1);
+}
+
+#header.scrolled .nav-links li a { /*다른 항목 글씨 */
+    color: white;  
+}
+
+
 
 .nav-links {
     display: flex;
@@ -69,8 +83,12 @@ body{
     display: inline-block;
 }
 
-.nav-links li a:hover { /*메뉴 안쪽*/
-    color: grey;
+.nav-links li a:hover { /*메뉴 안쪽*/ /*마우스 올리면*/
+    /* color: grey; */
+    color: rgba(124, 0, 25, 1);  
+}
+#header.scrolled .nav-links li a:hover { /*메뉴 안쪽*/ /*마우스 올리면 +스크롤시 */
+    color: rgba(214, 201, 177, 1);
 }
 
 ul {
@@ -98,7 +116,8 @@ a {
     /* background: white; */
     height: 40px;
     line-height: 40px;
-    color: white;
+    /* color: white; */
+    color: black;
     text-align: center;
 }
 
@@ -122,12 +141,17 @@ a {
 
 }
 
+#header.scrolled .Style1 li { /*style1은 배너 안의 항목들*/
+    background-color: rgba(124, 0, 25, 1);  
+}
+
 .nav-links .Style1 a {
     display: inline-block;
     padding-top: 6px;
     padding-bottom: 6px;
     /* background: white; */
-    color: white;
+    /* color: white; */
+    color: black;
     text-align: center;
     margin: 0 auto;
     width: 100%;
@@ -158,13 +182,12 @@ a {
     transition: all 0.3s ease;
 }
 
-.welcome.with-fixed-header {
-    background-color: rgba(11, 25, 67, 1);
+#header.scrolled .welcome.with-fixed-header {
+    background-color: rgba(124, 0, 25, 1); 
 }
 
-.welcome.with-fixed-header li{
-    background-color: rgba(11, 25, 67, 1);
-}
+
+
 
 @media screen and (max-width:1020px) {
     body {
@@ -242,29 +265,88 @@ a {
     }
 }
 
-.nav-links .current {
+.nav-links .current { /*home 색깔*/
     font-weight: bold;
-    color: rgb(111, 205, 249);
+    /* color: rgb(111, 205, 249); */
+    /* color: rgba(110, 46, 141, 1) */
+    color: rgba(124, 0, 25, 1);
 }
 
 html {
     scroll-behavior: smooth;
 }
 
-.footer-bottom-text {
+/* .footer-bottom-text {
     text-align: center;
     background: #111;
     color: white;
     line-height: 75px;
     font-size: 17px;
     font-family: 'Montserrat', sans-serif;
+} */
+
+
+.footer {
+    background-color: #f8f8f8; /* 연한 회색 배경 */
+    padding: 20px;
+    display: flex;
+    justify-content: center;  
+    
+}
+
+
+.footer-container {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    max-width: 900px; 
+    width: 100%;
+    gap: 0;
+}
+
+
+.footer-left {
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    margin-right: 10px; 
+}
+
+.footer-logo {
+    width: auto; 
+    height: 50px;
+}
+
+.footer-right {
+    text-align: left;
+    justify-content: center;
+    display: flex;
+    flex-direction: column; /
+    color: #888;
+}
+
+.footer-right p {
+    margin: 0; 
+    font-size: 14px;    
+}
+.footer-right a {
+    color: #888;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-right a:hover {
+    /* text-decoration: underline; */
+    color: #600000;
 }
 
 .banner-area {
     /* for image */
-    background-image: url(../images/new_gate_long_dark.jpg);
+    /* background-image: url(../images/new_gate_long_dark.jpg); */
+    background-image: url(../images/Korea_University_Main_Hall.jpg);
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
+    height: 100vh;
 
     /* background-color:  rgba(170, 170, 170, 0.3); */
     
@@ -281,6 +363,7 @@ html {
     flex-grow: 1;
     background-position: center center;
     -webkit-background-size: cover;
+    transition: background-position 0.1s ease-out;
 }
 
 .banner-area h1 {
@@ -301,7 +384,7 @@ html {
     }
 }
 
-.banner-area h1 span{
+.banner-area h1 span{ /*banner 중앙 글씨*/
     display: inline-block;
     /* background-color: rgba(255, 255, 255, 0.9); */
     padding: 0px 10px 0px 10px;
@@ -319,7 +402,7 @@ html {
     width:217px;
     height: 5px;
     margin-bottom: 0px;
-    background-color: rgb(211, 211, 211);
+    /* background-color: rgb(211, 211, 211); */
 }
 
 .area-divider-news {
@@ -327,7 +410,7 @@ html {
     width: 85px;
     height: 5px;
     margin-bottom: 30px;
-    background-color: rgb(211, 211, 211);
+    /* background-color: rgb(211, 211, 211); */
 }
 
 .area-divider-recruit {
@@ -335,15 +418,15 @@ html {
     width: 200px;
     height: 5px;
     margin-bottom: 30px;
-    background-color: rgb(211, 211, 211);
+    /* background-color: rgb(211, 211, 211); */
 }
 
-.area-divider-publication {
+.area-divider-publication { /*selected publications 제목 밑 부분*/
     display: block;
     width: 355px;
     height: 5px;
     margin-bottom: 30px;
-    background-color: rgb(211, 211, 211);
+    /* background-color: rgb(211, 211, 211); */
 }
 
 
@@ -351,7 +434,8 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-size: 26px;
     font-weight: bold;
-    color: royalblue;
+    /* color: royalblue; */
+    color: rgba(124, 0, 25, 1);
     padding-top: 30px;
 }
 
@@ -391,21 +475,26 @@ html {
     padding-left: 25px;
 }
 
-.wrap-horizontal {
+.wrap-horizontal { /*news 내용*/
     width: 100%;
-    height: 300px;
+    /* height: 300px; */
     padding: 20px;
-    overflow: auto;
-    border: 3px solid rgb(200, 200, 200);
+    
+    /* overflow: auto; */
+    /* border: 3px solid rgb(200, 200, 200); */
     /* background-color: rgb(232, 232, 232); */
 
 }
+.wrap-horizontal.expanded {
+    padding-bottom: 0;
+    /* background-color: none; */
+}
 
 .outer {
-    border: 3px solid rgb(200, 200, 200);
+    /* border: 3px solid rgb(200, 200, 200); */
     /* background-color: rgb(232, 232, 232); */
     width: 100%;
-    height: 330px;
+    /* height: 330px; */
     margin: 0 auto;
     overflow-x: hidden;
     /* text-align: center; */
@@ -417,56 +506,80 @@ html {
 
 .inner-list {
     display: flex;
-    transition: .2s ease-out;
-    height: 100%;
-    /* position: relative; */
+    /* transition: transform 0.3s ease-out; */
+    width: 100%; /* 정확한 너비 설정 */
+    /* overflow: hidden; 넘치는 요소 숨기기 */
+    white-space: nowrap; /* 한 줄로 표시 */
 }
-
 .inner {
-    /* border: 6px solid olive; */
+    /* flex: 0 0 100%; */
+    border: 6px solid olive;
     width: 100%;
-    display: -webkit-flex;
+    /* display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
-    display: -o-flex;
+    display: -o-flex; */
     display: flex;
     /* flex-wrap: wrap; */
-    justify-content: space-around left;
+    /* justify-content: space-around; */
+    justify-content: center;
+    align-items: center;
     padding: 0 60px;
+    position: relative;
 }
 
 .inner .inner_column {
-    flex-basis: 40%;
+    /* flex-basis: 40%; */
     padding-top: 13px;
     padding-bottom: 13px;
+    position: relative;
+    width: 100%;
 }
 
 .inner .inner_pic {
-    height: 100%;
-    /* width: 100%; */
+    /* height: 100%; */
+    height: 400px;
+    width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-.inner .inner_desc {
+/* .inner .inner_desc {
     flex-basis: 60%;
     padding-left: 20px;
     display: flex;
     align-items: center;
+} */
+.inner .inner_desc {
+    position: absolute;
+    bottom: 0;
+    height: 130px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
-
 .inner .inner_desc p {
     text-align: left;
     /* margin: 0 auto; */
 }
+
+.inner_desc a {
+    color: white;
+
+  }
 
 .inner span {
     display: block;
     font-family: 'Montserrat', sans-serif;
     font-size: 17px;
     text-align: left;
-    line-height: 40px;
+    /* line-height: 40px; */
 }
 @media screen and (max-width:1020px) {
     .inner-list {
@@ -803,4 +916,161 @@ button img {
     .research h2 {
         font-size: 20px;
     }
+}
+
+.hidden-news {
+    display: none; /* 기본적으로 숨김 */
+    margin: 0;
+    padding-top: 0;
+    padding-left: 20px; 
+    padding-right: 20px;
+}
+
+
+#read-more-btn {
+    display: block;
+    /* margin: 20px auto; */
+    margin: 20px auto;
+    padding: 10px 20px;
+    width: auto;
+    height: auto;
+    font-size: 16px;
+    background-color: rgba(124, 0, 25, 1);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    position: relative;
+}
+
+#read-more-btn:hover {
+    background-color: rgba(124, 0, 25, 0.8);
+}
+
+
+
+/*selected publication*/
+
+/* 페이지 인디케이터 (dots) */
+.dots {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: gray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: black;
+}
+
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;   
+}
+
+
+.slides {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+    /* overflow: hidden; */
+}
+
+/* 개별 슬라이드 */
+.slide {
+    /* width: 100%; */
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inner_pic {
+    max-height: 400px; 
+    object-fit: contain; /* 원래 비율을 유지하면서 박스 안에 맞춤 */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    align-self: center; /* 이미지가 너무 작으면 중앙 정렬 */
+}
+
+.inner_desc {
+    width: 100%;
+    /* height: 100px; */
+    min-height: 100px;
+    /* width: 50%; */
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 16px;
+    /* transform: skew(-20deg); */
+    position: absolute;
+    /* margin-top: 20px; */
+    /* min-height: 100px; */
+    bottom: -150px;
+    /* left: 0; */
+    /* top: 0; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        
+    /* clip-path: polygon(0 0, 100% 0%, 100% 100%, 0% 100%); */
+}
+
+.inner_desc p {
+    width: 90%; 
+    text-align: left;
+    /* line-height: 1.6; */
+}
+.inner_desc p span {
+    display: block; 
+    margin-bottom: 5px;  
+}
+
+/* 마지막 span에는 여백을 없애기 */
+.inner_desc p span:last-child {
+    margin-bottom: 0;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 50%;
+    z-index: 10; /* 버튼이 항상 위에 오도록 설정 */
+}
+
+.arrow.left {
+    left: 10px;
+    
+}
+
+.arrow.right {
+    right: 10px;
+}
+
+.arrow:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
 }

@@ -18,3 +18,102 @@ function show() {
         }
     };
 }
+
+
+document.getElementById("read-more-btn").addEventListener("click", function() {
+    var hiddenNews = document.querySelector(".hidden-news");
+    var newsContainer = document.querySelector(".wrap-horizontal");
+    var buttonPosition = this.getBoundingClientRect().top + window.scrollY; // 버튼의 현재 위치 저장
+
+    if (hiddenNews.style.display === "none" || hiddenNews.style.display === "") {
+        hiddenNews.style.display = "block"; 
+        newsContainer.classList.add("expanded"); 
+        this.textContent = "Show Less"; 
+
+        window.scrollTo({
+            top: window.scrollY + 250, 
+            behavior: "smooth"
+        });
+
+    } else {
+        hiddenNews.style.display = "none"; 
+        newsContainer.classList.remove("expanded"); 
+        this.textContent = "Read More"; 
+
+        this.scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+    }
+});
+
+
+
+window.addEventListener("scroll", function() { 
+    var header = document.getElementById("header");
+    var welcome = document.getElementsByClassName("welcome")[0];
+    var logo = document.querySelector(".img-logo");
+    var banner = document.querySelector(".banner-area");
+    var scrollPosition = window.scrollY;
+
+    banner.style.backgroundPosition = `center ${50 - scrollPosition * 0.05}%`;
+
+    if (window.scrollY > 5) {  // 스크롤되면 상태 변경
+        header.classList.add("scrolled");  
+        header.classList.remove("collapsed");
+        welcome.classList.add("with-fixed-header");
+        logo.src = "images/logo/ver2/logo_white.png";  // 
+    } else {  // 스크롤이 맨 위로 올라가면 원래대로 복귀
+        header.classList.remove("scrolled");  
+        header.classList.add("collapsed");
+        welcome.classList.remove("with-fixed-header");
+        logo.src = "images/logo/ver2/left_logo.png";  //
+    }
+});
+
+
+let currentIndex = 0;
+const slides = document.querySelectorAll('.slide');
+const dotsContainer = document.querySelector('.dots');
+const slidesContainer = document.querySelector('.slides');
+
+// 자동 생성
+slides.forEach((_, index) => {
+    const dot = document.createElement("span");
+    dot.classList.add("dot");
+    if (index === 0) dot.classList.add("active");
+    dot.onclick = () => moveSlideTo(index);
+    dotsContainer.appendChild(dot);
+});
+
+const dots = document.querySelectorAll('.dot');
+
+function moveSlide(direction) {
+    currentIndex += direction;
+    // 슬라이드 개수를 벗어나면 처음 또는 마지막으로 이동
+    if (currentIndex >= slides.length) currentIndex = 0;
+    if (currentIndex < 0) currentIndex = slides.length - 1;
+    updateSlide();
+}
+
+function moveSlideTo(index) {
+    currentIndex = index;
+    updateSlide();
+}
+
+function updateSlide() {
+    const slideWidth = slides[0].getBoundingClientRect().width; // 너비 계산
+    slidesContainer.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+
+    dots.forEach((dot, index) => {
+        dot.classList.toggle('active', index === currentIndex);
+    });
+}
+
+// 초기화
+document.addEventListener("DOMContentLoaded", () => {
+    updateSlide();
+
+});
+
+
