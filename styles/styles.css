@@ -1062,7 +1062,7 @@ button img {
 }
 
 .inner_desc {
-    width: 100%;
+    width: 90%;
     /* height: 100px; */
     min-height: 130px;
     /* width: 50%; */
@@ -1425,10 +1425,10 @@ button img {
 @media screen and (min-width:  1700px) {
 
     .arrow.left {
-        left: 20%;
+        left: calc((100% - 1200px) / 2 + 10px); 
     }
     .arrow.right {
-        right: 20%;
+        right: calc((100% - 1200px) / 2 + 10px);
     }
     .slider-container {
         position: relative;
