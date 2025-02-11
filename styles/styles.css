@@ -185,7 +185,9 @@ a {
 #header.scrolled .welcome.with-fixed-header {
     background-color: rgba(124, 0, 25, 1); 
 }
-
+.welcome {
+    z-index: 10;
+}
 
 
 
@@ -342,7 +344,7 @@ html {
     height: 50px;
 }
 
-.footer-right {
+.footer-text {
     text-align: left;
     justify-content: center;
     display: flex;
@@ -350,19 +352,30 @@ html {
     color: #888;
 }
 
-.footer-right p {
+.footer-text p {
     margin: 0; 
     font-size: 14px;    
 }
-.footer-right a {
+.footer-text a {
     color: #888;
     text-decoration: none;
     font-weight: bold;
 }
 
-.footer-right a:hover {
+.footer-text a:hover {
     /* text-decoration: underline; */
     color: #600000;
+}
+.footer-right {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: center; 
+    margin-left: 10px; 
+}
+
+.footer-right .footer-logo {
+    width: auto;
+    height: 50px; 
 }
 
 .banner-area {
@@ -389,6 +402,7 @@ html {
     background-position: center center;
     -webkit-background-size: cover;
     transition: background-position 0.1s ease-out;
+
 }
 
 .banner-area h1 {
@@ -508,6 +522,8 @@ html {
     width: 100%;
     /* height: 300px; */
     padding: 20px;
+    padding-top: 0;
+    padding-bottom: 0;
     
     /* overflow: auto; */
     /* border: 3px solid rgb(200, 200, 200); */
@@ -940,11 +956,11 @@ button img {
 }
 
 @media (max-width: 1000px) {
-    .slider-container {
+    /* .slider-container {
         position: relative;
         width: 100%;
         height: 300px;
-    }
+    } */
     .research{
         flex-basis: 50%;
         padding-bottom: 20px;
@@ -1037,7 +1053,7 @@ button img {
 
 
 .inner_pic {
-    max-height: 400px; 
+    max-height: 420px; 
     object-fit: contain; /* 원래 비율을 유지하면서 박스 안에 맞춤 */
     background-size: contain;
     background-repeat: no-repeat;
@@ -1048,7 +1064,7 @@ button img {
 .inner_desc {
     width: 100%;
     /* height: 100px; */
-    min-height: 100px;
+    min-height: 130px;
     /* width: 50%; */
     /* background: rgba(0, 0, 0, 0.5); */
     background-color: rgba(214, 201, 177, 0.5);
@@ -1061,7 +1077,7 @@ button img {
     position: absolute;
     /* margin-top: 20px; */
     /* min-height: 100px; */
-    bottom: -150px;
+    bottom: -160px;
     /* left: 0; */
     /* top: 0; */
     display: flex;
@@ -1090,6 +1106,71 @@ button img {
 .inner_desc p span:last-child {
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 1640px) {
+    .slider-container {
+        position: relative;
+        width: 100%;
+        height: 500px;
+    }
+    
+    .slides {
+        transition: transform 0.4s ease-in-out;
+        width: 100%; 
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inner_pic {
+        width: 90%;
+        max-height: 300px;
+        height: auto;
+        object-fit: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        align-self: center;
+    }
+
+    .inner_desc {
+        width: 90%; 
+        min-height: auto; 
+        padding: 10px; 
+        font-size: calc(14px + 0.2vw); /* 화면 크기에 따라 텍스트 크기 조정 */
+        text-align: left; 
+        line-height: 1.6; 
+        margin-top: 10px; 
+        word-wrap: break-word; /* 긴 단어가 잘리지 않게 */
+        overflow-wrap: break-word; /* 긴 단어가 화면을 넘지 않게 */
+        position: absolute;
+    }
+
+    .inner_desc p {
+        width: 90%; 
+        margin: 0; 
+        text-align: left;
+        line-height: 1.4; 
+        font-size: calc(14px + 0.2vw);; 
+        white-space: normal; 
+    }
+
+    .inner_desc p span {
+        display: block; 
+        margin-bottom: 5px; /* 간격 유지 */
+    }
+
+    /* 마지막 span의 여백 없애기 */
+    .inner_desc p span:last-child {
+        margin-bottom: 0;
+    }
+}
+
 @media screen and (max-width: 1020px) {
     .slider-container {
         position: relative;
@@ -1111,7 +1192,7 @@ button img {
     }
 
     .inner_pic {
-        width: 100%;
+        width: 90%;
         max-height: 300px;
         height: auto;
         object-fit: contain;
@@ -1122,7 +1203,7 @@ button img {
     }
 
     .inner_desc {
-        width: 100%; 
+        width: 90%; 
         min-height: auto; 
         padding: 10px; 
         font-size: calc(14px + 0.2vw); /* 화면 크기에 따라 텍스트 크기 조정 */
@@ -1135,7 +1216,7 @@ button img {
     }
 
     .inner_desc p {
-        width: 100%; 
+        width: 90%; 
         margin: 0; 
         text-align: left;
         line-height: 1.4; 
@@ -1152,6 +1233,163 @@ button img {
     .inner_desc p span:last-child {
         margin-bottom: 0;
     }
+    
+}
+
+@media screen and (max-width: 846px) {
+    .slider-container {
+        position: relative;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .slides {
+        transition: transform 0.4s ease-in-out;
+        width: 100%; 
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inner_pic {
+        width: 90%;
+        max-height: 250px;
+        height: auto;
+        object-fit: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        align-self: center;
+    }
+
+    .inner_desc {
+        width: 90%;
+        min-height: auto; 
+        padding: 8px; 
+        text-align: left; 
+        line-height: 1.5; 
+        margin-top: 10px; 
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        position: absolute;
+        bottom: -140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner_desc p {
+        width: 80%; 
+        margin: 0 20px; 
+        text-align: left;
+        line-height: 1.4; 
+        font-size: calc(12px + 0.2vw); 
+        white-space: normal; 
+    }
+}
+
+@media screen and (max-width: 638px) {
+    .slider-container {
+        max-width: 638px
+    }
+
+    .inner_pic {
+        width: 90%;
+        max-height: 200px;
+    }
+
+    .inner_desc {
+        width: 90%;
+        padding: 6px;
+        line-height: 1.4;
+        bottom: -150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner_desc p {
+        font-size: calc(10px + 0.3vw);
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .slider-container {
+        height: 330px;
+    }
+
+    .inner_pic {
+        width: 90%;
+        max-height: 150px;
+    }
+
+    .inner_desc {
+        width: 90%;
+        padding: 4px;
+        font-size: calc(10px + 0.4vw);
+        line-height: 1.4;
+        bottom: -160px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner_desc p {
+        font-size: calc(10px + 0.4vw);
+    }
+    .area-divider-publication { /*selected publications 제목 밑 부분*/
+        width: 205px;
+
+    }
+}
+@media screen and (max-width: 320px) {
+    .slider-container {
+        height: 300px;
+    }
+
+    .inner_pic {
+        width: 90%;
+        max-height: 150px;
+    }
+    .inner_desc {
+        width: 90%;
+        padding: 4px;
+        line-height: 1.4;
+        bottom: -150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .inner_desc p {
+        font-size: calc(8px + 0.4vw);
+    }
+}
+@media screen and (max-width: 280px) {
+    .slider-container {
+        height: 300px;
+    }
+
+    .inner_pic {
+        width: 90%;
+        max-height: 150px;
+    }
+    .inner_desc {
+        width: 90%;
+        padding: 4px;
+        line-height: 1.4;
+        bottom: -150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .inner_desc p {
+        font-size: calc(8px + 0.4vw);
+    }
 }
 
 .arrow {
@@ -1166,7 +1404,7 @@ button img {
     cursor: pointer;
     font-size: 20px;
     border-radius: 50%;
-    z-index: 10; /* 버튼이 항상 위에 오도록 설정 */
+    z-index: 1; /* 버튼이 항상 위에 오도록 설정 */
 }
 
 .arrow.left {
@@ -1184,3 +1422,77 @@ button img {
     color: white;
 }
 
+@media screen and (min-width:  1700px) {
+
+    .arrow.left {
+        left: 20%;
+    }
+    .arrow.right {
+        right: 20%;
+    }
+    .slider-container {
+        position: relative;
+        width: 100%;
+        height: 600px;
+    }
+    
+    .slides {
+        transition: transform 0.4s ease-in-out;
+        width: 100%; 
+    }
+
+    .slide {
+        flex: 0 0 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .inner_pic {
+        width: 1000px;
+        max-height: 400px;
+        height: auto;
+        object-fit: contain;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        align-self: center;
+    }
+
+    .inner_desc {
+        width: 1000px; 
+        min-height: auto; 
+        padding: 10px; 
+        font-size: calc(14px + 0.2vw); /* 화면 크기에 따라 텍스트 크기 조정 */
+        text-align: left; 
+        line-height: 1.6; 
+        margin-top: 10px; 
+        word-wrap: break-word; /* 긴 단어가 잘리지 않게 */
+        overflow-wrap: break-word; /* 긴 단어가 화면을 넘지 않게 */
+        position: absolute;
+        bottom: -180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inner_desc p {
+        width: 90%; 
+        margin: 0; 
+        text-align: left;
+        line-height: 1.4; 
+        font-size: calc(14px + 0.2vw);; 
+        white-space: normal; 
+    }
+
+    .inner_desc p span {
+        display: block; 
+        margin-bottom: 5px; /* 간격 유지 */
+    }
+
+    /* 마지막 span의 여백 없애기 */
+    .inner_desc p span:last-child {
+        margin-bottom: 0;
+    }
+}
