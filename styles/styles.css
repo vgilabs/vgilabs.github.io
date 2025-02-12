@@ -370,7 +370,8 @@ html {
     display: flex;
     justify-content: flex-end; 
     align-items: center; 
-    margin-left: 10px; 
+    margin-left: 6px; 
+    margin-top: 3px;
 }
 
 .footer-right .footer-logo {
@@ -481,6 +482,19 @@ html {
     height: 5px;
     margin-bottom: 30px;
     background-color: rgb(211, 211, 211);
+} 
+
+.area-main:nth-of-type(2) .area-name  {
+    font-family: 'Montserrat', sans-serif; 
+    font-size: 32px; /* 기존보다 크게 설정 */
+    font-weight: bolder; /* 더 두꺼운 글자 */
+    color: rgba(124, 0, 25, 1);
+    padding-top: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* 약간의 그림자 추가로 입체감 */
+    letter-spacing: 1px; /* 글자 간격 조금 띄워서 강조 */
+}
+.area-main:nth-of-type(2) .area-divider-publication   {
+    width: 0;
 }
 
 
@@ -1139,7 +1153,7 @@ button img {
     }
 
     .inner_pic {
-        width: 90%;
+        width: 80%;
         max-height: 300px;
         height: auto;
         object-fit: contain;
@@ -1150,7 +1164,7 @@ button img {
     }
 
     .inner_desc {
-        width: 90%; 
+        width: 80%; 
         min-height: auto; 
         padding: 10px; 
         font-size: calc(14px + 0.2vw); /* 화면 크기에 따라 텍스트 크기 조정 */
@@ -1163,7 +1177,7 @@ button img {
     }
 
     .inner_desc p {
-        width: 90%; 
+        width: 80%; 
         margin: 0; 
         text-align: left;
         line-height: 1.4; 
@@ -1179,6 +1193,12 @@ button img {
     /* 마지막 span의 여백 없애기 */
     .inner_desc p span:last-child {
         margin-bottom: 0;
+    }
+    .arrow.left {
+        left: calc((100% - 2000p) / 2 ); 
+    }
+    .arrow.right {
+        right: calc((100% - 2000p) / 2 );
     }
 }
 
@@ -1454,10 +1474,10 @@ button img {
 @media screen and (min-width:  1700px) {
 
     .arrow.left {
-        left: calc((100% - 1200px) / 2 + 10px); 
+        left: calc((100% - 1100px) / 2 + 50 px); 
     }
     .arrow.right {
-        right: calc((100% - 1200px) / 2 + 10px);
+        right: calc((100% - 1100px) / 2 + 5px);
     }
     .slider-container {
         position: relative;

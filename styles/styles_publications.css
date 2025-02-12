@@ -600,9 +600,9 @@ header nav{
     display: flex;
     justify-content: flex-end; 
     align-items: center; 
-    margin-left: 10px; 
+    margin-left: 6px; 
+    margin-top: 3px;
 }
-
 .footer-right .footer-logo {
     width: auto;
     height: 50px; 
