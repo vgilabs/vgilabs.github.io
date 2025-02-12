@@ -135,3 +135,33 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 
+  function calculateRatio(screenWidth) {
+    const minWidth = 1000;
+    const maxWidth = 1700;
+    const minRatio = 0.3;
+    const maxRatio = 0.6;
+
+    if (screenWidth <= minWidth) return minRatio;
+    if (screenWidth >= maxWidth) return maxRatio;
+
+    return minRatio + ((screenWidth - minWidth) / (maxWidth - minWidth)) * (maxRatio - minRatio);
+}
+
+function adjustArrowPosition() {
+    const screenWidth = window.innerWidth;
+    const innerPic = document.querySelector('.inner_desc');
+    const leftArrow = document.querySelector('.arrow.left');
+    const rightArrow = document.querySelector('.arrow.right');
+
+    if (innerPic && leftArrow && rightArrow) {
+        const innerPicWidth = innerPic.offsetWidth;
+        const ratio = calculateRatio(screenWidth);
+        const offset = ((screenWidth - innerPicWidth) / 2) * ratio;
+
+        leftArrow.style.left = `${offset}px`;
+        rightArrow.style.right = `${offset}px`;
+    }
+}
+
+adjustArrowPosition();
+window.addEventListener('resize', adjustArrowPosition);
