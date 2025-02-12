@@ -350,6 +350,7 @@ html {
     display: flex;
     flex-direction: column; 
     color: #888;
+    margin: 0 10px;
 }
 
 .footer-text p {
