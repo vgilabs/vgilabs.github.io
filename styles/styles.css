@@ -191,14 +191,14 @@ a {
 
 
 
-@media screen and (max-width:1020px) {
+@media screen and (max-width:1124px) {
     body {
         overflow-x: hidden;
     }
     .nav-links {
         position: absolute;
         right: 0px;
-        height: 450%;
+        height: 550%;
         top: 60px;
         padding-top: 15px;
         padding-bottom: 15px;
