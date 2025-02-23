@@ -612,7 +612,7 @@ header nav{
 
 
 
-@media screen and (max-width:1200px) {
+@media screen and (max-width:1130px) {
     body {
         overflow-x: hidden;
     }
@@ -748,7 +748,7 @@ header nav{
 
 
 
-@media screen and (max-width:1020px) {
+@media screen and (max-width:1100px) {
     .about-btn {
         padding: 8px 8px;
         display: inline-block;
