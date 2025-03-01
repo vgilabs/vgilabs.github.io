@@ -1,58 +1,47 @@
-let index2 = 0;
+let indexes = { kccv_2024: 0, cvpr: 0 , kccv_2023: 0}; 
 
-function moveSlide(step) {
-    const slides = document.querySelector(".slides");
-    const totalSlides = document.querySelectorAll(".slide").length;
-    
-    index2 = (index2 + step + totalSlides) % totalSlides;
-    slides.style.transform = `translateX(-${index2 * 100}%)`;
-}
-
-
-let index = 0;
-
-document.addEventListener("DOMContentLoaded", function() {
-    initDots();
-    updateSlide();
+document.addEventListener("DOMContentLoaded", function () {
+    initDots("kccv_2024");
+    initDots("cvpr");
+    initDots("kccv_2023");
+    updateSlide("kccv_2024");
+    updateSlide("cvpr");
+    updateSlide("kccv_2023");
 });
 
-function initDots() {
-    const slides = document.querySelectorAll(".slide");
-    const dotsContainer = document.querySelector(".dots-container");
-
-    // 기존 도트 삭제
+function initDots(gallery) {
+    const slides = document.querySelector(`#${gallery}-gallery .slides`).children;
+    const dotsContainer = document.querySelector(`#${gallery}-gallery .dots-container`);
     dotsContainer.innerHTML = "";
 
-    // 슬라이드 개수만큼 도트 생성
-    slides.forEach((_, i) => {
+    Array.from(slides).forEach((_, i) => {
         let dot = document.createElement("span");
         dot.classList.add("dot");
-        dot.addEventListener("click", () => currentSlide(i));
+        dot.addEventListener("click", () => currentSlide(i, gallery));
         dotsContainer.appendChild(dot);
     });
 }
 
-function moveSlide(step) {
-    const slides = document.querySelectorAll(".slide");
-
-    index = (index + step + slides.length) % slides.length;
-    updateSlide();
+function moveSlide(step, gallery) {
+    const slides = document.querySelector(`#${gallery}-gallery .slides`).children;
+    indexes[gallery] = (indexes[gallery] + step + slides.length) % slides.length;
+    updateSlide(gallery);
 }
 
-function currentSlide(n) {
-    index = n;
-    updateSlide();
+function currentSlide(n, gallery) {
+    indexes[gallery] = n;
+    updateSlide(gallery);
 }
 
-function updateSlide() {
-    const slides = document.querySelectorAll(".slide");
-    const dots = document.querySelectorAll(".dot");
+function updateSlide(gallery) {
+    const slides = document.querySelectorAll(`#${gallery}-gallery .slide`);
+    const dots = document.querySelectorAll(`#${gallery}-gallery .dot`);
 
     slides.forEach((slide, i) => {
-        slide.style.display = (i === index) ? "block" : "none";
+        slide.style.display = i === indexes[gallery] ? "block" : "none";
     });
 
     dots.forEach((dot, i) => {
-        dot.classList.toggle("active", i === index);
+        dot.classList.toggle("active", i === indexes[gallery]);
     });
 }
