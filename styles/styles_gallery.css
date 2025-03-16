@@ -549,8 +549,39 @@ header nav{
 
 
 .gallery-container {
-    text-align: center;
-    padding: 20px;
+  padding: 20px;
+}
+
+.gallery-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* 슬라이더 간격 */
+}
+
+.gallery-slider {
+  width: calc((100% - 40px) / 3); 
+  max-width: 400px;
+  /* height: 450px; */
+  background-color: #fff;
+  overflow: hidden;
+  position: relative;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* 태블릿 (1024px 이하)에서는 2개씩 */
+@media (max-width: 1024px) {
+    .gallery-slider {
+      width: calc((100% - 20px) / 2);
+    }
+  }
+  
+/* 모바일 (600px 이하)에서는 1개씩 */
+@media (max-width: 600px) {
+.gallery-slider {
+    width: 100%;
+}
 }
 
 .gallery-title {
@@ -562,16 +593,9 @@ header nav{
     margin-bottom: 20px;
 }
 
-.gallery-slider {
-    position: relative;
-    max-width: 600px;
-    margin: auto;
-    margin-top: 20px;
-    overflow: hidden;
-}
 
 .slides {
-    display: flex;
+    display: relative;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -587,40 +611,58 @@ header nav{
 }
 
 .slide img {
-    object-fit: contain;
+    width: 100%;        
+    aspect-ratio: 1 / 1;
+    object-fit: contain;   
     object-position: center;
-    height: 400px;
-    width: 100%;
-    pointer-events: none;
-    -webkit-user-drag: none;
-    -moz-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-touch-callout: none;
+    /* border-radius: 8px;   */
+    background-color: #f0f0f0; 
 }
+  
 
-#slide-text {
+.slide-text {
     text-align: center;
     font-size: 17px;
     font-weight: bold;
     margin-top: 10px;
 }
 
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    border-radius: 50%;
+.prev,
+.next {
+  position: absolute;
+  top: 45%;                /* 이미지 기준 수직 중앙 */
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.prev { left: 10px; }
-.next { right: 10px; }
+.prev { left: 20px; }
+.next { right: 20px; }
+
+.gallery-slider:hover .prev,
+.gallery-slider:hover .next {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.gallery-slider:hover .prev:hover,
+.gallery-slider:hover .next:hover {
+    background: rgba(255, 255, 255, 0.8); 
+    color: #333;
+}
 
 .dots-container {
     text-align: center;
