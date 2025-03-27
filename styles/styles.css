@@ -882,10 +882,9 @@ button {
     margin: 10px 5px 0px 5px;
 }
 
-button:hover{
+/* button:not(.arrow):hover {
     background: royalblue;
-    /* color: gray; */
-}
+} */
 
 button img {
     width: 100%;
@@ -1484,12 +1483,10 @@ button img {
     }
 }
 
-
-.arrow {
+/* .arrow {
     position: absolute;
     top: 30%;
     transform: translateY(-50%);
-    /* background: rgba(0, 0, 0, 0.5); */
     background: rgba(255, 255, 255, 0.8);
     color: black;
     border: none;
@@ -1497,7 +1494,7 @@ button img {
     cursor: pointer;
     font-size: 20px;
     border-radius: 50%;
-    z-index: 1; /* 버튼이 항상 위에 오도록 설정 */
+    z-index: 1; 
 }
 
 .arrow.left {
@@ -1513,7 +1510,49 @@ button img {
     
     background-color: rgba(214, 201, 177, 0.5);
     color: white;
-}
+} */
+
+.arrow {
+
+    position: absolute;
+    top: 30%;
+    transform: translateY(-50%);
+    z-index: 1;
+
+    width: 50px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8); 
+    color: #333;         
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    /* transition: opacity 0.3s ease, transform 0.3s ease; */
+  }
+  
+  .arrow.left {
+    left: 0;
+  }
+  
+  .arrow.right {
+    right: 0;
+  }
+  
+  .gallery-slider:hover .arrow {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  
+  .arrow:hover {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;                 
+  }
+  
+  
 /* @media screen and (min-width:  1700px) {
 
     .arrow.left {
