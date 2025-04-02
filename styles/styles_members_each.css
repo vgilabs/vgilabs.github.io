@@ -348,7 +348,8 @@ header nav{
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     text-align: left;
-    color: royalblue;
+    /* color: royalblue; */
+    color: rgba(124, 0, 25, 1);
 
     padding-bottom: 3px;
 }
@@ -962,7 +963,8 @@ header nav{
     font-family: 'Montserrat', sans-serif;
     font-size: 22px;
     text-align: left;
-    color: royalblue;
+    /* color: royalblue; */
+    color: rgba(124, 0, 25, 1);
 
     padding-bottom: 3px;
 }
