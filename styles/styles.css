@@ -1483,46 +1483,19 @@ button img {
     }
 }
 
-/* .arrow {
-    position: absolute;
-    top: 30%;
-    transform: translateY(-50%);
-    background: rgba(255, 255, 255, 0.8);
-    color: black;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    border-radius: 50%;
-    z-index: 1; 
-}
-
-.arrow.left {
-    left: 0;
-    
-}
-
-.arrow.right {
-    right: 0;
-}
-
-.arrow:hover {
-    
-    background-color: rgba(214, 201, 177, 0.5);
-    color: white;
-} */
-
 .arrow {
-
+    opacity: 0;
+    pointer-events: none;
+  
     position: absolute;
     top: 30%;
     transform: translateY(-50%);
     z-index: 1;
-
+  
     width: 50px;
     height: 50px;
-    background: rgba(255, 255, 255, 0.8); 
-    color: #333;         
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(51, 51, 51, 0.3);
     border: none;
     cursor: pointer;
     border-radius: 50%;
@@ -1531,26 +1504,30 @@ button img {
     align-items: center;
     font-size: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    /* transition: opacity 0.3s ease, transform 0.3s ease; */
+    transition: opacity 0.3s ease, background 0.3s ease, color 0.3s ease;
   }
   
   .arrow.left {
-    left: 0;
+    left: 10px;
   }
   
   .arrow.right {
     right: 0;
   }
   
-  .gallery-slider:hover .arrow {
+  .slider-container:hover .arrow,
+  .slides:hover .arrow {
     opacity: 1;
     pointer-events: auto;
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
   }
   
   .arrow:hover {
     background: rgba(0, 0, 0, 0.6);
-    color: white;                 
+    color: white;
   }
+  
   
   
 /* @media screen and (min-width:  1700px) {
