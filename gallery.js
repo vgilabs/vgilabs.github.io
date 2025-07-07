@@ -1,11 +1,14 @@
-let indexes = { kccv_2024: 0, cvpr: 0 , kccv_2023: 0}; 
+let indexes = { cvpr_2025: 0,kccv_2024: 0, cvpr_2024: 0 , kccv_2023: 0}; 
 
 document.addEventListener("DOMContentLoaded", function () {
+    initDots("cvpr_2025");
     initDots("kccv_2024");
-    initDots("cvpr");
+    initDots("cvpr_2024");
     initDots("kccv_2023");
+
+    updateSlide("cvpr_2025");
     updateSlide("kccv_2024");
-    updateSlide("cvpr");
+    updateSlide("cvpr_2024");
     updateSlide("kccv_2023");
 });
 
