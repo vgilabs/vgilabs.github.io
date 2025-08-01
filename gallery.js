@@ -1,15 +1,17 @@
-let indexes = { cvpr_2025: 0,kccv_2024: 0, cvpr_2024: 0 , kccv_2023: 0}; 
+let indexes = {ICML_2025: 0, CVPR_2025: 0, KCCV_2024: 0, CVPR_2024: 0 , KCCV_2023: 0}; 
 
 document.addEventListener("DOMContentLoaded", function () {
-    initDots("cvpr_2025");
-    initDots("kccv_2024");
-    initDots("cvpr_2024");
-    initDots("kccv_2023");
+    initDots("ICML_2025");
+    initDots("CVPR_2025");
+    initDots("KCCV_2024");
+    initDots("CVPR_2024");
+    initDots("KCCV_2023");
 
-    updateSlide("cvpr_2025");
-    updateSlide("kccv_2024");
-    updateSlide("cvpr_2024");
-    updateSlide("kccv_2023");
+    updateSlide("ICML_2025");
+    updateSlide("CVPR_2025");
+    updateSlide("KCCV_2024");
+    updateSlide("CVPR_2024");
+    updateSlide("KCCV_2023");
 });
 
 function initDots(gallery) {
