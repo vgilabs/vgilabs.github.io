@@ -1,12 +1,16 @@
-let indexes = {ICML_2025: 0, CVPR_2025: 0, KCCV_2024: 0, CVPR_2024: 0 , KCCV_2023: 0}; 
+let indexes = {Seminar_2025: 0, KCCV_2025: 0, ICML_2025: 0, CVPR_2025: 0, KCCV_2024: 0, CVPR_2024: 0 , KCCV_2023: 0}; 
 
 document.addEventListener("DOMContentLoaded", function () {
+    initDots("Seminar_2025");
+    initDots("KCCV_2025");
     initDots("ICML_2025");
     initDots("CVPR_2025");
     initDots("KCCV_2024");
     initDots("CVPR_2024");
     initDots("KCCV_2023");
 
+    updateSlide("Seminar_2025");
+    updateSlide("KCCV_2025");
     updateSlide("ICML_2025");
     updateSlide("CVPR_2025");
     updateSlide("KCCV_2024");

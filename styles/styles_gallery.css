@@ -560,6 +560,8 @@ header nav{
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px; /* 슬라이더 간격 */
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .gallery-slider {
