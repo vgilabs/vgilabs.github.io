@@ -24,12 +24,6 @@ header.collapsed {
     border-bottom: none;
 }
 
-header nav{
-    display: flex;
-    position:fixed;
-    transition: all 0.01s;
-    background-color: transparent;
-}
 
 body{
     padding-top: 0px;
@@ -144,7 +138,7 @@ header nav{
     display: flex;
     position:fixed;
     transition: all 0.01s;
-    background-color: transparent;
+    background: rgba(255, 255, 255, 0.4);
 }
 
 

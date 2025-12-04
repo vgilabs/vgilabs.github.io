@@ -28,7 +28,8 @@ header nav{
     display: flex;
     position:fixed;
     transition: all 0.01s;
-    background-color: transparent;
+    /* background-color: transparent; */
+    background: rgba(255, 255, 255, 0.4);
 
 }
 
@@ -187,6 +188,7 @@ a {
 }
 .welcome {
     z-index: 10;
+    /* background: rgba(255, 255, 255, 0.4); */
 }
 
 
