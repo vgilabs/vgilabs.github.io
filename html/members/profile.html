@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en-US" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Profile · VGI Lab @ Korea University</title>
+  <link rel="icon" href="/images/logo/ver2/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Montserrat:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/site.css">
+  <link rel="stylesheet" href="/styles/profile.css">
+</head>
+<body data-page="profile">
+
+  <div id="nav-mount"></div>
+
+  <header class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="wordmark" id="wm">Members<span class="dot">.</span></h1>
+      <div class="wordmark-sub" id="wm-sub">VGI Lab · Korea University</div>
+    </div>
+  </header>
+
+  <div class="back-row">
+    <a class="back-link" href="/html/members.html">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+      Back to Members
+    </a>
+  </div>
+
+  <section class="profile" id="profile-section">
+    <div class="container">
+      <article class="profile-card" id="profile-card"></article>
+    </div>
+  </section>
+
+  <section class="list hidden" id="edu-section">
+    <div class="container">
+      <div class="section-head">
+        <h3>Education</h3>
+      </div>
+      <div class="edu-list" id="edu-list"></div>
+    </div>
+  </section>
+
+  <section class="list hidden" id="career-section">
+    <div class="container">
+      <div class="section-head">
+        <h3>Career</h3>
+        <span class="count" id="career-count">— entries</span>
+      </div>
+      <div class="career-list" id="career-list"></div>
+    </div>
+  </section>
+
+  <section class="list hidden" id="pub-section">
+    <div class="container">
+      <div class="section-head">
+        <h3>Publications</h3>
+        <span class="count" id="pub-count">— papers</span>
+      </div>
+      <div class="pub-list" id="pub-list"></div>
+    </div>
+  </section>
+
+  <section class="list hidden" id="patent-section">
+    <div class="container">
+      <div class="section-head">
+        <h3>Patents</h3>
+        <span class="count" id="patent-count">— patents</span>
+      </div>
+      <div class="pub-list" id="patent-list"></div>
+    </div>
+  </section>
+
+  <section class="list hidden" id="award-section">
+    <div class="container">
+      <div class="section-head">
+        <h3>Awards</h3>
+        <span class="count" id="award-count">— awards</span>
+      </div>
+      <div class="award-list" id="award-list"></div>
+    </div>
+  </section>
+
+  <div class="empty-msg hidden" id="empty-msg">
+    <h2>Member not found</h2>
+    <p>This profile id is not in the directory. <a href="/html/members.html" style="color:var(--accent);border-bottom:1px solid var(--accent);">Back to Members &rarr;</a></p>
+  </div>
+
+  <div id="footer-mount"></div>
+
+  <script src="/assets/members-data.js"></script>
+  <script>
+    (() => {
+      const M = window.VGI_MEMBERS; if (!M) return;
+      const id = new URLSearchParams(location.search).get('id');
+      const m = id ? M[id] : null;
+      if (!m) {
+        ['profile-section','edu-section','career-section','pub-section','patent-section','award-section','back-row']
+          .forEach(s => { const el = document.getElementById(s); if (el) el.classList.add('hidden'); });
+        document.getElementById('empty-msg')?.classList.remove('hidden');
+        return;
+      }
+
+      document.title = `${m.name_en} · VGI Lab @ Korea University`;
+      const wm = document.getElementById('wm');
+      wm.innerHTML = `${m.name_en}<span class="dot">.</span>`;
+      
+      const len = m.name_en.length;
+      if (len > 14) wm.style.fontSize = 'clamp(40px, 5.6vw, 76px)';
+      else if (len > 10) wm.style.fontSize = 'clamp(44px, 6.4vw, 88px)';
+      document.getElementById('wm-sub').textContent = `${m.name_kr} · ${m.role}`;
+
+      const ghSVG = `<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.4 1.02 0 2.04.14 3 .4 2.29-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.62-5.48 5.92.43.37.82 1.1.82 2.22 0 1.6-.01 2.89-.01 3.29 0 .32.22.7.83.58C20.57 21.79 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>`;
+
+      const realGithub = m.github && !/vgi\.korea\.ac\.kr|vgilabs\.github\.io/.test(m.github) && m.github !== '#' && m.github !== '';
+      const card = document.getElementById('profile-card');
+      card.innerHTML = `
+        <div class="profile-photo" style="background-image: url('${m.photo}');"></div>
+        <div class="profile-info">
+          <h2>${m.name_en}</h2>
+          <div class="kr">${m.name_kr}</div>
+          <div class="role-pill">${m.role}</div>
+          <div class="affil">${m.dept}</div>
+          <div class="profile-meta">
+            <div class="row"><span class="label">Email</span><a href="mailto:${m.email}">${m.email}</a></div>
+            ${m.room ? `<div class="row"><span class="label">Room</span><span>${m.room}</span></div>` : ''}
+            ${m.interests ? `<div class="row"><span class="label">Interests</span><span>${m.interests}</span></div>` : ''}
+            ${realGithub ? `
+              <div class="row links-row"><span class="label">Links</span>
+                <div class="profile-links">
+                  <a class="profile-link" href="${m.github}" target="_blank" rel="noopener" aria-label="GitHub">${ghSVG}</a>
+                </div>
+              </div>` : ''}
+          </div>
+        </div>`;
+
+      const renderAuthors = (s) => s.replace(/<me>/g, '<span class="me">').replace(/<\/me>/g, '</span>');
+
+      if (Array.isArray(m.education) && m.education.length) {
+        document.getElementById('edu-section').classList.remove('hidden');
+        document.getElementById('edu-list').innerHTML = m.education.map((e, i) => `
+          <article class="edu-row">
+            <div class="num">${String(m.education.length - i).padStart(2,'0')}</div>
+            <div>
+              <h4>${e.school}</h4>
+              <div class="meta">${e.degree}${e.location ? ` · ${e.location}` : ''}</div>
+              ${e.advisor ? `<div class="advisor">Advisor · ${e.advisor}</div>` : ''}
+            </div>
+          </article>`).join('');
+      }
+
+      if (Array.isArray(m.career) && m.career.length) {
+        document.getElementById('career-section').classList.remove('hidden');
+        document.getElementById('career-count').textContent = `${String(m.career.length).padStart(2,'0')} ${m.career.length === 1 ? 'entry' : 'entries'}`;
+        document.getElementById('career-list').innerHTML = m.career.map(c => `
+          <article class="career-row">
+            <div>
+              <h4>${c.org}${c.location ? ` <span style="font-weight:400;color:var(--text-1);font-size:0.85em;">· ${c.location}</span>` : ''}</h4>
+              <div class="role">${c.role}</div>
+            </div>
+            <div class="when">${c.years}</div>
+          </article>`).join('');
+      }
+
+      if (Array.isArray(m.publications) && m.publications.length) {
+        document.getElementById('pub-section').classList.remove('hidden');
+        document.getElementById('pub-count').textContent = `${m.publications.length} ${m.publications.length === 1 ? 'paper' : 'papers'}`;
+        document.getElementById('pub-list').innerHTML = m.publications.map(p => {
+          const cls = p.domestic ? 'domestic' : (p.journal ? 'journal' : '');
+          const isConf = !p.domestic && !p.journal;
+
+          const yearMatch = p.date && p.date.match(/(\d{4})/);
+          const year = yearMatch ? yearMatch[1] : '';
+          const dateLoc = [p.venueFull, p.location, p.date].filter(Boolean).join(', ');
+          return `
+            <article class="pub-entry">
+              <div class="pub-num">[${p.num}]</div>
+              <div>
+                <div class="pub-meta-line">
+                  ${isConf && year
+                    ? `<span class="pub-venue-badge ${cls}">${p.venue} ${year}</span>`
+                    : `<span class="pub-venue-badge ${cls}">${p.venue}</span>`}
+                  ${p.tag ? `<span class="pub-tag ${p.tag.toLowerCase() === 'award' ? 'award' : ''}">${p.tag}</span>` : ''}
+                  ${p.tagNote ? `<span class="pub-tag-note">${p.tagNote}</span>` : ''}
+                </div>
+                <h4 class="pub-title">${p.title}</h4>
+                <div class="pub-authors">${renderAuthors(p.authors)}</div>
+                <span class="pub-loc">${dateLoc}</span>
+              </div>
+            </article>`;
+        }).join('');
+      }
+
+      if (Array.isArray(m.patents) && m.patents.length) {
+        document.getElementById('patent-section').classList.remove('hidden');
+        document.getElementById('patent-count').textContent = `${m.patents.length} ${m.patents.length === 1 ? 'patent' : 'patents'}`;
+        document.getElementById('patent-list').innerHTML = m.patents.map(p => `
+          <article class="pub-entry">
+            <div class="pub-num">[${p.num}]</div>
+            <div>
+              <div class="pub-meta-line">
+                <span class="pub-venue-badge patent">Patent</span>
+              </div>
+              <h4 class="pub-title">${p.title}</h4>
+              <div class="pub-authors">${renderAuthors(p.authors)}</div>
+              <span class="pub-loc">${[p.venue, p.date].filter(Boolean).join(' · ')}</span>
+            </div>
+          </article>`).join('');
+      }
+
+      if (Array.isArray(m.awards) && m.awards.length) {
+        document.getElementById('award-section').classList.remove('hidden');
+        document.getElementById('award-count').textContent = `${m.awards.length} ${m.awards.length === 1 ? 'award' : 'awards'}`;
+        document.getElementById('award-list').innerHTML = m.awards.map(a => `
+          <article class="award-row">
+            <div>
+              <h4>${a.title}</h4>
+              <div class="where">${a.venue}${a.location ? ` · ${a.location}` : ''}</div>
+              ${a.cert ? `
+                <a class="cert" href="${a.cert}" target="_blank" rel="noopener">
+                  View certificate
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M9 7h8v8"/></svg>
+                </a>` : ''}
+            </div>
+            <div class="when">${a.date}</div>
+          </article>`).join('');
+      }
+    })();
+  </script>
+  <script src="/assets/site.js"></script>
+</body>
+</html>

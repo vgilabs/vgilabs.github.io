@@ -1,0 +1,157 @@
+.hero {
+      position: relative; height: 42vh; min-height: 340px; overflow: hidden; isolation: isolate;
+      display: flex; align-items: center; justify-content: center; text-align: center;
+    }
+
+.hero-bg {
+      position: absolute; inset: 0; z-index: -2;
+      background-image: url('/images/Korea_University_Main_Hall.jpg');
+      background-size: cover; background-position: center 38%;
+      animation: heroKenBurns 28s ease-in-out infinite alternate;
+    }
+
+@keyframes heroKenBurns {
+      0%   { transform: scale(1.05) translate(0%, 0%); }
+      50%  { transform: scale(1.12) translate(-1.5%, -1%); }
+      100% { transform: scale(1.05) translate(1.5%, 0.8%); }
+    }
+
+.hero::before {
+      content: ""; position: absolute; inset: 0; z-index: -1;
+      background: linear-gradient(180deg, rgba(0,0,0,0.32) 0%, rgba(0,0,0,0.18) 40%, rgba(0,0,0,0.72) 100%);
+    }
+
+.hero-content { color: white; padding: 0 32px; max-width: 920px; }
+
+.wordmark {
+      font-family: 'Montserrat', sans-serif; font-weight: 700;
+      font-size: clamp(48px, 7vw, 100px); line-height: 1; letter-spacing: -0.022em;
+      color: white; margin-bottom: 18px;
+      white-space: nowrap;
+      text-shadow: 0 2px 24px rgba(0,0,0,0.45), 0 1px 3px rgba(0,0,0,0.30);
+      opacity: 0; transform: translateY(10px); filter: blur(16px);
+      animation: heroIn 1.4s cubic-bezier(.16,.7,.2,1) 0.3s forwards;
+    }
+
+@keyframes heroIn {
+      to { opacity: 1; transform: translateY(0); filter: blur(0); letter-spacing: -0.025em; }
+    }
+
+.wordmark .dot { color: var(--crimson-3); display: inline-block; animation: dotBreath 4s ease-in-out 1.8s infinite; }
+
+@keyframes dotBreath {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50%      { opacity: 0.78; transform: scale(0.94); }
+    }
+
+.wordmark-sub {
+      font-family: 'Montserrat', sans-serif; font-weight: 500;
+      font-size: clamp(14px, 1.5vw, 18px); letter-spacing: 0.12em; text-transform: uppercase;
+      color: rgba(255,255,255,0.85);
+      text-shadow: 0 1px 8px rgba(0,0,0,0.35);
+      opacity: 0; transform: translateY(8px);
+      animation: heroSubIn 1s cubic-bezier(.16,.7,.2,1) 1.0s forwards;
+    }
+
+@keyframes heroSubIn { to { opacity: 1; transform: translateY(0); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .wordmark, .wordmark-sub { animation: none; opacity: 1; transform: none; filter: none; letter-spacing: -0.025em; }
+  .wordmark .dot { animation: none; }
+}
+
+section.contact { padding: 80px 0 96px; }
+
+.contact-grid {
+      display: grid; grid-template-columns: 1.15fr 1fr;
+      gap: 48px; align-items: stretch;
+    }
+
+.map-wrap {
+      position: relative; border-radius: 16px; overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: 0 14px 36px rgba(20,18,12,0.08);
+      height: 100%;            
+      background: var(--bg-1);
+    }
+
+.map-wrap iframe {
+      width: 100%; height: 100%; border: 0; display: block;
+      filter: saturate(0.92) contrast(0.98);
+      transition: filter 0.4s ease;
+    }
+
+[data-theme="dark"] .map-wrap iframe { filter: saturate(0.85) contrast(0.95) brightness(0.78) invert(0.92) hue-rotate(180deg); }
+
+.map-badge {
+      position: absolute; left: 14px; bottom: 14px;
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 8px 14px;
+      background: color-mix(in srgb, var(--bg-0) 94%, transparent);
+      backdrop-filter: blur(10px) saturate(140%);
+      border: 1px solid var(--line); border-radius: 999px;
+      font-family: 'JetBrains Mono', monospace; font-size: 11px;
+      letter-spacing: 0.10em; text-transform: uppercase; color: var(--text-1);
+    }
+
+.map-badge .pin { width: 6px; height: 6px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 28%, transparent); }
+
+.info-col { display: flex; flex-direction: column; gap: 18px; }
+
+.info-card {
+      background: var(--bg-1); border: 1px solid var(--line); border-radius: 14px;
+      padding: 24px 26px; transition: all 0.25s cubic-bezier(.2,.7,.2,1);
+      display: grid; grid-template-columns: 44px 1fr; gap: 18px; align-items: start;
+    }
+
+.info-card:hover { border-color: var(--accent); transform: translateY(-2px); box-shadow: 0 12px 28px rgba(20,18,12,0.08); }
+
+.info-icon {
+      width: 44px; height: 44px; border-radius: 10px;
+      background: color-mix(in srgb, var(--accent) 10%, var(--bg-2));
+      color: var(--accent);
+      display: inline-flex; align-items: center; justify-content: center;
+      transition: background 0.25s ease;
+    }
+
+.info-card:hover .info-icon { background: color-mix(in srgb, var(--accent) 18%, var(--bg-2)); }
+
+.info-icon svg { width: 20px; height: 20px; }
+
+.info-body { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+
+.info-label {
+      font-family: 'JetBrains Mono', monospace; font-size: 11px;
+      letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-2);
+    }
+
+.info-value {
+      font-family: 'Fraunces', serif; font-weight: 500;
+      font-size: 18px; line-height: 1.4; letter-spacing: -0.005em;
+      color: var(--text-0);
+      display: flex; flex-direction: column; gap: 2px;
+    }
+
+.info-value .row { display: block; }
+
+.info-value a {
+      border-bottom: 1px solid transparent; transition: all 0.2s ease;
+    }
+
+.info-value a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+@media (max-width: 1024px) {
+  .contact-grid { grid-template-columns: 1fr; gap: 36px; }
+  .map-wrap { min-height: 380px; }
+}
+
+@media (max-width: 900px) {
+  #theme-btn { margin-left: auto; }
+}
+
+@media (max-width: 560px) {
+  .hero { height: 36vh; min-height: 280px; }
+  section.contact { padding: 56px 0 72px; }
+  .info-card { padding: 20px; grid-template-columns: 1fr; gap: 12px; }
+  .map-wrap { min-height: 320px; }
+}

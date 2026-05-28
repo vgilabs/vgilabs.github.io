@@ -1,249 +1,216 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en-US" data-theme="light">
 <head>
-  <title>VGI @ KU </title>
-  <link rel="icon" href="../images/logo/ver2/logo.png" type="image/png">
-
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../css/academicons.css" />
-  <link rel="stylesheet" href="../styles/styles_gallery.css">
+  <title>Gallery · VGI Lab @ Korea University</title>
+  <link rel="icon" href="/images/logo/ver2/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Montserrat:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/site.css">
+  <link rel="stylesheet" href="/styles/gallery.css">
 </head>
+<body data-page="gallery">
 
-<body>
-  <header id="header">
-    <nav class="welcome">
-      <div class="logo">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../images/logo/ver2/left_logo.png" class="img-logo">
-        </a>
-      </div>
-      <ul class="nav-links"> <!-- ul: unordered list -->
-        <li><a href="../index.html">Home</a></li>
-        <li>
-          <a href="members.html">Members</a>
-          <ul class="Style1">
-            <li><a href="members.html#section1">Professor</a></li>
-            <li><a href="members.html#section2">Students</a></li>
-            <!-- <li><a href="html/members.html#undergrad">Undergraduate Student</a></li> -->
-            <li><a href="members.html#section4">Research Advisor</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="publications_selected.html">Publications</a>
-          <ul class="Style1">
-            <li><a href="publications.html#section1">Conferences</a></li>
-            <li><a href="publications.html#section2">Journals</a></li>
-            <li><a href="publications.html#section3">Patents</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="research.html">Research</a>
-          <ul class="Style1">
-            <!-- <li><a href="research.html#section1">Topics</a></li>
-            <li><a href="research.html#section2">Projects</a></li> -->
-          </ul>
-        </li>
-        <li><a class="current" href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </nav>
+  <div id="nav-mount"></div>
 
-    <!-- <script src="../app.js"></script> -->
+  <header class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="wordmark">Gallery<span class="dot">.</span></h1>
+      <div class="wordmark-sub">Conferences · Lab Moments</div>
+    </div>
   </header>
-  <div class="banner-area">
-    <h1><span>GALLERY</span></h1> <!-- span: shadow effect -->
-  </div>
 
-  <script src="../app.js"></script>
-
-
-
-  <div class="gallery-container">
-    <!-- <h1 class="gallery-title">Gallery</h1> -->
-    <div class="gallery-row">
-
-      <div class="gallery-slider" id="ICLR_2026-gallery">
-        <div class="slides">
-          <div class="slide"><img src="../images/gallery/2026_ICLR.jpg" alt="ICLR 2026"></div>
-        </div>
-        <button class="prev" onclick="moveSlide(-1, 'ICLR_2026')">&#10094;</button>
-        <button class="next" onclick="moveSlide(1, 'ICLR_2026')">&#10095;</button>
-        <div class="dots-container"></div>
-        <p class="slide-text">ICLR 2026</p>
-      </div>
-
-      <div class="gallery-slider" id="NeurIPS_2025-gallery">
-        <div class="slides">
-          <div class="slide"><img src="../images/gallery/2025_NeurIPS1.jpeg" alt="NeurIPS 2025"></div>
-          <div class="slide"><img src="../images/gallery/2025_NeurIPS2.jpeg" alt="NeurIPS 2025"></div>
-        </div>
-        <button class="prev" onclick="moveSlide(-1, 'NeurIPS_2025')">&#10094;</button>
-        <button class="next" onclick="moveSlide(1, 'NeurIPS_2025')">&#10095;</button>
-        <div class="dots-container"></div>
-        <p class="slide-text">NeurIPS 2025</p>
-      </div>
-
-      
-      <div class="gallery-slider" id="ICCV_2025-gallery">
-        <div class="slides">
-          <div class="slide"><img src="../images/gallery/2025_ICCV4.jpeg" alt="ICCV 2025"></div>
-          <div class="slide"><img src="../images/gallery/2025_ICCV1.jpeg" alt="ICCV 2025"></div>
-          <div class="slide"><img src="../images/gallery/2025_ICCV2.jpeg" alt="ICCV 2025"></div>
-          <div class="slide"><img src="../images/gallery/2025_ICCV3.jpeg" alt="ICCV 2025"></div>
-
-          <div class="slide"><img src="../images/gallery/2025_ICCV5.jpeg" alt="ICCV 2025"></div>
-          <div class="slide"><img src="../images/gallery/2025_ICCV6.jpeg" alt="ICCV 2025"></div>
-          <div class="slide"><img src="../images/gallery/2025_ICCV7.jpeg" alt="ICCV 2025"></div>
-        </div>
-        <button class="prev" onclick="moveSlide(-1, 'ICCV_2025')">&#10094;</button>
-        <button class="next" onclick="moveSlide(1, 'ICCV_2025')">&#10095;</button>
-        <div class="dots-container"></div>
-        <p class="slide-text">ICCV 2025</p>
-      </div>
-
-      <div class="gallery-slider" id="Seminar_2025-gallery">
-        <div class="slides">
-          <div class="slide"><img src="../images/gallery/2025_seminar.jpg" alt="Seminar 2025"></div>
-        </div>
-        <button class="prev" onclick="moveSlide(-1, 'Seminar_2025')">&#10094;</button>
-        <button class="next" onclick="moveSlide(1, 'Seminar_2025')">&#10095;</button>
-        <div class="dots-container"></div>
-        <p class="slide-text">Seminar & HBD</p>
-      </div>
-
-      <div class="gallery-slider" id="KCCV_2025-gallery">
-        <div class="slides">
-          <div class="slide"><img src="../images/gallery/2025_KCCV.jpg" alt="KCCV 2025"></div>
-          <div class="slide"><img src="../images/gallery/2025_KCCV2.jpg" alt="KCCV 2025"></div>
-        </div>
-        <button class="prev" onclick="moveSlide(-1, 'KCCV_2025')">&#10094;</button>
-        <button class="next" onclick="moveSlide(1, 'KCCV_2025')">&#10095;</button>
-        <div class="dots-container"></div>
-        <p class="slide-text">KCCV 2025</p>
-      </div>
-
-      <div class="gallery-slider" id="ICML_2025-gallery">
-        <div class="slides">
-          <div class="slide"><img src="../images/gallery/2025_ICML.jpg" alt="ICML 2025"></div>
-          <div class="slide"><img src="../images/gallery/2025_ICML2.jpg" alt="ICML 2025"></div>
-          <div class="slide"><img src="../images/gallery/2025_ICML3.jpg" alt="ICML 2025"></div>
-        </div>
-        <button class="prev" onclick="moveSlide(-1, 'ICML_2025')">&#10094;</button>
-        <button class="next" onclick="moveSlide(1, 'ICML_2025')">&#10095;</button>
-        <div class="dots-container"></div>
-        <p class="slide-text">ICML 2025</p>
-      </div>
-
-      <div class="gallery-slider" id="CVPR_2025-gallery">
-        <div class="slides">
-          <div class="slide"><img src="../images/gallery/2025_CVPR.jpg" alt="CVPR 2025"></div>
-          <div class="slide"><img src="../images/gallery/2025_CVPR2.jpg" alt="CVPR 2025"></div>
-          <div class="slide"><img src="../images/gallery/2025_CVPR3.jpg" alt="CVPR 2025"></div>
-          <div class="slide"><img src="../images/gallery/2025_CVPR4.jpg" alt="CVPR 2025"></div>
-        </div>
-        <button class="prev" onclick="moveSlide(-1, 'CVPR_2025')">&#10094;</button>
-        <button class="next" onclick="moveSlide(1, 'CVPR_2025')">&#10095;</button>
-        <div class="dots-container"></div>
-        <p class="slide-text">CVPR 2025</p>
-      </div>
-
-      <div class="gallery-slider" id="ECCV_2024-gallery">
-        <div class="slides">
-          <div class="slide"><img src="../images/gallery/2024_ECCV.png" alt="ECCV 2024"></div>
-          <div class="slide"><img src="../images/gallery/2024_ECCV2.jpg" alt="ECCV 2024"></div>
-          <div class="slide"><img src="../images/gallery/2024_ECCV3.jpg" alt="ECCV 2024"></div>
-        </div>
-        <button class="prev" onclick="moveSlide(-1, 'ECCV_2024')">&#10094;</button>
-        <button class="next" onclick="moveSlide(1, 'ECCV_2024')">&#10095;</button>
-        <div class="dots-container"></div>
-        <p class="slide-text">ECCV 2024</p>
-      </div>
-
-      <div class="gallery-slider" id="KCCV_2024-gallery">
-        <div class="slides">
-          <div class="slide"><img src="../images/gallery/2024_KCCV.JPG" alt="KCCV 2024"></div>
-          <div class="slide"><img src="../images/gallery/2024_KCCV2.png" alt="KCCV 2024"></div>
-        </div>
-        <button class="prev" onclick="moveSlide(-1, 'KCCV_2024')">&#10094;</button>
-        <button class="next" onclick="moveSlide(1, 'KCCV_2024')">&#10095;</button>
-        <div class="dots-container"></div>
-        <p class="slide-text">KCCV 2024</p>
-      </div>
-
-      <div class="gallery-slider" id="CVPR_2024-gallery">
-        <div class="slides">
-          <div class="slide"><img src="../images/gallery/2024_CVPR.png" alt="CVPR 2024"></div>
-          <div class="slide"><img src="../images/gallery/2024_CVPR2.png" alt="CVPR 2024"></div>
-          <div class="slide"><img src="../images/gallery/2024_CVPR3.jpg" alt="CVPR 2024"></div>
-        </div>
-        <button class="prev" onclick="moveSlide(-1, 'CVPR_2024')">&#10094;</button>
-        <button class="next" onclick="moveSlide(1, 'CVPR_2024')">&#10095;</button>
-        <div class="dots-container"></div>
-        <p class="slide-text">CVPR 2024</p>
-      </div>
-
-      <!-- <div class="gallery-slider" id="ICCV_2023-gallery">
-        <div class="slides">
-          <div class="slide"><img src="../images/gallery/2023_ICCV.jpeg" alt="ICCV 2023"></div>
-        </div>
-        <button class="prev" onclick="moveSlide(-1, 'ICCV_2023')">&#10094;</button>
-        <button class="next" onclick="moveSlide(1, 'ICCV_2023')">&#10095;</button>
-        <div class="dots-container"></div>
-        <p class="slide-text">ICCV 2023</p>
-      </div> -->
-
-      <div class="gallery-slider" id="KCCV_2023-gallery">
-        <div class="slides">
-          <div class="slide"><img src="../images/gallery/2023_KCCV.png" alt="KCCV 2023"></div>
-        </div>
-        <button class="prev" onclick="moveSlide(-1, 'KCCV_2023')">&#10094;</button>
-        <button class="next" onclick="moveSlide(1, 'KCCV_2023')">&#10095;</button>
-        <div class="dots-container"></div>
-        <p class="slide-text">KCCV 2023</p>
+  <div class="tab-bar">
+    <div class="container">
+      <div class="tab-row" id="tabs">
+        <button class="tab active" data-filter="all">All</button>
+        <div class="tab-divider"></div>
+        <button class="tab" data-filter="2026">2026</button>
+        <button class="tab" data-filter="2025">2025</button>
+        <button class="tab" data-filter="2024">2024</button>
+        <button class="tab" data-filter="2023">2023</button>
       </div>
     </div>
-
-
-
   </div>
 
-  <script src="../gallery.js"></script>
+  <section class="gal">
+    <div class="container" id="years"></div>
+  </section>
 
-  <footer class="footer">
-    <div class="footer-container">
-      <!-- 왼쪽: 로고 -->
-      <div class="footer-left">
-        <img src="../images/logo/ver2/crimson2positive.gif" alt="Korea University Logo" class="footer-logo">
-      </div>
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lb-prev" id="lb-prev" aria-label="Previous photo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+    </button>
+    <img class="lb-img" id="lb-img" alt="">
+    <button class="lb-next" id="lb-next" aria-label="Next photo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"/></svg>
+    </button>
+    <button class="lb-close" id="lb-close" aria-label="Close">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="lb-caption" id="lb-caption"></div>
+  </div>
 
-      <!-- 오른쪽: 텍스트 -->
-      <div class="footer-text">
-        <p>Department of <a href="http://xai.korea.ac.kr/">Artificial Intelligence</a>, <a
-            href="https://korea.ac.kr/">Korea University</a></p>
-        <p>(02841) 145 Anam-ro, Seongbuk-gu, Seoul, South Korea</p>
-        <p>All Rights reserved by &copy;<a href="https://vgi.korea.ac.kr/">VGILAB</a></p>
-      </div>
+  <div id="footer-mount"></div>
 
-      <div class="footer-right">
-        <a href="https://vgi.korea.ac.kr/">
-          <img src="../images/logo/ver2/logo_square_black2.png" alt="Square Black Logo" class="footer-logo">
-        </a>
-      </div>
+  <script>
+    // Add a new event at the top. Drop photos into /images/gallery/ and list each path here.
+    const EVENTS = [
+      { id: 'iclr-2026',     name: 'ICLR 2026',      year: 2026, location: 'Brazil',     kind: 'Conference',
+        photos: ['/images/gallery/2026_ICLR.jpg'] },
 
-    </div>
-  </footer>
-  <script src="../data.js"></script>
+      { id: 'neurips-2025',  name: 'NeurIPS 2025',   year: 2025, location: 'San Diego',  kind: 'Conference',
+        photos: ['/images/gallery/2025_NeurIPS1.jpeg', '/images/gallery/2025_NeurIPS2.jpeg'] },
+      { id: 'iccv-2025',     name: 'ICCV 2025',      year: 2025, location: 'Honolulu',   kind: 'Conference',
+        photos: ['/images/gallery/2025_ICCV4.jpeg', '/images/gallery/2025_ICCV1.jpeg', '/images/gallery/2025_ICCV2.jpeg',
+                 '/images/gallery/2025_ICCV3.jpeg', '/images/gallery/2025_ICCV5.jpeg', '/images/gallery/2025_ICCV6.jpeg',
+                 '/images/gallery/2025_ICCV7.jpeg'] },
+      { id: 'seminar-2025',  name: 'Seminar & HBD',  year: 2025, location: 'KU VGI Lab', kind: 'Lab',
+        photos: ['/images/gallery/2025_seminar.jpg'] },
+      { id: 'kccv-2025',     name: 'KCCV 2025',      year: 2025, location: 'Korea',      kind: 'Lab'      ,
+        photos: ['/images/gallery/2025_KCCV.jpg', '/images/gallery/2025_KCCV2.jpg'] },
+      { id: 'icml-2025',     name: 'ICML 2025',      year: 2025, location: 'Vancouver',  kind: 'Conference',
+        photos: ['/images/gallery/2025_ICML.jpg', '/images/gallery/2025_ICML2.jpg', '/images/gallery/2025_ICML3.jpg'] },
+      { id: 'cvpr-2025',     name: 'CVPR 2025',      year: 2025, location: 'Nashville',  kind: 'Conference',
+        photos: ['/images/gallery/2025_CVPR.jpg', '/images/gallery/2025_CVPR2.jpg', '/images/gallery/2025_CVPR3.jpg', '/images/gallery/2025_CVPR4.jpg'] },
+
+      { id: 'eccv-2024',     name: 'ECCV 2024',      year: 2024, location: 'Milano',     kind: 'Conference',
+        photos: ['/images/gallery/2024_ECCV.png', '/images/gallery/2024_ECCV2.jpg', '/images/gallery/2024_ECCV3.jpg'] },
+      { id: 'kccv-2024',     name: 'KCCV 2024',      year: 2024, location: 'Korea',      kind: 'Lab'      ,
+        photos: ['/images/gallery/2024_KCCV.JPG', '/images/gallery/2024_KCCV2.png'] },
+      { id: 'cvpr-2024',     name: 'CVPR 2024',      year: 2024, location: 'Seattle',    kind: 'Conference',
+        photos: ['/images/gallery/2024_CVPR.png', '/images/gallery/2024_CVPR2.png', '/images/gallery/2024_CVPR3.jpg'] },
+
+      { id: 'kccv-2023',     name: 'KCCV 2023',      year: 2023, location: 'Korea',      kind: 'Lab'      ,
+        photos: ['/images/gallery/2023_KCCV.png'] },
+    ];
+
+    const yearsRoot = document.getElementById('years');
+
+    function renderCard(ev) {
+      const multi = ev.photos.length > 1;
+      const kindClass = ev.kind === 'Lab' ? 'lab' : 'conf';
+      const slides = ev.photos.map((src, i) => `
+        <div class="slide${i===0?' active':''}" data-i="${i}" style="background-image:url('${src}');" role="button" aria-label="Open ${ev.name} photo ${i+1}"></div>
+      `).join('');
+      const dots = multi ? ev.photos.map((_, i) =>
+        `<button class="dot${i===0?' active':''}" data-i="${i}" aria-label="Photo ${i+1}"></button>`
+      ).join('') : '';
+      return `
+        <article class="event-card" data-id="${ev.id}">
+          <div class="slider" data-current="0" data-count="${ev.photos.length}">
+            <div class="slides">${slides}</div>
+            ${multi ? `
+              <button class="slide-btn prev" aria-label="Previous">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
+              </button>
+              <button class="slide-btn next" aria-label="Next">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"/></svg>
+              </button>
+              <div class="photo-count">1 / ${ev.photos.length}</div>
+              <div class="dots">${dots}</div>
+            ` : ''}
+          </div>
+          <div class="event-body">
+            <div class="event-name">${ev.name}</div>
+            <div class="event-meta">
+              <span class="badge ${kindClass}">${ev.kind}</span>
+              <span class="sep">·</span>
+              <span>${ev.location}</span>
+            </div>
+          </div>
+        </article>`;
+    }
+
+    function render(filter) {
+      const years = [...new Set(EVENTS.map(e => e.year))].sort((a,b) => b - a);
+      const html = years.map(y => {
+        const items = EVENTS.filter(e => e.year === y);
+        const hidden = (filter !== 'all' && String(y) !== filter);
+        return `
+          <div class="year-group${hidden?' empty':''}" data-year="${y}">
+            <div class="year-head">
+              <h2>${y}</h2>
+              <span class="count">${String(items.length).padStart(2,'0')} events</span>
+            </div>
+            <div class="event-grid">${items.map(renderCard).join('')}</div>
+          </div>`;
+      }).join('');
+      yearsRoot.innerHTML = html;
+      wireSliders();
+    }
+
+    function wireSliders() {
+      document.querySelectorAll('.slider').forEach(slider => {
+        const count = parseInt(slider.dataset.count, 10);
+        const slides = [...slider.querySelectorAll('.slide')];
+        const dots = [...slider.querySelectorAll('.dot')];
+        const countEl = slider.querySelector('.photo-count');
+        const setIdx = (i) => {
+          const idx = ((i % count) + count) % count;
+          slider.dataset.current = idx;
+          slides.forEach((s, k) => s.classList.toggle('active', k === idx));
+          dots.forEach((d, k) => d.classList.toggle('active', k === idx));
+          if (countEl) countEl.textContent = `${idx + 1} / ${count}`;
+        };
+        slider.querySelector('.slide-btn.prev')?.addEventListener('click', (e) => { e.stopPropagation(); setIdx(parseInt(slider.dataset.current,10) - 1); });
+        slider.querySelector('.slide-btn.next')?.addEventListener('click', (e) => { e.stopPropagation(); setIdx(parseInt(slider.dataset.current,10) + 1); });
+        dots.forEach(d => d.addEventListener('click', (e) => { e.stopPropagation(); setIdx(parseInt(d.dataset.i,10)); }));
+        slides.forEach(s => s.addEventListener('click', () => {
+          const card = slider.closest('.event-card');
+          openLightbox(card.dataset.id, parseInt(s.dataset.i,10));
+        }));
+      });
+    }
+
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    const lbCap = document.getElementById('lb-caption');
+    let lbState = { event: null, i: 0 };
+
+    function openLightbox(eventId, i) {
+      const ev = EVENTS.find(e => e.id === eventId);
+      if (!ev) return;
+      lbState = { event: ev, i };
+      lbImg.src = ev.photos[i];
+      lbImg.alt = `${ev.name} — photo ${i+1}`;
+      lbCap.textContent = `${ev.name} · ${i+1} / ${ev.photos.length}`;
+      lb.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      lb.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+    function stepLb(delta) {
+      const ev = lbState.event; if (!ev) return;
+      const n = ev.photos.length;
+      lbState.i = ((lbState.i + delta) % n + n) % n;
+      lbImg.src = ev.photos[lbState.i];
+      lbImg.alt = `${ev.name} — photo ${lbState.i+1}`;
+      lbCap.textContent = `${ev.name} · ${lbState.i+1} / ${n}`;
+    }
+    document.getElementById('lb-close').addEventListener('click', closeLightbox);
+    document.getElementById('lb-prev').addEventListener('click', () => stepLb(-1));
+    document.getElementById('lb-next').addEventListener('click', () => stepLb(1));
+    lb.addEventListener('click', (e) => { if (e.target === lb) closeLightbox(); });
+    document.addEventListener('keydown', (e) => {
+      if (!lb.classList.contains('open')) return;
+      if (e.key === 'Escape') closeLightbox();
+      else if (e.key === 'ArrowLeft') stepLb(-1);
+      else if (e.key === 'ArrowRight') stepLb(1);
+    });
+
+    const tabs = document.getElementById('tabs');
+    tabs.addEventListener('click', (e) => {
+      const t = e.target.closest('.tab'); if (!t) return;
+      tabs.querySelectorAll('.tab').forEach(x => x.classList.toggle('active', x === t));
+      render(t.dataset.filter);
+    });
+
+    render('all');
+  </script>
+  <script src="/assets/site.js"></script>
 </body>
-
 </html>

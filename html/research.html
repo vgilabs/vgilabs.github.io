@@ -1,359 +1,177 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="en-US" data-theme="light">
 <head>
-  <title>VGI @ KU </title>
-  <link rel="icon" href="../images/logo/ver2/logo.png" type="image/png">
-
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:500,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="../css/academicons.css" />
-  <link rel="stylesheet" href="../styles/styles_research.css">
+  <title>Research · VGI Lab @ Korea University</title>
+  <link rel="icon" href="/images/logo/ver2/logo.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Montserrat:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles/site.css">
+  <link rel="stylesheet" href="/styles/research.css">
 </head>
+<body data-page="research">
 
-<body>
-  <header id="header">
-    <nav class="welcome">
-      <div class="logo">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../images/logo/ver2/left_logo.png" class="img-logo">
-        </a>
-      </div>
-      <ul class="nav-links"> <!-- ul: unordered list -->
-        <li><a href="../index.html">Home</a></li>
-        <li>
-          <a href="members.html">Members</a>
-          <ul class="Style1">
-            <li><a href="members.html#section1">Professor</a></li>
-            <li><a href="members.html#section2">Students</a></li>
-            <!-- <li><a href="html/members.html#undergrad">Undergraduate Student</a></li> -->
-            <li><a href="members.html#section4">Research Advisor</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="publications_selected.html">Publications</a>
-          <ul class="Style1">
-            <li><a href="publications.html#section1">Conferences</a></li>
-            <li><a href="publications.html#section2">Journals</a></li>
-            <li><a href="publications.html#section3">Patents</a></li>
-          </ul>
-        </li>
-        <li>
-          <a class="current" href="research.html">Research</a>
-          <ul class="Style1">
-            <!-- <li><a href="research.html#section1">Topics</a></li>
-            <li><a href="research.html#section2">Projects</a></li> -->
-          </ul>
-        </li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <div class="burger">
-        <div class="line"></div>
-        <div class="line"></div>
-        <div class="line"></div>
-      </div>
-    </nav>
+  <div id="nav-mount"></div>
 
-    <script src="../app.js"></script>
-  </header>
-  <div class="banner-area">
-    <h1><span>RESEARCH</span></h1> <!-- span: shadow effect -->
-  </div>
-  
-  <section class="research-area" id="Research">
-    <span class="anchor-top" id="section1"></span>
-    <div class="area-main">
-      <div class="area-divider-top"></div>
-      <div class="area-name">Research Topic</div>
-        <a name="journals"></a>
-      <div class="area-divider-bottom"></div>
-
-      <div class="topic">
-        <div class="topic_column">
-          <div class="pics" style="background-image: url('../images/CL.png');"></div>
-        </div>
-        <div class="topic_desc">
-          <p>
-            <ul style="list-style-type:disc">
-              <h2>Continual Learning</h2>
-              <p>We are focusing on Continual Learning in AI, which involves training machine learning models to learn continuously from new data while maintaining previously learned information. This approach prevents 'catastrophic forgetting' and ensures our AI systems adapt and retain knowledge effectively over time.</p>
-              <div class="keywords">
-                <h3>&num; Keywords</h3>
-                <div><a href="https://arxiv.org/abs/2308.09303">Class-Incremental Learning</a></div>
-                <div><a href="https://arxiv.org/abs/2404.02117">Few-Shot Incremental Learning</a></div>
-                <div><a href="https://arxiv.org/abs/2308.11917">Lifelong GAN</a></div>
-                <div>Transfer Learning</div>
-                <div><a href="https://arxiv.org/abs/2408.13492">Online Learning</a></div>
-                <!-- <li>
-                  Continual Learning
-                </li>
-                <li>
-                  Transfer Learning
-                </li>
-                <li>
-                  Unsupervised Domain Adaptation
-                </li>
-                <li>
-                  Few-Shot Learning
-                </li>
-                <li>
-                  Out-Of-Distribution Generalization
-                </li>
-                <li>
-                  Online Learning
-                </li>
-                <li>
-                  Machine Unlearning
-                </li> -->
-              </div>
-            </ul>
-          </p>
-        </div>
-      </div>
-      <div class="topic">
-        <div class="topic_column">
-          <div class="pics" style="background-image: url('../images/DA.png');"></div>
-        </div>
-        <div class="topic_desc">
-          <p>
-            <ul style="list-style-type:disc">
-              <h2>Learning Methods for Future AI</h2>
-              <p>We are exploring innovative methods to enhance AI, making it more adaptable and efficient. Our approach focuses on teaching AI to learn in ways similar to humans, better preparing it for a variety of real-world challenges. Our goal is to develop AI that is more capable of handling diverse tasks and learning effectively from different experiences.</p>
-              <div class="keywords">
-                <h3>&num; Keywords</h3>
-                <div><a href="https://arxiv.org/abs/2311.12467">Domain Adaptation</a></div>
-                <div>Unsupervised Learning</div>
-                <div><a href="https://khu.elsevierpure.com/en/publications/non-probabilistic-cosine-similarity-loss-for-few-shot-image-class">Few-Shot Learning</a></div>
-                <div><a href="https://arxiv.org/abs/2303.13995">Out-Of-Distribution Detection</a></div>
-                <div><a href="https://arxiv.org/abs/2405.09879">Machine Unlearning</a></div>
-                <!-- <li>
-                  Continual Learning
-                </li>
-                <li>
-                  Transfer Learning
-                </li>
-                <li>
-                  Unsupervised Domain Adaptation
-                </li>
-                <li>
-                  Few-Shot Learning
-                </li>
-                <li>
-                  Out-Of-Distribution Generalization
-                </li>
-                <li>
-                  Online Learning
-                </li>
-                <li>
-                  Machine Unlearning
-                </li> -->
-              </div>
-            </ul>
-          </p>
-        </div>
-      </div>
-
-      <div class="topic">
-        <div class="topic_column">
-          <div class="pics" style="background-image: url('../images/GM.png');"></div>
-        </div>
-        <div class="topic_desc">
-          <p>
-            <ul style="list-style-type:disc">
-              <h2>Deep Generative AI</h2>
-              <p>We are advancing the field of Deep Generative Models, aiming to improve how AI creates and understands visuals. Our work focuses on making better images, animating pictures, and building 3D models with AI. Our goal is to enhance AI's ability to perform complex visual tasks more easily.</p>
-              <div class="keywords">
-                <h3>&num; Keywords</h3>
-                <div><a href="https://arxiv.org/abs/2209.10811">High-Fidelity GAN Inversion</a></div>
-                <div>Image Manipulation</div>
-                <div><a href="https://arxiv.org/abs/2309.01950">Talking Head Generation</a></div>
-                <div>3D Reconstruction</div>
-                <!-- <li>
-                  High-Fidelity GAN Inversion
-                </li>
-                <li>
-                  Image Manipulation
-                </li>
-                <li>
-                  Talking Head Generation
-                </li>
-                <li>
-                  3D Reconstruction
-                </li> -->
-              </div>
-            </ul>
-          </p>
-        </div>
-      </div>
-
-      <div class="topic">
-        <div class="topic_column">
-          <div class="pics" style="background-image: url('../images/MM.png');"></div>
-        </div>
-        <div class="topic_desc">
-          <p>
-            <ul style="list-style-type:disc">
-              <h2>Multi-Modal AI</h2>
-              <p>We are working on Multi-Modal AI to teach systems how to handle and make sense of various kinds of data at once. Our goal is to build smarter AI that can make good predictions and spot things that don't follow the usual patterns, making it better at solving real-world problems.</p>
-              <div class="keywords">
-                <h3>&num; Keywords</h3>
-                <div>Multi-Modal Fusion</div>
-                <div>Back-Channel Prediction</div>
-                <div><a href="https://ieeexplore.ieee.org/document/10164104">Medical AI: Anomaly Detection</a></div>
-                <!-- <li>
-                  Multi-Modal Fusion
-                </li>
-                <li>
-                  Back-Channel Prediction
-                </li>
-                <li>
-                  Medical AI: Anomaly Detection
-                </li> -->
-              </div>
-            </ul>
-          </p>
-        </div>
-      </div>
-
-      <!-- <div class="topic">
-        <div class="topic_column">
-          <div class="pics" style="background-image: url('../images/DA.png');"></div>
-        </div>
-        <div class="topic_desc">
-          <p>
-            <ul style="list-style-type:disc">
-              <h2>Domain Adaptation</h2>
-              <li>
-                Unsupervised Domain Adaptation
-              </li>
-            </ul>
-          </p>
-        </div>
-      </div> -->
-
-    </div> <!-- area-main -->
-
-    <!-- <span class="anchor" id="section2"></span>
-    <div class="area-main">
-      <div class="area-divider-top"></div>
-      <div class="area-name">Research Project</div>
-        <a name="conferences"></a> 
-      <div class="area-divider-bottom"></div>
-
-      <div class="numbering">
-        <p class="info">[5]</p>
-      </div>
-      <div class="each-con">
-          <p class="info">
-            <span>Multi-Modal Back-Channel Prediction <b>(2023 - 2023)</b></span>
-            <span>▪︎ <b>Funding:</b> $50,000</span>
-            <span>▪︎ <b>Supervision:</b> ETRI</span>
-          </p>
-      </div>
-      <div class="numbering">
-        <p class="info">[4]</p>
-      </div>
-      <div class="each-con">
-          <p class="info">
-            <span>Cloud Continuum for Enabling Large Scale AI Services <b>(2023 - 2031)</b></span>
-            <span>▪︎ <b>Funding:</b> $7,500,000</span>
-            <span>▪︎ <b>Supervision:</b> IITP</span>
-          </p>
-      </div>
-      <div class="numbering">
-        <p class="info">[3]</p>
-      </div>
-      <div class="each-con">
-          <p class="info">
-            <span>Video and Audio-Driven Lip Sync Generation Models <b>(2022-2024)</b></span>
-            <span>▪︎ <b>Funding:</b> $150,000</span>
-            <span>▪︎ <b>Supervision:</b> ETRI</span>
-          </p>
-      </div>
-      <div class="numbering">
-        <p class="info">[2]</p>
-      </div>
-      <div class="each-con">
-          <p class="info">
-            <span>Patient-Specific General Intelligence for Effective Early Diagnosis of Arrhythmia <b>(2021 - 2024)</b></span>
-            <span>▪︎ <b>Funding:</b> $90,000</span>
-            <span>▪︎ <b>Supervision:</b> NRF</span>
-          </p>
-      </div>
-      <div class="numbering">
-        <p class="info">[1]</p>
-      </div>
-      <div class="each-con">
-          <p class="info">
-            <span>Research Proposal in the Field of Artificial General Intelligence <b>(2021 - 2021)</b></span>
-            <span>▪︎ <b>Funding:</b> $80,000</span>
-            <span>▪︎ <b>Supervision:</b> ETRI</span>
-          </p>
-      </div>
-    </div> -->
-
-  </section> <!-- section-end -->
-
-  <script src="../app.js"></script>
-  
-  <!-- <footer>
-    <p class="footer-bottom-text">All Rights reserved by &copy;VGILAB</p>
-  </footer> -->
-
-
-  <footer class="footer">
-    <div class="footer-container">
-        <!-- 왼쪽: 로고 -->
-        <div class="footer-left">
-            <img src="../images/logo/ver2/crimson2positive.gif" alt="Korea University Logo" class="footer-logo">
-        </div>
-
-        <!-- 오른쪽: 텍스트 -->
-        <div class="footer-text">
-            <p>Department of <a href="http://xai.korea.ac.kr/">Artificial Intelligence</a>, <a href="https://korea.ac.kr/">Korea University</a></p>
-            <p>(02841) 145 Anam-ro, Seongbuk-gu, Seoul, South Korea</p>
-            <p>All Rights reserved by &copy;<a href="https://vgi.korea.ac.kr/">VGILAB</a></p>
-        </div>
-        
-        <div class="footer-right">
-          <a href="https://vgi.korea.ac.kr/">
-            <img src="../images/logo/ver2/logo_square_black2.png" alt="Square Black Logo" class="footer-logo">
-          </a>
-        </div>
-
+  <header class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <h1 class="wordmark">Research<span class="dot">.</span></h1>
+      <div class="wordmark-sub">Visual &amp; General Intelligence</div>
     </div>
-  </footer>
-  <script src="../data.js"></script>
+  </header>
 
-  <!-- <script>
+  <section class="research">
+    <div class="container">
+      <div class="section-head">
+        <h2>Research Topics</h2>
+      </div>
 
-    var header = document.getElementById('header')
-    var welcome = document.getElementsByClassName('welcome')[0]
+      <div class="topics">
 
-    function changeHeaderCollapsed(collapseState) {
-      if (collapseState) {
-        header.classList.add('collapsed')
-        welcome.classList.remove('with-fixed-header')
-      } else if (!collapseState) {
-        header.classList.remove('collapsed')
-        welcome.classList.add('with-fixed-header')
-      }
-    }
+        <article class="topic-card">
+          <div class="topic-illust t-cl">
+            <span class="num">01</span>
+            <svg class="glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="7" y="20" width="13" height="24" rx="2"/><rect x="25.5" y="14" width="13" height="30" rx="2"/><rect x="44" y="8" width="13" height="36" rx="2"/>
+<path d="M9.5 26 H17.5" opacity="0.5"/><path d="M9.5 32 H15" opacity="0.5"/><path d="M9.5 38 H16.5" opacity="0.5"/>
+<path d="M28 20 H36" opacity="0.5"/><path d="M28 26 H34.5" opacity="0.5"/><path d="M28 32 H35.5" opacity="0.5"/><path d="M28 38 H34" opacity="0.5"/>
+<path d="M46.5 14 H54.5" opacity="0.5"/><path d="M46.5 20 H53" opacity="0.5"/><path d="M46.5 26 H54.5" opacity="0.5"/><path d="M46.5 32 H53.5" opacity="0.5"/><path d="M46.5 38 H54" opacity="0.5"/>
+<path d="M20 32 H25.5"/><path d="M23 29 L25.5 32 L23 35"/><path d="M38.5 26 H44"/><path d="M41.5 23 L44 26 L41.5 29"/>
+<path d="M6 50 H58" stroke-dasharray="2 2" opacity="0.5"/>
+<circle cx="11" cy="54.6" r="1.4"/><circle cx="20.4" cy="54.6" r="1.4"/><circle cx="29.8" cy="54.6" r="1.4"/><circle cx="39.2" cy="54.6" r="1.4"/><circle cx="48.6" cy="54.6" r="1.4"/><circle cx="56" cy="54.6" r="1.4"/>
+            </svg>
+          </div>
+          <div class="topic-body">
+            <h3 class="topic-title">Learning Methods for Future AI</h3>
+            <p class="topic-desc">We are focusing on learning paradigms that move AI closer to human-like flexibility — continual learning that prevents catastrophic forgetting across tasks, domain adaptation across distributions, generalization from limited data, and revising what a model has learned. The aim is models that handle diverse real-world tasks more efficiently.</p>
+            <div class="topic-keys">
+              <span class="topic-keys-label"># Keywords</span>
+              <div class="topic-keys-list">
+                <a class="keyword link" href="https://arxiv.org/abs/2508.10896" target="_blank" rel="noopener">Continual Learning <span class="arr">↗</span></a>
+                <a class="keyword link" href="https://arxiv.org/abs/2311.12467" target="_blank" rel="noopener">Domain Adaptation <span class="arr">↗</span></a>
+                <span class="keyword">Unsupervised Learning</span>
+                <a class="keyword link" href="https://khu.elsevierpure.com/en/publications/non-probabilistic-cosine-similarity-loss-for-few-shot-image-class" target="_blank" rel="noopener">Few-Shot Learning <span class="arr">↗</span></a>
+                <a class="keyword link" href="https://arxiv.org/abs/2303.13995" target="_blank" rel="noopener">Out-of-Distribution Detection <span class="arr">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
 
-    window.addEventListener('scroll', function(e) {
-      if (window.scrollY > 0) {
-        changeHeaderCollapsed(false)
-      } else {
-        changeHeaderCollapsed(true)
-      }
-    })
-  
-  </script> -->
+        <article class="topic-card">
+          <div class="topic-illust t-gen">
+            <span class="num">02</span>
+            <svg class="glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <g transform="translate(8.96 4.8) scale(0.72 0.85)" stroke-width="2.9"><rect x="6" y="8" width="14.5" height="40" rx="2"/><rect x="24.75" y="8" width="14.5" height="40" rx="2"/><rect x="43.5" y="8" width="14.5" height="40" rx="2"/>
+<path d="M20.5 28 H24.75"/><path d="M22.75 26 L24.75 28 L22.75 30"/><path d="M39.25 28 H43.5"/><path d="M41.5 26 L43.5 28 L41.5 30"/>
+<g opacity="0.8"><circle cx="9.5" cy="14" r="0.85"/><circle cx="13.5" cy="18" r="0.85"/><circle cx="17.5" cy="13" r="0.85"/><circle cx="11" cy="25" r="0.85"/><circle cx="16" cy="30" r="0.85"/><circle cx="18" cy="21" r="0.85"/><circle cx="9" cy="36" r="0.85"/><circle cx="14" cy="41" r="0.85"/></g>
+<circle cx="29" cy="18" r="1" opacity="0.85"/><circle cx="35" cy="18" r="1" opacity="0.85"/><path d="M27.5 36 Q32 40 36.5 36" opacity="0.7"/>
+<circle cx="48.5" cy="19" r="1.2"/><circle cx="53.5" cy="19" r="1.2"/><path d="M47 36 Q51 41 55 36"/>
+<path d="M6 52 H58" opacity="0.4"/><path d="M13.25 52 V56" opacity="0.4"/><path d="M32 52 V56" opacity="0.4"/><path d="M50.75 52 V56" opacity="0.4"/></g>
+            </svg>
+          </div>
+          <div class="topic-body">
+            <h3 class="topic-title">Generative AI</h3>
+            <p class="topic-desc">We are advancing generative models across modalities, including diffusion models for images, avatar generation, image manipulation, and 3D scene reconstruction. The goal is to make complex visual generation tractable for AI.</p>
+            <div class="topic-keys">
+              <span class="topic-keys-label"># Keywords</span>
+              <div class="topic-keys-list">
+                <a class="keyword link" href="https://arxiv.org/abs/2309.01950" target="_blank" rel="noopener">Avatar Generation <span class="arr">↗</span></a>
+                <a class="keyword link" href="https://arxiv.org/abs/2209.10811" target="_blank" rel="noopener">Image Manipulation <span class="arr">↗</span></a>
+                <a class="keyword link" href="https://arxiv.org/abs/2507.18155" target="_blank" rel="noopener">3D Reconstruction <span class="arr">↗</span></a>
+                <a class="keyword link" href="https://arxiv.org/abs/2510.04668" target="_blank" rel="noopener">Diffusion Models <span class="arr">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="topic-card">
+          <div class="topic-illust t-mm">
+            <span class="num">03</span>
+            <svg class="glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="13" r="5"/><circle cx="11" cy="13" r="1.8" fill="currentColor"/>
+<path d="M6 30 H17"/><path d="M6 34 H16"/><path d="M6 38 H17"/>
+<path d="M6 53 L8.5 50 L11 56 L13.5 48 L16 56 L18 51"/>
+<path d="M19 13 L30 31" opacity="0.7"/><path d="M19 34 H30" opacity="0.7"/><path d="M19 52 L30 37" opacity="0.7"/>
+<rect x="30" y="27.5" width="12.5" height="13" rx="2"/><path d="M33 34 H40"/><path d="M36.25 30.5 V37.5"/>
+<path d="M43 34 H52"/><path d="M49 31 L52 34 L49 37"/><rect x="52" y="29.5" width="6" height="9" rx="1"/>
+            </svg>
+          </div>
+          <div class="topic-body">
+            <h3 class="topic-title">Multi-Modal AI</h3>
+            <p class="topic-desc">We are building systems that integrate signals from multiple modalities such as language, vision, audio, and biosignals to reason jointly about complex inputs. We are also studying reliability concerns such as mitigating hallucination, while making robust predictions and detecting anomalies in real-world settings.</p>
+            <div class="topic-keys">
+              <span class="topic-keys-label"># Keywords</span>
+              <div class="topic-keys-list">
+                <span class="keyword">Multi-Modal Fusion</span>
+                <span class="keyword">Back-Channel Prediction</span>
+                <a class="keyword link" href="https://ieeexplore.ieee.org/document/10164104" target="_blank" rel="noopener">Medical AI · Anomaly Detection <span class="arr">↗</span></a>
+                <span class="keyword">Hallucination</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="topic-card">
+          <div class="topic-illust t-rob">
+            <span class="num">04</span>
+            <svg class="glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <g transform="translate(3.2 3.2) scale(0.9)" stroke-width="2.67"><rect x="6" y="8" width="52" height="48" rx="2"/>
+<g opacity="0.25"><path d="M19 8 V56"/><path d="M32 8 V56"/><path d="M45 8 V56"/><path d="M6 24 H58"/><path d="M6 40 H58"/></g>
+<circle cx="12.5" cy="48" r="2.6"/><path d="M12.5 45 V39"/><path d="M10.5 41.5 L12.5 39 L14.5 41.5"/>
+<path d="M12.5 45 Q21 31 42 21" stroke-dasharray="2 2" opacity="0.75"/>
+<circle cx="21" cy="40" r="1.4"/><circle cx="29" cy="33" r="1.4"/><circle cx="37" cy="26" r="1.4"/>
+<rect x="23" y="42" width="6" height="6" rx="0.5" opacity="0.4" fill="currentColor" stroke="none"/>
+<path d="M48 15 L49.7 19.6 L54.3 19.6 L50.6 22.4 L52 27 L48 24.2 L44 27 L45.4 22.4 L41.7 19.6 L46.3 19.6 Z"/></g>
+            </svg>
+          </div>
+          <div class="topic-body">
+            <h3 class="topic-title">Embodied AI and Robotics</h3>
+            <p class="topic-desc">We are studying how agents perceive, reason, and act in physical and simulated environments, connecting vision, language, and control. Our focus centers on human vision-language-action (VLA) models, alongside instruction-following navigation and manipulation for real-world robots.</p>
+            <div class="topic-keys">
+              <span class="topic-keys-label"># Keywords</span>
+              <div class="topic-keys-list">
+                <span class="keyword">VLA</span>
+                <span class="keyword">VLN</span>
+                <span class="keyword">Embodied Reasoning</span>
+                <span class="keyword">Robot Manipulation</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="topic-card">
+          <div class="topic-illust t-priv">
+            <span class="num">05</span>
+            <svg class="glyph" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M32 8 L52 16 V32 C52 44 42 53 32 56 C22 53 12 44 12 32 V16 Z"/>
+<rect x="24.5" y="31" width="15" height="12" rx="2"/><path d="M27 31 v-3.5 a5 5 0 0 1 10 0 v3.5"/>
+<circle cx="32" cy="36.5" r="1.6" fill="currentColor"/><path d="M32 38 V40.5"/>
+            </svg>
+          </div>
+          <div class="topic-body">
+            <h3 class="topic-title">Privacy and Safety AI</h3>
+            <p class="topic-desc">We are making AI safe to deploy by selectively removing what a model should not retain, erasing specific knowledge, identities, or concepts, and protecting individuals against unauthorized personalization of generative models.</p>
+            <div class="topic-keys">
+              <span class="topic-keys-label"># Keywords</span>
+              <div class="topic-keys-list">
+                <a class="keyword link" href="https://arxiv.org/abs/2405.09879" target="_blank" rel="noopener">Machine Unlearning <span class="arr">↗</span></a>
+                <a class="keyword link" href="https://arxiv.org/abs/2511.01307" target="_blank" rel="noopener">Anti-Personalization <span class="arr">↗</span></a>
+                <span class="keyword">Privacy Protection</span>
+                <a class="keyword link" href="https://arxiv.org/abs/2504.02199" target="_blank" rel="noopener">Knowledge &amp; Concept Erasing <span class="arr">↗</span></a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="footer-mount"></div>
+
+  <script>
+  </script>
+  <script src="/assets/site.js"></script>
 </body>
-
 </html>
