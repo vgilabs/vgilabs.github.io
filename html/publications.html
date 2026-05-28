@@ -201,24 +201,29 @@
         return true;
       };
 
-      document.querySelectorAll('a[href^="#group-"], a[href*="publications.html#group-"]').forEach(a => {
-        a.addEventListener('click', (e) => {
-          const href = a.getAttribute('href');
-          const hash = href.includes('#') ? '#' + href.split('#')[1] : '';
-          if (goToGroup(hash)) {
-            e.preventDefault();
-            history.replaceState(null, '', hash);
-            
-            const navItem = a.closest('.nav-item');
-            if (navItem) {
-              navItem.classList.add('menu-dismissed');
-              a.blur();
-              const onLeave = () => { navItem.classList.remove('menu-dismissed'); navItem.removeEventListener('mouseleave', onLeave); };
-              navItem.addEventListener('mouseleave', onLeave);
+      const attachSubmenuHandlers = () => {
+        document.querySelectorAll('a[href^="#group-"], a[href*="publications.html#group-"]').forEach(a => {
+          if (a.dataset.bound) return;
+          a.dataset.bound = '1';
+          a.addEventListener('click', (e) => {
+            const href = a.getAttribute('href');
+            const hash = href.includes('#') ? '#' + href.split('#')[1] : '';
+            if (goToGroup(hash)) {
+              e.preventDefault();
+              history.replaceState(null, '', hash);
+              const navItem = a.closest('.nav-item');
+              if (navItem) {
+                navItem.classList.add('menu-dismissed');
+                a.blur();
+                const onLeave = () => { navItem.classList.remove('menu-dismissed'); navItem.removeEventListener('mouseleave', onLeave); };
+                navItem.addEventListener('mouseleave', onLeave);
+              }
             }
-          }
+          });
         });
-      });
+      };
+      attachSubmenuHandlers();
+      document.addEventListener('site:ready', attachSubmenuHandlers);
 
       
       
