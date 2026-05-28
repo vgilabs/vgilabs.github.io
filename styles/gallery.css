@@ -87,6 +87,8 @@
 
 .tab.active { background: var(--accent); color: white; border-color: var(--accent); }
 
+[data-theme="dark"] .tab.active { background: var(--crimson-3); color: white; border-color: var(--crimson-3); }
+
 .tab-divider { width: 1px; height: 22px; background: var(--line); margin: 0 8px; flex-shrink: 0; }
 
 section.gal { padding: 64px 0 96px; }

@@ -97,6 +97,10 @@
       background: var(--accent); color: white; border-color: var(--accent);
     }
 
+[data-theme="dark"] .tab.active {
+      background: var(--crimson-3); color: white; border-color: var(--crimson-3);
+    }
+
 .tab .count {
       display: inline-block; margin-left: 6px;
       font-family: 'JetBrains Mono', monospace; font-size: 10.5px; opacity: 0.75;
@@ -181,6 +185,8 @@ section { padding: 56px 0; }
 .pub-venue-badge.domestic { background: #2F4660; color: white; }
 
 .pub-venue-badge.patent   { background: #5A4A2C; color: white; }
+
+[data-theme="dark"] .pub-venue-badge          { background: var(--crimson-3); }
 
 [data-theme="dark"] .pub-venue-badge.journal  { background: #467B5F; }
 

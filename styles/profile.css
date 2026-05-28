@@ -220,6 +220,11 @@ section.list { padding: 56px 0; }
 
 .pub-venue-badge.patent { background: #5A4A2C; }
 
+[data-theme="dark"] .pub-venue-badge          { background: var(--crimson-3); }
+[data-theme="dark"] .pub-venue-badge.journal  { background: #467B5F; }
+[data-theme="dark"] .pub-venue-badge.domestic { background: #4D6985; }
+[data-theme="dark"] .pub-venue-badge.patent   { background: #806B45; }
+
 .pub-year-badge {
       font-family: 'JetBrains Mono', monospace; font-size: 11.5px;
       letter-spacing: 0.04em; color: var(--text-2);
