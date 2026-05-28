@@ -47,7 +47,6 @@
     <div class="container">
       <div class="section-head">
         <h3>Career</h3>
-        <span class="count" id="career-count">— entries</span>
       </div>
       <div class="career-list" id="career-list"></div>
     </div>
@@ -57,7 +56,6 @@
     <div class="container">
       <div class="section-head">
         <h3>Publications</h3>
-        <span class="count" id="pub-count">— papers</span>
       </div>
       <div class="pub-list" id="pub-list"></div>
     </div>
@@ -67,7 +65,6 @@
     <div class="container">
       <div class="section-head">
         <h3>Patents</h3>
-        <span class="count" id="patent-count">— patents</span>
       </div>
       <div class="pub-list" id="patent-list"></div>
     </div>
@@ -77,7 +74,6 @@
     <div class="container">
       <div class="section-head">
         <h3>Awards</h3>
-        <span class="count" id="award-count">— awards</span>
       </div>
       <div class="award-list" id="award-list"></div>
     </div>
@@ -154,7 +150,6 @@
 
       if (Array.isArray(m.career) && m.career.length) {
         document.getElementById('career-section').classList.remove('hidden');
-        document.getElementById('career-count').textContent = `${String(m.career.length).padStart(2,'0')} ${m.career.length === 1 ? 'entry' : 'entries'}`;
         document.getElementById('career-list').innerHTML = m.career.map(c => `
           <article class="career-row">
             <div>
@@ -167,7 +162,6 @@
 
       if (Array.isArray(m.publications) && m.publications.length) {
         document.getElementById('pub-section').classList.remove('hidden');
-        document.getElementById('pub-count').textContent = `${m.publications.length} ${m.publications.length === 1 ? 'paper' : 'papers'}`;
         document.getElementById('pub-list').innerHTML = m.publications.map(p => {
           const cls = p.domestic ? 'domestic' : (p.journal ? 'journal' : '');
           const isConf = !p.domestic && !p.journal;
@@ -196,7 +190,6 @@
 
       if (Array.isArray(m.patents) && m.patents.length) {
         document.getElementById('patent-section').classList.remove('hidden');
-        document.getElementById('patent-count').textContent = `${m.patents.length} ${m.patents.length === 1 ? 'patent' : 'patents'}`;
         document.getElementById('patent-list').innerHTML = m.patents.map(p => `
           <article class="pub-entry">
             <div class="pub-num">[${p.num}]</div>
@@ -213,7 +206,6 @@
 
       if (Array.isArray(m.awards) && m.awards.length) {
         document.getElementById('award-section').classList.remove('hidden');
-        document.getElementById('award-count').textContent = `${m.awards.length} ${m.awards.length === 1 ? 'award' : 'awards'}`;
         document.getElementById('award-list').innerHTML = m.awards.map(a => `
           <article class="award-row">
             <div>

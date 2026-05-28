@@ -132,7 +132,6 @@
           <div class="year-group${hidden?' empty':''}" data-year="${y}">
             <div class="year-head">
               <h2>${y}</h2>
-              <span class="count">${String(items.length).padStart(2,'0')} events</span>
             </div>
             <div class="event-grid">${items.map(renderCard).join('')}</div>
           </div>`;

@@ -46,7 +46,6 @@
       <div class="pub-group" id="group-conf">
         <div class="group-head">
           <h2>International Conference Papers</h2>
-          <span class="count" id="gc-conf">— papers</span>
         </div>
         <div class="pub-list" id="list-conf"></div>
       </div>
@@ -54,7 +53,6 @@
       <div class="pub-group" id="group-journal">
         <div class="group-head">
           <h2>International Journal Papers</h2>
-          <span class="count" id="gc-journal">— papers</span>
         </div>
         <div class="pub-list" id="list-journal"></div>
       </div>
@@ -62,7 +60,6 @@
       <div class="pub-group" id="group-domestic">
         <div class="group-head">
           <h2>Domestic Conference Papers</h2>
-          <span class="count" id="gc-domestic">— papers</span>
         </div>
         <div class="pub-list" id="list-domestic"></div>
       </div>
@@ -70,7 +67,6 @@
       <div class="pub-group" id="group-patent">
         <div class="group-head">
           <h2>Patents</h2>
-          <span class="count" id="gc-patent">— patents</span>
         </div>
         <div class="pub-list" id="list-patent"></div>
       </div>
@@ -93,10 +89,10 @@
       const emptyEl = document.getElementById('empty-state');
 
       const types = [
-        { key: 'conf', label: 'Conferences', listId: 'list-conf', groupId: 'group-conf', countId: 'gc-conf', unit: 'papers' },
-        { key: 'journal', label: 'Journals', listId: 'list-journal', groupId: 'group-journal', countId: 'gc-journal', unit: 'papers' },
-        { key: 'domestic', label: 'Domestic', listId: 'list-domestic', groupId: 'group-domestic', countId: 'gc-domestic', unit: 'papers' },
-        { key: 'patent', label: 'Patents', listId: 'list-patent', groupId: 'group-patent', countId: 'gc-patent', unit: 'patents' },
+        { key: 'conf', label: 'Conferences', listId: 'list-conf', groupId: 'group-conf', unit: 'papers' },
+        { key: 'journal', label: 'Journals', listId: 'list-journal', groupId: 'group-journal', unit: 'papers' },
+        { key: 'domestic', label: 'Domestic', listId: 'list-domestic', groupId: 'group-domestic', unit: 'papers' },
+        { key: 'patent', label: 'Patents', listId: 'list-patent', groupId: 'group-patent', unit: 'patents' },
       ];
 
       const matchesFilter = (p) => {
@@ -158,18 +154,15 @@
         types.forEach(t => {
           const list = document.getElementById(t.listId);
           const group = document.getElementById(t.groupId);
-          const countEl = document.getElementById(t.countId);
           const filtered = PUBS.filter(p => p.type === t.key && matchesFilter(p));
           if (filtered.length === 0) {
             group.classList.add('empty');
             list.innerHTML = '';
-            countEl.textContent = '0 ' + t.unit;
           } else {
             group.classList.remove('empty');
 
             const N = filtered.length;
             list.innerHTML = filtered.map((p, i) => renderEntry(p, N - i)).join('');
-            countEl.textContent = `${filtered.length} ${filtered.length === 1 ? t.unit.replace(/s$/,'') : t.unit}`;
             anyVisible = true;
           }
         });
