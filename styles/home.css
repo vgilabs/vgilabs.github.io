@@ -242,7 +242,7 @@ section { padding: 76px 0; }
 
 .sel-venue .tag-inline::before {
       content: "★"; font-size: 11.3px; line-height: 1; color: #5A3D00;
-      transform: translateY(-0.5px);
+      transform: translateY(-0.3px);
     }
 
 .sel-venue .tag-note {

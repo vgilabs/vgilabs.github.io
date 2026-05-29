@@ -240,7 +240,7 @@ section.list { padding: 56px 0; }
       box-shadow: 0 1px 4px rgba(245,200,66,0.50);
     }
 
-.pub-tag::before { content: "★"; color: #5A3D00; font-size: 11.3px; line-height: 1; transform: translateY(-0.5px); }
+.pub-tag::before { content: "★"; color: #5A3D00; font-size: 11.3px; line-height: 1; transform: translateY(-0.3px); }
 
 .pub-tag.award::before { content: "✦"; }
 
