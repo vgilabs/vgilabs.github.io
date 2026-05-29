@@ -209,7 +209,7 @@ section { padding: 56px 0; }
     }
 
 .pub-tag::before {
-      content: "★"; font-size: 11px; line-height: 1; color: #5A3D00;
+      content: "★"; font-size: 11.3px; line-height: 1; color: #5A3D00;
       transform: translateY(-0.5px);
     }
 
