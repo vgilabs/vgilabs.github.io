@@ -209,7 +209,8 @@ section { padding: 56px 0; }
     }
 
 .pub-tag::before {
-      content: "★"; font-size: 10px; line-height: 1; color: #5A3D00;
+      content: "★"; font-size: 11px; line-height: 1; color: #5A3D00;
+      transform: translateY(-0.5px);
     }
 
 .pub-tag.award { background: #F5C842; color: #2A1B00; box-shadow: 0 1px 4px rgba(245,200,66,0.50); }

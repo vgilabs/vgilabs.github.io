@@ -80,5 +80,16 @@
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
   document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
+  document.addEventListener('contextmenu', e => {
+    if (e.target.closest('img, .brand-logo, .footer-logo, .member-photo, .prof-photo, .profile-photo, .sel-image, .sel-blur, .sel-thumb, .slide, .lb-img, .lightbox, .hero-bg, .topic-tile')) {
+      e.preventDefault();
+    }
+  });
+  document.addEventListener('dragstart', e => {
+    if (e.target.tagName === 'IMG' || e.target.closest('.member-photo, .prof-photo, .profile-photo, .sel-image, .slide, .topic-tile')) {
+      e.preventDefault();
+    }
+  });
+
   document.dispatchEvent(new CustomEvent('site:ready'));
 })();

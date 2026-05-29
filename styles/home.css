@@ -231,14 +231,19 @@ section { padding: 76px 0; }
     }
 
 .sel-venue .tag-inline {
-      font-style: normal; font-weight: 700; font-size: 0.5em; letter-spacing: 0.04em;
+      font-family: 'Inter', sans-serif; font-style: normal; font-weight: 700;
+      font-size: 11px; letter-spacing: 0.10em; text-transform: uppercase;
       color: #2A1B00; background: #F5C842;
       padding: 4px 10px; border-radius: 4px; vertical-align: middle;
       margin-left: 14px;
       box-shadow: 0 1px 4px rgba(245,200,66,0.50);
+      display: inline-flex; align-items: center; gap: 5px;
     }
 
-.sel-venue .tag-inline::before { content: "★ "; color: #5A3D00; }
+.sel-venue .tag-inline::before {
+      content: "★"; font-size: 11px; line-height: 1; color: #5A3D00;
+      transform: translateY(-0.5px);
+    }
 
 .sel-venue .tag-note {
       font-style: italic; font-weight: 400; font-size: 0.46em; letter-spacing: 0.02em;

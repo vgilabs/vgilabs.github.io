@@ -155,3 +155,13 @@ footer { padding: 24px 0 20px; border-top: 1px solid var(--line); background: va
 @media (max-width: 640px) {
   .container { padding: 0 22px; }
 }
+
+img,
+.brand-logo, .footer-logo,
+.member-photo, .prof-photo, .profile-photo,
+.sel-image, .sel-blur, .sel-thumb,
+.slide, .lb-img, .hero-bg, .topic-tile {
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
