@@ -306,7 +306,7 @@ section.list { padding: 56px 0; }
 
 @media (max-width: 768px) {
   .profile-card { grid-template-columns: 1fr; gap: 24px; padding: 26px; }
-  .profile-photo { aspect-ratio: 3/4; max-width: 200px; }
+  .profile-photo { aspect-ratio: 3/4; max-width: 200px; margin: 0 auto; }
 }
 
 @media (max-width: 560px) {

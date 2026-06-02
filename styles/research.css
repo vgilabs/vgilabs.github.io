@@ -191,7 +191,7 @@ section.research { padding: 80px 0 96px; }
 
 @media (max-width: 880px) {
   .topic-card { grid-template-columns: 1fr; gap: 22px; padding: 22px; }
-  .topic-illust { aspect-ratio: 16/9; max-height: 240px; }
+  .topic-illust { aspect-ratio: 16/9; max-height: 240px; width: 100%; max-width: 427px; margin: 0 auto; }
 }
 
 @media (max-width: 560px) {

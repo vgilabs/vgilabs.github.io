@@ -305,14 +305,15 @@ section { padding: 44px 0; }
 
 @media (max-width: 880px) {
   .member-grid { grid-template-columns: repeat(3, 1fr); }
-  .prof-card { grid-template-columns: 280px 1fr; gap: 40px; padding: 32px; }
+  .prof-card { grid-template-columns: 240px 1fr; gap: 36px; padding: 30px; }
+  .prof-card .prof-photo { aspect-ratio: 4/5; min-height: 0; align-self: start; }
 }
 
 @media (max-width: 768px) {
   .prof-card { grid-template-columns: 1fr; gap: 28px; padding: 28px; }
-  .prof-photo { aspect-ratio: 4/3; max-width: 320px; }
+  .prof-card .prof-photo { width: 100%; max-width: 260px; aspect-ratio: 4/5; min-height: 0; margin: 0 auto; align-self: start; }
   .advisor-card { grid-template-columns: 1fr; gap: 24px; padding: 28px; }
-  .advisor-logo { max-width: 140px; }
+  .advisor-logo { max-width: 140px; margin: 0 auto; }
   .alumni-row { grid-template-columns: 1fr; gap: 4px; }
 }
 

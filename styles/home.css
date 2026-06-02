@@ -650,7 +650,10 @@ a.news-row.linkable:hover .arrow { transform: translateX(4px); color: var(--acce
   .topic-grid { grid-template-columns: repeat(3, 1fr); }
   .hero-meta-inner { grid-template-columns: repeat(2, 1fr); gap: 16px 0; padding: 16px 32px; }
   .meta-cell { border-right: none; padding-left: 0 !important; padding-right: 0; }
-  .recruit-card .text-grid { grid-template-columns: 1fr; gap: 24px; }
+  .recruit-card .text-grid { grid-template-columns: 1fr; gap: 28px; }
+  .recruit-card .text-grid::before { display: none; }
+  .recruit-card .text-grid p:not(:first-child) { padding-top: 28px; border-top: 1px solid var(--line); }
+  .recruit-card .body { padding: 36px 32px; }
   .sel-body { padding: 24px 32px 44px; }
   .sel-title, .sel-authors { max-width: 100%; }
   .sel-progress { left: 32px; right: 32px; }
