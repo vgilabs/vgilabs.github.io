@@ -176,7 +176,7 @@ window.VGI_MEMBERS = {
         title: 'AudioAvatar: Personalized Audio-driven Whole-body Talking Avatars',
         venue: 'CVPR', venueFull: 'Computer Vision and Pattern Recognition', location: 'Denver, U.S.A.', date: 'Jun. 2026' },
       { num: 10, authors: 'Seungeun Lee, Seung-Jun Moon, <me>H. M. Lew</me>, Ji-Su Kang, and G.-M. Park<sup>†</sup>',
-        title: 'Secondary Motion-Aware 3D Clothed Gaussian Avatars from Monocular Videos',
+        title: 'SMAGA: Secondary Motion-Aware 3D Clothed Gaussian Avatars from Monocular Videos',
         venue: 'ICLR', venueFull: 'International Conference on Learning Representations', location: 'Rio de Janeiro, Brazil', date: 'Apr. 2026' },
       { num: 9, authors: 'Seung-Jun Moon*, <me>H. M. Lew</me>*, Seungeun Lee, Ji-Su Kang, and G.-M. Park<sup>†</sup>',
         title: 'GeoAvatar: Adaptive Geometrical Gaussian Splatting for 3D Head Avatar',

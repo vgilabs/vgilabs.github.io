@@ -21,7 +21,7 @@ window.VGI_DATA = {
       venue: "CVPR", year: 2026, tag: null,
       paper: "https://arxiv.org/abs/2603.17583", code: "",
       image: "/images/publications/Edit-As-Act.png" },
-    { title: "Secondary Motion-Aware 3D Clothed Gaussian Avatars from Monocular Videos",
+    { title: "SMAGA: Secondary Motion-Aware 3D Clothed Gaussian Avatars from Monocular Videos",
       authors: "Seungeun Lee, SeungJun Moon, H. M. Lew, Ji-Su Kang, and G.-M. Park†",
       venue: "ICLR", year: 2026, tag: null,
       paper: "https://iclr.cc/virtual/2026/poster/10011771", code: "",

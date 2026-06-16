@@ -25,7 +25,7 @@ window.VGI_PUBS = [
     paper: 'https://arxiv.org/abs/2603.17583' },
   { type: 'conf', num: 37, year: 2026, selected: true,
     authors: 'Seungeun Lee, Seung-Jun Moon, H. M. Lew, Ji-Su Kang, and <me>G.-M. Park</me>†',
-    title: 'Secondary Motion-Aware 3D Clothed Gaussian Avatars from Monocular Videos',
+    title: 'SMAGA: Secondary Motion-Aware 3D Clothed Gaussian Avatars from Monocular Videos',
     venue: 'ICLR', venueFull: 'International Conference on Learning Representations',
     location: 'Rio de Janeiro, Brazil, Apr. 2026',
     paper: 'https://iclr.cc/virtual/2026/poster/10011771' },
