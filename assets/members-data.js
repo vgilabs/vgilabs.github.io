@@ -173,7 +173,7 @@ window.VGI_MEMBERS = {
     ],
     publications: [
       { num: 11, authors: 'Seungeun Lee, Seung-Jun Moon, <me>H. M. Lew</me>, Ji-Su Kang, and G.-M. Park<sup>†</sup>',
-        title: 'Personalized Audio-driven Whole-body Talking Avatars',
+        title: 'AudioAvatar: Personalized Audio-driven Whole-body Talking Avatars',
         venue: 'CVPR', venueFull: 'Computer Vision and Pattern Recognition', location: 'Denver, U.S.A.', date: 'Jun. 2026' },
       { num: 10, authors: 'Seungeun Lee, Seung-Jun Moon, <me>H. M. Lew</me>, Ji-Su Kang, and G.-M. Park<sup>†</sup>',
         title: 'Secondary Motion-Aware 3D Clothed Gaussian Avatars from Monocular Videos',
