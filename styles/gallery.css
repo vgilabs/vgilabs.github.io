@@ -152,7 +152,6 @@ section.gal { padding: 64px 0 96px; }
       position: absolute; top: 50%; transform: translateY(-50%);
       width: 36px; height: 36px; border-radius: 50%;
       background: rgba(20,18,12,0.55); color: white;
-      touch-action: manipulation;
       border: none; cursor: pointer;
       display: inline-flex; align-items: center; justify-content: center;
       opacity: 0; transition: opacity 0.2s ease, background 0.2s ease;
@@ -290,8 +289,6 @@ section.gal { padding: 64px 0 96px; }
   .lb-next { right: 12px; }
   .lb-close, .lb-prev, .lb-next { width: 40px; height: 40px; }
   .slide-btn { opacity: 1; background: rgba(20,18,12,0.45); }
-  .slide-btn.prev { left: 22px; }
-  .slide-btn.next { right: 22px; }
   .dot { width: 9px; height: 9px; }
   .dots { gap: 8px; bottom: 12px; }
 }
