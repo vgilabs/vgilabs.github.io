@@ -104,6 +104,7 @@ window.VGI_DATA = {
   ],
   // Add new news items at the top, newest date first.
   news: [
+    { date: "2026-06-18", html: "<b class='accent'>Four papers</b> were accepted to <b><i>ECCV 2026</i></b>." },
     { date: "2026-04-27", html: "One paper was accepted to <b><i>Computers & Education</i></b> (JCR: <b>0.6%</b>, IF: <b>10.8</b>)." },
     { date: "2026-04-07", html: "<b>One paper</b> was accepted to <b><i>ACL 2026</i></b>." },
     { date: "2026-03-13", html: "VGILAB receives a research grant funded by NRF under the Outstanding Young Researcher Grant (<b class='accent'>우수신진연구</b>) program." },

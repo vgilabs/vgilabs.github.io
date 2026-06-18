@@ -14,6 +14,9 @@ window.VGI_MEMBERS = {
       { school: 'Kyung Hee University', location: 'Yongin, Republic of Korea', degree: 'B.S. in Electronic Engineering' }
     ],
     publications: [
+      { num: 5, authors: 'J.-H. Lee, <me>J.-Y. Moon</me>, M.-Y. Park, Jung Uk Kim<sup>†</sup>, and G.-M. Park<sup>†</sup>',
+        title: 'Online Versatile Incremental Learning: Towards Class and Domain-Agnostic Adaptation at Any Time',
+        venue: 'ECCV', venueFull: 'European Conference on Computer Vision', location: 'Malmö, Sweden', date: 'Oct. 2026' },
       { num: 4, authors: 'M.-J. Kim*, <me>J.-Y. Moon</me>*, Mujeen Sung<sup>†</sup>, and G.-M. Park<sup>†</sup>',
         title: "Open Your Model's Eyes: Video and Context-Aware Multimodal Backchannel Prediction",
         venue: 'ACL', venueFull: 'Association for Computational Linguistics', location: 'San Diego, U.S.A.', date: 'Jul. 2026' },
@@ -50,6 +53,12 @@ window.VGI_MEMBERS = {
       { school: 'Kyung Hee University', location: 'Yongin, Republic of Korea', degree: 'B.S. in Computer Science and Engineering', advisor: 'Prof. Gyeong-Moon Park' }
     ],
     publications: [
+      { num: 7, authors: '<me>J.-H. Lee</me>, J.-Y. Moon, M.-Y. Park, Jung Uk Kim<sup>†</sup>, and G.-M. Park<sup>†</sup>',
+        title: 'Online Versatile Incremental Learning: Towards Class and Domain-Agnostic Adaptation at Any Time',
+        venue: 'ECCV', venueFull: 'European Conference on Computer Vision', location: 'Malmö, Sweden', date: 'Oct. 2026' },
+      { num: 6, authors: '<me>J.-H. Lee</me>, J.-E. Lee, and G.-M. Park<sup>†</sup>',
+        title: 'DARE to Mitigate Hallucination: Dual-path Auto-Regressive-aware Editing',
+        venue: 'ECCV', venueFull: 'European Conference on Computer Vision', location: 'Malmö, Sweden', date: 'Oct. 2026' },
       { num: 5, authors: 'M.-Y. Park*, <me>J.-H. Lee</me>*, and G.-M. Park<sup>†</sup>',
         title: 'Versatile Incremental Learning: Towards Class and Domain-Agnostic Incremental Learning',
         venue: 'ECCV', venueFull: 'European Conference on Computer Vision', location: 'Milan, Italy', date: 'Sep. 2024' },
@@ -93,6 +102,9 @@ window.VGI_MEMBERS = {
       { school: 'Kyung Hee University', location: 'Yongin, Republic of Korea', degree: 'B.S. in Mechanical Engineering; B.S. in Computer Science and Engineering' }
     ],
     publications: [
+      { num: 7, authors: 'Kang Eun Jeon, Yunsung Kang, Do Yeong Kang, <me>T.-Y. Lee</me>, G.-M. Park<sup>†</sup>, and Jong Hwan Ko<sup>†</sup>',
+        title: 'R-ESC: Robustly Erasing Space Concepts via Stochastic Feature Remapping',
+        venue: 'ECCV', venueFull: 'European Conference on Computer Vision', location: 'Malmö, Sweden', date: 'Oct. 2026' },
       { num: 6, authors: '<me>T.-Y. Lee</me>*, J. Seo*, Jong Hwan Ko<sup>†</sup>, and G.-M. Park<sup>†</sup>',
         title: 'Perturb a Model, Not an Image: Towards Robust Privacy Protection via Anti-Personalized Diffusion Models',
         venue: 'NeurIPS', venueFull: 'Neural Information Processing Systems', location: 'San Diego, U.S.A.', date: 'Dec. 2025' },
@@ -267,13 +279,16 @@ window.VGI_MEMBERS = {
       { school: 'Kyung Hee University', location: 'Yongin, Republic of Korea', degree: 'B.S. in Computer Science and Engineering' }
     ],
     publications: [
+      { num: 5, authors: '<me>H. Lim</me> and G.-M. Park<sup>†</sup>',
+        title: 'OSVE: One Step Video Editing with One Step Diffusion Models',
+        venue: 'ECCV', venueFull: 'European Conference on Computer Vision', location: 'Malmö, Sweden', date: 'Oct. 2026' },
       { num: 4, authors: '<me>H. Lim</me>*, Euijune Lee*, Si Eun Kwoun, Sung-Ho Bae, G.-M. Park, Yohan Hwang, and Sangmin-Michelle Lee<sup>†</sup>',
         title: 'Diffusion-Based AI System for Second Language Reading: Development, Text Quality Validation, and Learner Perception',
         venue: 'C&E', venueFull: 'Computers & Education, vol. 251, 105653', location: '', date: 'Oct. 2026', journal: true },
       { num: 3, authors: '<me>H. Lim</me>, Youngseob Won, J. Seo, and G.-M. Park<sup>†</sup>',
         title: 'ConceptSplit: Decoupled Multi-Concept Personalization of Diffusion Models via Token-wise Adaptation and Attention Disentanglement',
         venue: 'ICCV', venueFull: 'International Conference on Computer Vision', location: 'Hawaii, U.S.A.', date: 'Oct. 2025' },
-      { num: 2, authors: '<me>H. Lim</me> and G.-M. Park',
+      { num: 2, authors: '<me>H. Lim</me> and G.-M. Park<sup>†</sup>',
         title: 'Good-Text Inversion for Faster Real Image Editing using Guided Diffusion Models',
         venue: 'KSC', venueFull: 'Korea Software Congress', location: 'Yeosu, Republic of Korea', date: 'Dec. 2024', domestic: true },
       { num: 1, authors: '<me>H. Lim</me>, Y.-S. Won, SeonHyeok Kim, Yeonjin Seo, and G.-M. Park',
@@ -313,6 +328,11 @@ window.VGI_MEMBERS = {
     interests: '',
     education: [
       { school: 'Korea University', location: 'Seoul, Republic of Korea', degree: 'B.S. in Data Science' }
+    ],
+    publications: [
+      { num: 1, authors: 'J.-H. Lee, <me>J.-E. Lee</me>, and G.-M. Park<sup>†</sup>',
+        title: 'DARE to Mitigate Hallucination: Dual-path Auto-Regressive-aware Editing',
+        venue: 'ECCV', venueFull: 'European Conference on Computer Vision', location: 'Malmö, Sweden', date: 'Oct. 2026' }
     ]
   },
 
