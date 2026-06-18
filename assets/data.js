@@ -1,6 +1,21 @@
 window.VGI_DATA = {
   // Add new selected publications at the top. Image file goes in /images/publications/.
   publications: [
+    { title: "Online Versatile Incremental Learning: Towards Class and Domain-Agnostic Adaptation at Any Time",
+      authors: "J.-H. Lee, J.-Y. Moon, M.-Y. Park, Jung Uk Kim†, and G.-M. Park†",
+      venue: "ECCV", year: 2026, tag: null,
+      paper: "", code: "",
+      image: "/images/publications/Online_Versatile.png" },
+    { title: "DARE to Mitigate Hallucination: Dual-path Auto-Regressive-aware Editing",
+      authors: "J.-H. Lee, J.-E. Lee, and G.-M. Park†",
+      venue: "ECCV", year: 2026, tag: null,
+      paper: "", code: "",
+      image: "/images/publications/DARE.png" },
+    { title: "OSVE: One Step Video Editing with One Step Diffusion Models",
+      authors: "H. Lim and G.-M. Park†",
+      venue: "ECCV", year: 2026, tag: null,
+      paper: "", code: "",
+      image: "/images/publications/OSVE.png" },
     { title: "Open Your Model's Eyes: Video and Context-Aware Multimodal Backchannel Prediction",
       authors: "M.-J. Kim*, J.-Y. Moon*, Mujeen Sung†, and G.-M. Park†",
       venue: "ACL", year: 2026, tag: null,
@@ -85,22 +100,7 @@ window.VGI_DATA = {
       authors: "Chan Lee*, Seungho Shin*, G.-M. Park†, Jung Uk Kim†",
       venue: "AAAI", year: 2025, tag: null,
       paper: "https://arxiv.org/abs/2501.02640", code: "https://github.com/VisualAIKHU/SAMPD",
-      image: "/images/MPAW.png" },
-    { title: "Online Continuous Generalized Category Discovery",
-      authors: "K.-H. Park, Hakyung Lee, Kyungwoo Song†, and G.-M. Park†",
-      venue: "ECCV", year: 2024, tag: null,
-      paper: "https://arxiv.org/abs/2408.13492", code: "https://github.com/KHU-AGI/OCGCD",
-      image: "/images/OCGCD.png" },
-    { title: "Versatile Incremental Learning: Towards Class and Domain-Agnostic Incremental Learning",
-      authors: "M.-Y. Park*, J.-H. Lee*, and G.-M. Park†",
-      venue: "ECCV", year: 2024, tag: null,
-      paper: "https://arxiv.org/abs/2409.10956", code: "https://github.com/KHU-AGI/VIL",
-      image: "/images/ICON.png" },
-    { title: "Towards Model-Agnostic Dataset Condensation by Heterogeneous Models",
-      authors: "J.-Y. Moon, Jung Uk Kim†, and G.-M. Park†",
-      venue: "ECCV", year: 2024, tag: "Oral",
-      paper: "https://arxiv.org/abs/2409.14538", code: "https://github.com/KHU-AGI/HMDC",
-      image: "/images/HDMC.png" }
+      image: "/images/MPAW.png" }
   ],
   // Add new news items at the top, newest date first.
   news: [
