@@ -59,6 +59,11 @@
 
   nav?.querySelectorAll('.nav-item .submenu a').forEach(a => {
     a.addEventListener('click', () => {
+      if (window.matchMedia('(max-width: 900px)').matches) {
+        nav.classList.remove('open');
+        hamBtn?.setAttribute('aria-expanded', 'false');
+        return;
+      }
       const item = a.closest('.nav-item');
       if (!item) return;
       item.classList.add('menu-dismissed');

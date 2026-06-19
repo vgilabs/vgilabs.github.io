@@ -306,13 +306,24 @@ section.list { padding: 56px 0; }
 
 @media (max-width: 768px) {
   .profile-card { grid-template-columns: 1fr; gap: 24px; padding: 26px; }
-  .profile-photo { aspect-ratio: 3/4; max-width: 200px; margin: 0 auto; }
+  .profile-photo {
+    width: 100%; max-width: 220px;
+    aspect-ratio: 3/4; min-height: 0;
+    margin: 0 auto; align-self: start;
+  }
+  .profile-info { align-items: center; text-align: center; }
+  .profile-info .role-pill { margin-left: auto; margin-right: auto; }
+  .profile-meta { width: 100%; align-items: stretch; text-align: left; }
+  section.list { padding: 36px 0; }
+  .section-head { margin-bottom: 14px; padding-bottom: 12px; }
 }
 
 @media (max-width: 560px) {
   .hero { height: 36vh; min-height: 280px; }
-  .profile-meta .row { flex-direction: column; gap: 2px; }
+  .profile-meta .row { flex-direction: column; gap: 2px; align-items: flex-start; }
+  .profile-meta .row.links-row { align-items: flex-start; }
   .profile-meta .label { width: auto; }
-  .pub-entry { grid-template-columns: 1fr; gap: 6px; }
+  .pub-entry { grid-template-columns: 36px 1fr; gap: 12px; }
+  .pub-num { font-size: 12px; padding-top: 0; }
   .career-row, .award-row { grid-template-columns: 1fr; gap: 4px; }
 }
