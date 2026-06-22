@@ -16,6 +16,11 @@ window.VGI_DATA = {
       venue: "ECCV", year: 2026, tag: null,
       paper: "", code: "",
       image: "/images/publications/OSVE.png" },
+    { title: "R-ESC: Robustly Erasing Space Concepts via Stochastic Feature Remapping",
+      authors: "Kang Eun Jeon, Yunsung Kang, Do Yeong Kang, T.-Y. Lee, G.-M. Park†, and Jong Hwan Ko†",
+      venue: "ECCV", year: 2026, tag: null,
+      paper: "", code: "",
+      image: "/images/publications/Resc.jpeg" },
     { title: "Open Your Model's Eyes: Video and Context-Aware Multimodal Backchannel Prediction",
       authors: "M.-J. Kim*, J.-Y. Moon*, Mujeen Sung†, and G.-M. Park†",
       venue: "ACL", year: 2026, tag: null,
@@ -95,12 +100,7 @@ window.VGI_DATA = {
       authors: "Unki Park, Seongmoon Jeong, Youngchan Jang, G.-M. Park†, and Jong Hwan Ko†",
       venue: "CVPR", year: 2025, tag: null,
       paper: "https://cvpr.thecvf.com/virtual/2025/poster/32766", code: "",
-      image: "/images/Test-Time.png" },
-    { title: "Multispectral Pedestrian Detection with Sparsely Annotated Label",
-      authors: "Chan Lee*, Seungho Shin*, G.-M. Park†, Jung Uk Kim†",
-      venue: "AAAI", year: 2025, tag: null,
-      paper: "https://arxiv.org/abs/2501.02640", code: "https://github.com/VisualAIKHU/SAMPD",
-      image: "/images/MPAW.png" }
+      image: "/images/Test-Time.png" }
   ],
   // Add new news items at the top, newest date first.
   news: [
