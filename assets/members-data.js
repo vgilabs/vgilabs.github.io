@@ -1,43 +1,5 @@
 // Add a new member as a new key (e.g. `jymoon: { ... }`). Put their photo at /images/members/.
 window.VGI_MEMBERS = {
-  jymoon: {
-    id: 'jymoon', name_en: 'Jun-Yeong Moon', name_kr: '문준영',
-    role: 'M.S.-Ph.D. student',
-    dept: 'Department of Artificial Intelligence, Korea University',
-    photo: '/images/members/jymoon.jpg',
-    email: 'moonjunyyy@korea.ac.kr',
-    room: '#203B, Woo Jung Informatics Building',
-    interests: 'Continual learning, multi-modality, and autonomous AI.',
-    github: 'https://github.com/moonjunyyy',
-    education: [
-      { school: 'Korea University', location: 'Seoul, Republic of Korea', degree: 'M.S.-Ph.D. student in Artificial Intelligence', advisor: 'Prof. Gyeong-Moon Park' },
-      { school: 'Kyung Hee University', location: 'Yongin, Republic of Korea', degree: 'B.S. in Electronic Engineering' }
-    ],
-    publications: [
-      { num: 5, authors: 'J.-H. Lee, <me>J.-Y. Moon</me>, M.-Y. Park, Jung Uk Kim<sup>†</sup>, and G.-M. Park<sup>†</sup>',
-        title: 'Online Versatile Incremental Learning: Towards Class and Domain-Agnostic Adaptation at Any Time',
-        venue: 'ECCV', venueFull: 'European Conference on Computer Vision', location: 'Malmö, Sweden', date: 'Oct. 2026' },
-      { num: 4, authors: 'M.-J. Kim*, <me>J.-Y. Moon</me>*, Mujeen Sung<sup>†</sup>, and G.-M. Park<sup>†</sup>',
-        title: "Open Your Model's Eyes: Video and Context-Aware Multimodal Backchannel Prediction",
-        venue: 'ACL', venueFull: 'Association for Computational Linguistics', location: 'San Diego, U.S.A.', date: 'Jul. 2026' },
-      { num: 3, authors: '<me>J.-Y. Moon</me>, Jung Uk Kim<sup>†</sup>, and G.-M. Park<sup>†</sup>',
-        title: 'Towards Model-Agnostic Dataset Condensation by Heterogeneous Models',
-        venue: 'ECCV', venueFull: 'European Conference on Computer Vision', location: 'Milan, Italy', date: 'Sept. 2024',
-        tag: 'Oral', tagNote: 'acceptance rate = 2.33%' },
-      { num: 2, authors: '<me>J.-Y. Moon</me>, K.-H. Park, Jung Uk Kim<sup>†</sup>, and G.-M. Park<sup>†</sup>',
-        title: 'Online Class Incremental Learning on Stochastic Blurry Task Boundary via Mask and Visual Prompt Tuning',
-        venue: 'ICCV', venueFull: 'International Conference on Computer Vision', location: 'Paris, France', date: 'Oct. 2023' },
-      { num: 1, authors: 'M.-J. Kim, <me>J.-Y. Moon</me>, and G.-M. Park',
-        title: 'Backchannel Prediction Model using Prototype Prompting',
-        venue: 'KSC', venueFull: 'Korea Software Congress', location: 'Busan, Republic of Korea', date: 'Dec. 2023', domestic: true }
-    ],
-    patents: [
-      { num: 1, authors: 'G.-M. Park, <me>J.-Y. Moon</me>, and K.-H. Park',
-        title: '인공지능 기반 분류 모델의 온라인 점진 학습 방법 및 이를 수행하기 위한 컴퓨팅 장치 (Online Incremental Learning Method of Artificial Intelligence-based Classification Model and Computing Device for Performing the Same)',
-        venue: 'Korean Patent Application (10-2023-0145630)', date: 'Oct. 27, 2023' }
-    ]
-  },
-
   jhlee: {
     id: 'jhlee', name_en: 'Jae-Ho Lee', name_kr: '이재호',
     role: 'Ph.D. student',
@@ -366,6 +328,20 @@ window.VGI_MEMBERS = {
     education: [
       { school: 'Korea University', location: 'Seoul, Republic of Korea', degree: 'M.S.-Ph.D. student in Artificial Intelligence', advisor: 'Prof. Gyeong-Moon Park' },
       { school: 'Korea University', location: 'Seoul, Republic of Korea', degree: 'B.S. in Civil, Environmental and Architectural Engineering' }
+    ]
+  },
+
+  jsjang: {
+    id: 'jsjang', name_en: 'Ji-Su Jang', name_kr: '장지수',
+    role: 'M.S.-Ph.D. student',
+    dept: 'Department of Artificial Intelligence, Korea University',
+    photo: '/images/members/jsjang.jpg',
+    email: 'j2500jan@gmail.com',
+    room: '#203B, Woo Jung Informatics Building',
+    interests: '',
+    education: [
+      { school: 'Korea University', location: 'Seoul, Republic of Korea', degree: 'M.S.-Ph.D. student in Artificial Intelligence', advisor: 'Prof. Gyeong-Moon Park' },
+      { school: 'Sookmyung Women\'s University', location: 'Seoul, Republic of Korea', degree: 'B.S. in IT Engineering' }
     ]
   },
 
