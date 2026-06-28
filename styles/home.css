@@ -6,7 +6,7 @@
 
 .hero-bg {
       position: absolute; inset: 0; z-index: -2;
-      background-image: url('/images/Korea_University_Main_Hall.jpg');
+      background-image: url('/images/logo/Korea_University_Main_Hall.jpg');
       background-size: cover; background-position: center 38%;
       will-change: transform;
       animation: heroKenBurns 28s ease-in-out infinite alternate;
