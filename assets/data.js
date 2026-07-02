@@ -2,7 +2,7 @@ window.VGI_DATA = {
   // Add new selected publications at the top. Image file goes in /images/publications/.
   publications: [
     { title: "Online Versatile Incremental Learning: Towards Class and Domain-Agnostic Adaptation at Any Time",
-      authors: "J.-H. Lee, J.-Y. Moon, M.-Y. Park, Jung Uk Kim†, and G.-M. Park†",
+      authors: "J.-H. Lee, M.-Y. Park, J.-Y. Moon, Jung Uk Kim†, and G.-M. Park†",
       venue: "ECCV", year: 2026, tag: null,
       paper: "", code: "",
       image: "/images/publications/2026/Online_Versatile.png" },
@@ -10,7 +10,7 @@ window.VGI_DATA = {
       authors: "J.-H. Lee, J.-E. Lee, and G.-M. Park†",
       venue: "ECCV", year: 2026, tag: null,
       paper: "", code: "",
-      image: "/images/publications/2026/DARE.png" },
+      image: "/images/publications/2026/DARE.jpg" },
     { title: "OSVE: One Step Video Editing with One Step Diffusion Models",
       authors: "H. Lim and G.-M. Park†",
       venue: "ECCV", year: 2026, tag: null,

@@ -1,7 +1,7 @@
 // Add new papers at the top of the list (matching their type: conf / journal / domestic / patent).
 window.VGI_PUBS = [
   { type: 'conf', num: 45, year: 2026, selected: true,
-    authors: 'J.-H. Lee, J.-Y. Moon, M.-Y. Park, Jung Uk Kim†, and <me>G.-M. Park</me>†',
+    authors: 'J.-H. Lee, M.-Y. Park, J.-Y. Moon, Jung Uk Kim†, and <me>G.-M. Park</me>†',
     title: 'Online Versatile Incremental Learning: Towards Class and Domain-Agnostic Adaptation at Any Time',
     venue: 'ECCV', venueFull: 'European Conference on Computer Vision',
     location: 'Malmö, Sweden, Oct. 2026' },

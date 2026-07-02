@@ -15,7 +15,7 @@ window.VGI_MEMBERS = {
       { school: 'Kyung Hee University', location: 'Yongin, Republic of Korea', degree: 'B.S. in Computer Science and Engineering', advisor: 'Prof. Gyeong-Moon Park' }
     ],
     publications: [
-      { num: 7, authors: '<me>J.-H. Lee</me>, J.-Y. Moon, M.-Y. Park, Jung Uk Kim<sup>†</sup>, and G.-M. Park<sup>†</sup>',
+      { num: 7, authors: '<me>J.-H. Lee</me>, M.-Y. Park, J.-Y. Moon, Jung Uk Kim<sup>†</sup>, and G.-M. Park<sup>†</sup>',
         title: 'Online Versatile Incremental Learning: Towards Class and Domain-Agnostic Adaptation at Any Time',
         venue: 'ECCV', venueFull: 'European Conference on Computer Vision', location: 'Malmö, Sweden', date: 'Oct. 2026' },
       { num: 6, authors: '<me>J.-H. Lee</me>, J.-E. Lee, and G.-M. Park<sup>†</sup>',
