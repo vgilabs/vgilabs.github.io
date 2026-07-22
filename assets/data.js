@@ -104,8 +104,8 @@ window.VGI_DATA = {
   ],
   // Add new news items at the top, newest date first.
   news: [
-    { date: "2026-07-22", html: "Prof. Gyeong-Moon Park will give a talk titled “Perturb a Model, Not an Image: Towards Robust Privacy Protection via Anti-Personalized Diffusion Models” at <a href='https://kcvs.kr/?act=info.workshop&pcode=schedule_2026&pseq=9' target='_blank' rel='noopener noreferrer' style='color: inherit; text-decoration: underline;'><b><i>KCCV 2026</i></b></a>." },
-    { date: "2026-07-22", html: "Prof. Gyeong-Moon Park will give a talk titled “Towards Privacy-Preserving Generative Intelligence” at <a href='https://aisociety.kr/ai-korea-2026/program' target='_blank' rel='noopener noreferrer' style='color: inherit; text-decoration: underline;'><b><i>THE AI KOREA 2026</i></b></a>." },
+    { date: "2026-07-22", html: "Prof. Gyeong-Moon Park will give a talk titled “Perturb a Model, Not an Image: Towards Robust Privacy Protection via Anti-Personalized Diffusion Models” at <a href='https://kcvs.kr/?act=info.workshop&pcode=schedule_2026&pseq=9' target='_blank' rel='noopener noreferrer' class='news-link'><b><i>KCCV 2026</i></b></a>." },
+    { date: "2026-07-22", html: "Prof. Gyeong-Moon Park will give a talk titled “Towards Privacy-Preserving Generative Intelligence” at <a href='https://aisociety.kr/ai-korea-2026/program' target='_blank' rel='noopener noreferrer' class='news-link'><b><i>THE AI KOREA 2026</i></b></a>." },
     { date: "2026-06-18", html: "<b class='accent'>Four papers</b> were accepted to <b><i>ECCV 2026</i></b>." },
     { date: "2026-04-27", html: "One paper was accepted to <b><i>Computers & Education</i></b> (JCR: <b>0.6%</b>, IF: <b>10.8</b>)." },
     { date: "2026-04-07", html: "<b>One paper</b> was accepted to <b><i>ACL 2026</i></b>." },
