@@ -40,6 +40,9 @@ window.VGI_MEMBERS = {
         tag: 'Award', award: '/images/award/award_220203_jhlee.pdf' }
     ],
     patents: [
+      { num: 2, authors: 'G.-M. Park, <me>J.-H. Lee</me>, and J.-E. Lee',
+        title: '대규모 시각-언어 모델의 환각을 완화하기 위한 방법 및 장치 (Method and Apparatus for Mitigating Hallucination in Large Vision-Language Model)',
+        venue: 'Korean Patent Application (10-2026-0136528)', date: '' },
       { num: 1, authors: '<me>J.-H. Lee</me>, M.-Y. Park, and G.-M. Park',
         title: '클러스터 기반 어댑터 변화 제어와 증분 분류기를 통한 다목적 증분 학습 장치 및 방법 (Versatile Incremental Learning Apparatus and Method using Cluster-based Adapter Shift Control and Incremental Classifier)',
         venue: 'Korean Patent Application (10-2024-0026300)', date: '' }
@@ -295,6 +298,11 @@ window.VGI_MEMBERS = {
       { num: 1, authors: 'J.-H. Lee, <me>J.-E. Lee</me>, and G.-M. Park<sup>†</sup>',
         title: 'DARE to Mitigate Hallucination: Dual-path Auto-Regressive-aware Editing',
         venue: 'ECCV', venueFull: 'European Conference on Computer Vision', location: 'Malmö, Sweden', date: 'Sep. 2026' }
+    ],
+    patents: [
+      { num: 1, authors: 'G.-M. Park, J.-H. Lee, and <me>J.-E. Lee</me>',
+        title: '대규모 시각-언어 모델의 환각을 완화하기 위한 방법 및 장치 (Method and Apparatus for Mitigating Hallucination in Large Vision-Language Model)',
+        venue: 'Korean Patent Application (10-2026-0136528)', date: '' }
     ]
   },
 

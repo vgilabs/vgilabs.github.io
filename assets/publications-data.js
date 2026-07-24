@@ -481,6 +481,11 @@ window.VGI_PUBS = [
     venue: 'KCC', venueFull: 'Korea Computer Congress',
     location: 'Jeju, Korea, Jun. 2021', tag: 'Award' },
 
+  { type: 'patent', num: 24, year: 2026,
+    authors: '<me>G.-M. Park</me>, J.-H. Lee, and J.-E. Lee',
+    title: '대규모 시각-언어 모델의 환각을 완화하기 위한 방법 및 장치 (Method and Apparatus for Mitigating Hallucination in Large Vision-Language Model)',
+    venue: 'KR', venueFull: 'Korean Patent Application',
+    location: '10-2026-0136528' },
   { type: 'patent', num: 23, year: 2026,
     authors: '<me>G.-M. Park</me>, Jong Hwan Ko, and T.-Y. Lee',
     title: '인공지능 모델의 개인화 방지를 위한 방법 및 장치 (Method and Apparatus for Preventing Personalization of Artificial Intelligence Model)',
