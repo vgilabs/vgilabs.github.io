@@ -24,7 +24,7 @@ window.VGI_DATA = {
     { title: "Open Your Model's Eyes: Video and Context-Aware Multimodal Backchannel Prediction",
       authors: "M.-J. Kim*, J.-Y. Moon*, Mujeen Sung†, and G.-M. Park†",
       venue: "ACL", year: 2026, tag: null,
-      paper: "", code: "",
+      paper: "https://arxiv.org/abs/2607.22729", code: "",
       image: "/images/publications/2026/Open.png" },
     { title: "Detecting Unknown Objects via Energy-based Separation for Open World Object Detection",
       authors: "J.-W. Heo*, K.-H. Park*, and G.-M. Park†",
