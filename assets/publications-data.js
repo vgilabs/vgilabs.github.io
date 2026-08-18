@@ -286,6 +286,11 @@ window.VGI_PUBS = [
     venue: 'RiTA', venueFull: 'International Conference on Robot Intelligence Technology and Applications',
     location: 'Beijing, China, Nov. 2014' },
 
+  { type: 'journal', num: 15, year: 2026,
+    authors: 'Unki Park, Seongmoon Jeong, Sangmin Kim, Jeungsub Lee, <me>G.-M. Park</me>†, and Jong Hwan Ko†',
+    title: 'ISER: Instance-Specific Early Stopping with Dynamic Low-Rank Adaptation for Learned Image Compression',
+    venue: 'Electronics', venueFull: 'Electronics',
+    location: 'Aug. 2026' },
   { type: 'journal', num: 14, year: 2026, selected: true,
     authors: 'H. Lim*, Euijune Lee*, Si Eun Kwoun, Sung-Ho Bae, <me>G.-M. Park</me>, Yohan Hwang, and Sangmin-Michelle Lee†',
     paper: 'https://www.sciencedirect.com/science/article/pii/S0360131526000928',
