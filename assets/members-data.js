@@ -344,7 +344,7 @@ window.VGI_MEMBERS = {
     role: 'M.S.-Ph.D. student',
     dept: 'Department of Artificial Intelligence, Korea University',
     photo: '/images/members/jsjang.jpg',
-    email: 'j2500jan@gmail.com',
+    email: 'js-jang@korea.ac.kr',
     room: '#203B, Woo Jung Informatics Building',
     interests: '',
     education: [
