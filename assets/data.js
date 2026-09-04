@@ -14,7 +14,7 @@ window.VGI_DATA = {
     { title: "OSVE: One Step Video Editing with One Step Diffusion Models",
       authors: "H. Lim and G.-M. Park†",
       venue: "ECCV", year: 2026, tag: null,
-      paper: "", code: "",
+      paper: "https://arxiv.org/abs/2607.19895", code: "",
       image: "/images/publications/2026/OSVE.png" },
     { title: "R-ESC: Robustly Erasing Space Concepts via Stochastic Feature Remapping",
       authors: "Kang Eun Jeon, Yunsung Kang, Do Yeong Kang, T.-Y. Lee, G.-M. Park†, and Jong Hwan Ko†",
