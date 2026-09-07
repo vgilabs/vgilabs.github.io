@@ -42,7 +42,7 @@ window.VGI_MEMBERS = {
     patents: [
       { num: 2, authors: 'G.-M. Park, <me>J.-H. Lee</me>, and J.-E. Lee',
         title: '대규모 시각-언어 모델의 환각을 완화하기 위한 방법 및 장치 (Method and Apparatus for Mitigating Hallucination in Large Vision-Language Model)',
-        venue: 'Korean Patent Application (10-2026-0136528)', date: '' },
+        venue: 'Korean Patent Application (10-2026-0136528)', date: 'Jul. 24, 2026' },
       { num: 1, authors: '<me>J.-H. Lee</me>, M.-Y. Park, and G.-M. Park',
         title: '클러스터 기반 어댑터 변화 제어와 증분 분류기를 통한 다목적 증분 학습 장치 및 방법 (Versatile Incremental Learning Apparatus and Method using Cluster-based Adapter Shift Control and Incremental Classifier)',
         venue: 'Korean Patent Application (10-2024-0026300)', date: '' }
@@ -260,6 +260,11 @@ window.VGI_MEMBERS = {
         title: 'LFS-DIFFUSION: Lifelong Few-shot Image Generation In Latent Diffusion Model Via LeFT Weight Modulator',
         venue: 'KCC', venueFull: 'Korea Computer Congress', location: 'Jeju Island, Republic of Korea', date: 'Jun. 2024', domestic: true, tag: 'Award' }
     ],
+    patents: [
+      { num: 1, authors: 'G.-M. Park and <me>H. Lim</me>',
+        title: '원스텝 확산 모델을 이용한 동영상 편집 방법 및 장치 (Method and Apparatus for Video Editing Using One-Step Diffusion Models)',
+        venue: 'Korean Patent Application (10-2026-0168193)', date: 'Sep. 4, 2026' }
+    ],
     awards: [
       { num: 1, title: 'Best Paper Award', venue: 'Korea Computer Congress (KCC)', location: 'Jeju Island, Republic of Korea', date: 'Jun. 2024' }
     ]
@@ -302,7 +307,7 @@ window.VGI_MEMBERS = {
     patents: [
       { num: 1, authors: 'G.-M. Park, J.-H. Lee, and <me>J.-E. Lee</me>',
         title: '대규모 시각-언어 모델의 환각을 완화하기 위한 방법 및 장치 (Method and Apparatus for Mitigating Hallucination in Large Vision-Language Model)',
-        venue: 'Korean Patent Application (10-2026-0136528)', date: '' }
+        venue: 'Korean Patent Application (10-2026-0136528)', date: 'Jul. 24, 2026' }
     ]
   },
 
