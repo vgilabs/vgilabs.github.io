@@ -1,6 +1,11 @@
 window.VGI_DATA = {
   // Add new selected publications at the top. Image file goes in /images/publications/.
   publications: [
+    { title: "Training-Free Open World Object Detection",
+      authors: "J.-W. Heo, C.-S. Woo, and G.-M. Park†",
+      venue: "NeurIPS", year: 2026, tag: null,
+      paper: "", code: "",
+      image: "/images/publications/2026/main_fig.png" },
     { title: "Online Versatile Incremental Learning: Towards Class and Domain-Agnostic Adaptation at Any Time",
       authors: "J.-H. Lee, M.-Y. Park, J.-Y. Moon, Jung Uk Kim†, and G.-M. Park†",
       venue: "ECCV", year: 2026, tag: null,
@@ -104,6 +109,7 @@ window.VGI_DATA = {
   ],
   // Add new news items at the top, newest date first.
   news: [
+    { date: "2026-09-26", html: "<b>One paper</b> was accepted to <b><i>NeurIPS 2026</i></b>." },
     { date: "2026-08-03", html: "VGILAB receives a research grant funded by IITP under the AI Star Fellowship (<b class='accent'>AI최고급신진연구자지원</b>) program." },
     { date: "2026-08-03", html: "Prof. Gyeong-Moon Park will serve as an Academic Committee Member of <a href='https://www.kosaim.org/html/?pmode=inputList&smode=view&part=&intAcSeq=109' target='_blank' rel='noopener noreferrer' class='news-link'><b><i>KoSAIM 2026</i></b></a>." },
     { date: "2026-08-03", html: "Prof. Gyeong-Moon Park will serve as a Registration Chair for <a href='https://kcvs.kr/?act=info.workshop&pseq=9' target='_blank' rel='noopener noreferrer' class='news-link'><b><i>KCCV 2026</i></b></a>." },

@@ -283,6 +283,11 @@ window.VGI_MEMBERS = {
       { school: 'Korea University', location: 'Seoul, Republic of Korea', degree: 'M.S. student in Artificial Intelligence', advisor: 'Prof. Gyeong-Moon Park' },
       { school: 'Sungkyunkwan University', location: 'Suwon, Republic of Korea', degree: 'B.S. in Electronic and Electric Engineering' }
     ],
+    publications: [
+      { num: 1, authors: 'J.-W. Heo, <me>C.-S. Woo</me>, and G.-M. Park<sup>†</sup>',
+        title: 'Training-Free Open World Object Detection',
+        venue: 'NeurIPS', venueFull: 'Neural Information Processing Systems', location: 'Sydney, Australia', date: 'Dec. 2026' }
+    ],
     career: [
       { org: 'LG Display', location: 'Paju, Republic of Korea', role: 'Inspection Process Senior Engineer in OLED Manufacture', years: '2016 — Present' }
     ]
@@ -324,6 +329,9 @@ window.VGI_MEMBERS = {
       { school: 'Korea University', location: 'Seoul, Republic of Korea', degree: 'B.S. in Computer Science' }
     ],
     publications: [
+      { num: 2, authors: '<me>J.-W. Heo</me>, C.-S. Woo, and G.-M. Park<sup>†</sup>',
+        title: 'Training-Free Open World Object Detection',
+        venue: 'NeurIPS', venueFull: 'Neural Information Processing Systems', location: 'Sydney, Australia', date: 'Dec. 2026' },
       { num: 1, authors: '<me>J.-W. Heo</me>*, K.-H. Park*, and G.-M. Park',
         title: 'Detecting Unknown Objects via Energy-based Separation for Open World Object Detection',
         venue: 'CVPR', venueFull: 'Computer Vision and Pattern Recognition', location: 'Denver, U.S.A.', date: 'Jun. 2026' }
