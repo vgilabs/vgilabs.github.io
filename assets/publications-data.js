@@ -1,5 +1,10 @@
 // Add new papers at the top of the list (matching their type: conf / journal / domestic / patent).
 window.VGI_PUBS = [
+  { type: 'conf', num: 47, year: 2026,
+    authors: 'Subeeun Park, Sungjun Lim, Heejin Jung, Somin Kim, <me>G.-M. Park</me>†, and Kyungwoo Song†',
+    title: 'When to Stop and Which to Return: Trajectory-Level Minimum Bayes Risk Decoding for Diffusion Language Models',
+    venue: 'NeurIPS-W', venueFull: 'NeurIPS Workshop on Beyond Next Token Prediction: Diffusion and Flow Models for Next-Generation Decoding (BeNTo)',
+    location: 'Sydney, Australia, Dec. 2026' },
   { type: 'conf', num: 46, year: 2026, selected: true,
     authors: 'J.-W. Heo, C.-S. Woo, and <me>G.-M. Park</me>†',
     title: 'Training-Free Open World Object Detection',
