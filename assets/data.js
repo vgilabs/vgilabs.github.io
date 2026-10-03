@@ -110,6 +110,7 @@ window.VGI_DATA = {
   // Add new news items at the top, newest date first.
   news: [
     { date: "2026-09-26", html: "<b>One paper</b> was accepted to <b><i>NeurIPS 2026</i></b>." },
+    { date: "2026-09-01", html: "New Integrated M.S.-Ph.D. member \"Ji-su Jang\" join our lab. Welcome!" },
     { date: "2026-08-03", html: "VGILAB receives a research grant funded by IITP under the AI Star Fellowship (<b class='accent'>AI최고급신진연구자지원</b>) program." },
     { date: "2026-08-03", html: "Prof. Gyeong-Moon Park will serve as an Academic Committee Member of <a href='https://www.kosaim.org/html/?pmode=inputList&smode=view&part=&intAcSeq=109' target='_blank' rel='noopener noreferrer' class='news-link'><b><i>KoSAIM 2026</i></b></a>." },
     { date: "2026-08-03", html: "Prof. Gyeong-Moon Park will serve as a Registration Chair for <a href='https://kcvs.kr/?act=info.workshop&pseq=9' target='_blank' rel='noopener noreferrer' class='news-link'><b><i>KCCV 2026</i></b></a>." },
