@@ -109,6 +109,7 @@ window.VGI_DATA = {
   ],
   // Add new news items at the top, newest date first.
   news: [
+    { date: "2026-10-15", html: "<b>One paper</b> was accepted to <b><i>WACV 2027</i></b>." },
     { date: "2026-09-26", html: "<b>One paper</b> was accepted to <b><i>NeurIPS 2026</i></b>." },
     { date: "2026-09-01", html: "New Integrated M.S.-Ph.D. member \"Ji-Su Jang\" join our lab. Welcome!" },
     { date: "2026-08-03", html: "VGILAB receives a research grant funded by IITP under the AI Star Fellowship (<b class='accent'>AI최고급신진연구자지원</b>) program." },
