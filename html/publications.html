@@ -27,6 +27,7 @@
         <button class="tab active" data-filter="selected">Selected</button>
         <button class="tab" data-filter="all">All</button>
         <div class="tab-divider"></div>
+        <button class="tab" data-filter="2027">2027</button>
         <button class="tab" data-filter="2026">2026</button>
         <button class="tab" data-filter="2025">2025</button>
         <button class="tab" data-filter="2024">2024</button>
@@ -97,7 +98,7 @@
 
       const matchesFilter = (p) => {
         if (state.filter === 'selected' && !p.selected) return false;
-        if (['2026','2025','2024','2023'].includes(state.filter) && p.year !== Number(state.filter)) return false;
+        if (['2027','2026','2025','2024','2023'].includes(state.filter) && p.year !== Number(state.filter)) return false;
         if (state.filter === '2022-2014' && (p.year > 2022 || p.year < 2014)) return false;
         if (state.q) {
           const hay = (p.title + ' ' + p.authors + ' ' + p.venue + ' ' + (p.venueFull||'') + ' ' + (p.tag||'') + ' ' + (p.location||'') + ' ' + p.year).toLowerCase();

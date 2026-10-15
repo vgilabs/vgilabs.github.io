@@ -1,5 +1,10 @@
 // Add new papers at the top of the list (matching their type: conf / journal / domestic / patent).
 window.VGI_PUBS = [
+  { type: 'conf', num: 48, year: 2027, selected: true,
+    authors: 'Joowang Kim, Jeyoon Yeom, Gyeongdeok Seo, Sungjun Lim, Jae Ha Gwak, <me>G.-M. Park</me>†, and Kyungwoo Song†',
+    title: 'DDRL: A Diffusion-Driven Reinforcement Learning Approach for Enhanced TSP Solutions',
+    venue: 'WACV', venueFull: 'Winter Conference on Applications of Computer Vision',
+    location: 'Orlando, U.S.A., Jan. 2027' },
   { type: 'conf', num: 47, year: 2026,
     authors: 'Subeeun Park, Sungjun Lim, Heejin Jung, Somin Kim, <me>G.-M. Park</me>†, and Kyungwoo Song†',
     title: 'When to Stop and Which to Return: Trajectory-Level Minimum Bayes Risk Decoding for Diffusion Language Models',
