@@ -24,7 +24,7 @@ window.VGI_DATA = {
     { title: "R-ESC: Robustly Erasing Space Concepts via Stochastic Feature Remapping",
       authors: "Kang Eun Jeon, Yunsung Kang, Do Yeong Kang, T.-Y. Lee, G.-M. Park†, and Jong Hwan Ko†",
       venue: "ECCV", year: 2026, tag: null,
-      paper: "", code: "",
+      paper: "https://eccv.ecva.net/virtual/2026/poster/4410", code: "",
       image: "/images/publications/2026/Resc.jpeg" },
     { title: "Open Your Model's Eyes: Video and Context-Aware Multimodal Backchannel Prediction",
       authors: "M.-J. Kim*, J.-Y. Moon*, Mujeen Sung†, and G.-M. Park†",
