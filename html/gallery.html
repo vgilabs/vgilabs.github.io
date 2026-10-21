@@ -43,6 +43,7 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m15 18-6-6 6-6"/></svg>
     </button>
     <img class="lb-img" id="lb-img" alt="">
+    <video class="lb-video" id="lb-video" controls playsinline controlsList="nodownload noremoteplayback" disablePictureInPicture oncontextmenu="return false"></video>
     <button class="lb-next" id="lb-next" aria-label="Next photo">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6 6 6-6 6"/></svg>
     </button>
@@ -63,7 +64,9 @@
       { id: 'group-lunch-sep-2026', name: 'Group Photo & Lab Lunch', year: 2026, location: 'KU VGI Lab', kind: 'Lab',
         photos: ['/images/gallery/2026/group_photo_sep1.jpg', '/images/gallery/2026/group_photo_sep2.jpg',
                  '/images/gallery/2026/group_photo_sep3.jpg', '/images/gallery/2026/group_photo_sep4.jpg',
-                 '/images/gallery/2026/group_photo_sep5.jpg', '/images/gallery/2026/lab_lunch_sep.jpeg'] },
+                 '/images/gallery/2026/group_photo_sep5.jpg', '/images/gallery/2026/lab_lunch_sep.jpeg',
+                 '/images/gallery/2026/group_photo_video_sep1_compressed.mp4',
+                 '/images/gallery/2026/group_photo_video_sep2_compressed.mp4'] },
 
       { id: 'eccv-2026',      name: 'ECCV 2026',       year: 2026, location: 'Malmö',  kind: 'Conference',
         photos: ['/images/gallery/2026/ECCV1.JPG', '/images/gallery/2026/ECCV2.jpeg',
@@ -132,10 +135,17 @@
 
     const yearsRoot = document.getElementById('years');
 
+    const isVideo = src => /\.mp4$/i.test(src);
+
     function renderCard(ev) {
       const multi = ev.photos.length > 1;
       const kindClass = ev.kind === 'Lab' ? 'lab' : 'conf';
-      const slides = ev.photos.map((src, i) => `
+      const slides = ev.photos.map((src, i) => isVideo(src) ? `
+        <div class="slide${i===0?' active':''}" data-i="${i}" role="button" aria-label="Open ${ev.name} video ${i+1}">
+          <video src="${src}" muted loop playsinline preload="metadata" controlsList="nodownload noremoteplayback" disablePictureInPicture oncontextmenu="return false"></video>
+          <span class="play-badge"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+      ` : `
         <div class="slide${i===0?' active':''}" data-i="${i}" style="background-image:url('${src}');" role="button" aria-label="Open ${ev.name} photo ${i+1}"></div>
       `).join('');
       const dots = multi ? ev.photos.map((_, i) =>
@@ -193,10 +203,16 @@
         const setIdx = (i) => {
           const idx = ((i % count) + count) % count;
           slider.dataset.current = idx;
-          slides.forEach((s, k) => s.classList.toggle('active', k === idx));
+          slides.forEach((s, k) => {
+            s.classList.toggle('active', k === idx);
+            const v = s.querySelector('video');
+            if (!v) return;
+            if (k === idx) v.play().catch(() => {}); else v.pause();
+          });
           dots.forEach((d, k) => d.classList.toggle('active', k === idx));
           if (countEl) countEl.textContent = `${idx + 1} / ${count}`;
         };
+        slides[0]?.querySelector('video')?.play().catch(() => {});
         slider.querySelector('.slide-btn.prev')?.addEventListener('click', (e) => { e.stopPropagation(); setIdx(parseInt(slider.dataset.current,10) - 1); });
         slider.querySelector('.slide-btn.next')?.addEventListener('click', (e) => { e.stopPropagation(); setIdx(parseInt(slider.dataset.current,10) + 1); });
         dots.forEach(d => d.addEventListener('click', (e) => { e.stopPropagation(); setIdx(parseInt(d.dataset.i,10)); }));
@@ -209,30 +225,45 @@
 
     const lb = document.getElementById('lightbox');
     const lbImg = document.getElementById('lb-img');
+    const lbVideo = document.getElementById('lb-video');
     const lbCap = document.getElementById('lb-caption');
     let lbState = { event: null, i: 0 };
 
+    function showLbItem(ev, i) {
+      const src = ev.photos[i];
+      lbVideo.pause();
+      if (isVideo(src)) {
+        lbImg.classList.add('hidden');
+        lbVideo.classList.add('active');
+        lbVideo.src = src;
+        lbVideo.play().catch(() => {});
+      } else {
+        lbVideo.classList.remove('active');
+        lbVideo.removeAttribute('src');
+        lbImg.classList.remove('hidden');
+        lbImg.src = src;
+        lbImg.alt = `${ev.name} — photo ${i+1}`;
+      }
+      lbCap.textContent = `${ev.name} · ${i+1} / ${ev.photos.length}`;
+    }
     function openLightbox(eventId, i) {
       const ev = EVENTS.find(e => e.id === eventId);
       if (!ev) return;
       lbState = { event: ev, i };
-      lbImg.src = ev.photos[i];
-      lbImg.alt = `${ev.name} — photo ${i+1}`;
-      lbCap.textContent = `${ev.name} · ${i+1} / ${ev.photos.length}`;
+      showLbItem(ev, i);
       lb.classList.add('open');
       document.body.style.overflow = 'hidden';
     }
     function closeLightbox() {
       lb.classList.remove('open');
+      lbVideo.pause();
       document.body.style.overflow = '';
     }
     function stepLb(delta) {
       const ev = lbState.event; if (!ev) return;
       const n = ev.photos.length;
       lbState.i = ((lbState.i + delta) % n + n) % n;
-      lbImg.src = ev.photos[lbState.i];
-      lbImg.alt = `${ev.name} — photo ${lbState.i+1}`;
-      lbCap.textContent = `${ev.name} · ${lbState.i+1} / ${n}`;
+      showLbItem(ev, lbState.i);
     }
     document.getElementById('lb-close').addEventListener('click', closeLightbox);
     document.getElementById('lb-prev').addEventListener('click', () => stepLb(-1));
