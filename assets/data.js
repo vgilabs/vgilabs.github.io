@@ -109,7 +109,7 @@ window.VGI_DATA = {
   ],
   // Add new news items at the top, newest date first.
   news: [
-    { date: "2026-10-27", html: "Prof. Gyeong-Moon Park will serve as an Area Chair for the <a href='https://aclrollingreview.org/' target='_blank' rel='noopener noreferrer' class='news-link'><b><i>ARR 2026 October Cycle</i></b></a>." },
+    { date: "2026-10-27", html: "Prof. Gyeong-Moon Park will serve as an Area Chair for <a href='https://aclrollingreview.org/' target='_blank' rel='noopener noreferrer' class='news-link'><b><i>ARR 2026 October Cycle</i></b></a>." },
     { date: "2026-10-15", html: "<b>One paper</b> was accepted to <b><i>WACV 2027</i></b>." },
     { date: "2026-09-26", html: "<b>One paper</b> was accepted to <b><i>NeurIPS 2026</i></b>." },
     { date: "2026-09-01", html: "New Integrated M.S.-Ph.D. member \"Ji-Su Jang\" join our lab. Welcome!" },
