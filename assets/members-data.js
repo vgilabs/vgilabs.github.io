@@ -441,6 +441,19 @@ window.VGI_MEMBERS = {
         title: '딥 러닝을 이용한 이미지의 특징 추출 및 합성 시스템 및 이의 학습 방법 (Image Feature Extraction and Synthesis System Using Deep Learning and Its Learning Method)',
         venue: 'Korean Patent (10-2022-0053447)', date: 'Apr. 29, 2022' }
     ]
-  }
+  },
 
+  azzeggarh: {
+    id: 'azzeggarh', name_en: 'Oualid Azzeggarh', name_kr: '아제가 왈릳',
+    role: 'Research Internship',
+    dept: 'M.S. student, The University of Osaka',
+    photo: '/images/members/Azzeggarh.png',
+    email: 'azzeggarh@ist.osaka-u.ac.jp',
+    room: '#203B, Woo Jung Informatics Building',
+    interests: '',
+    education: [
+      { school: 'The University of Osaka', location: 'Osaka, Japan', degree: 'M.S. student' },
+      { school: 'Leiden University', location: 'Leiden, The Netherlands', degree: 'B.S. in Computer Science' }
+    ]
+  }
 };
