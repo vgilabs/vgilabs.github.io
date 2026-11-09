@@ -67,6 +67,15 @@
     </div>
   </section>
 
+  <section id="intern">
+    <div class="container">
+      <div class="section-head">
+        <h2>Interns</h2>
+      </div>
+      <div class="member-grid" id="intern-grid"></div>
+    </div>
+  </section>
+
   <section id="undergrad">
     <div class="container">
       <div class="section-head">
@@ -144,7 +153,10 @@
       { name: 'Ji-Su Jang', kr: '장지수', role: 'M.S.-Ph.D. student',
         photo: '/images/members/jsjang.jpg', email: 'js-jang@korea.ac.kr',
         site: '/html/members/profile.html?id=jsjang', year: 'Fall 2026' },
-      { name: 'Oualid Azzeggarh', kr: '아제가 왈릳', role: 'Research Internship',
+    ];
+
+    const INTERN = [
+      { name: 'Oualid Azzeggarh', kr: '아제가 왈리드', role: 'Research Internship',
         photo: '/images/members/Azzeggarh.png', email: 'azzeggarh@ist.osaka-u.ac.jp',
         site: '/html/members/profile.html?id=azzeggarh', year: 'Fall 2026' },
     ];
@@ -202,6 +214,7 @@
       </article>`;
 
     document.getElementById('grad-grid').innerHTML = GRADS.map(renderMember).join('');
+    document.getElementById('intern-grid').innerHTML = INTERN.map(renderMember).join('');
     document.getElementById('ug-grid').innerHTML = UNDERGRADS.map(renderMember).join('');
 
     document.querySelectorAll('.member-card[data-site]').forEach(card => {

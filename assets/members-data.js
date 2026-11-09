@@ -444,7 +444,7 @@ window.VGI_MEMBERS = {
   },
 
   azzeggarh: {
-    id: 'azzeggarh', name_en: 'Oualid Azzeggarh', name_kr: '아제가 왈릳',
+    id: 'azzeggarh', name_en: 'Oualid Azzeggarh', name_kr: '아제가 왈리드',
     role: 'Research Internship',
     dept: 'M.S. student, The University of Osaka',
     photo: '/images/members/Azzeggarh.png',
