@@ -109,7 +109,6 @@ window.VGI_DATA = {
   ],
   // Add new news items at the top, newest date first.
   news: [
-    { date: "2026-10-27", html: "Prof. Gyeong-Moon Park will serve as an <b>Invited Session Chair</b> for <a href='https://2026.iccas.org/committee/' target='_blank' rel='noopener noreferrer' class='news-link'><b><i>ICCAS 2026</i></b></a>." },
     { date: "2026-10-27", html: "Prof. Gyeong-Moon Park will serve as an <b>Area Chair</b> for <a href='https://aclrollingreview.org/' target='_blank' rel='noopener noreferrer' class='news-link'><b><i>ARR 2026 October Cycle</i></b></a>." },
     { date: "2026-10-15", html: "<b>One paper</b> was accepted to <b><i>WACV 2027</i></b>." },
     { date: "2026-09-26", html: "<b>One paper</b> was accepted to <b><i>NeurIPS 2026</i></b>." },
@@ -128,6 +127,7 @@ window.VGI_DATA = {
     { date: "2026-02-21", html: "<b class='accent'>Three papers</b> were accepted to <b><i>CVPR 2026</i></b>." },
     { date: "2026-02-16", html: "One paper was accepted to <b><i>Medical Image Analysis</i></b> (JCR: <b>2%</b>, IF: <b>11.8</b>)." },
     { date: "2026-01-26", html: "<b>One paper</b> was accepted to <b><i>ICLR 2026</i></b>." },
+    { date: "2026-01-05", html: "Prof. Gyeong-Moon Park will serve as an <b>Invited Session Chair</b> for <a href='https://2026.iccas.org/committee/' target='_blank' rel='noopener noreferrer' class='news-link'><b><i>ICCAS 2026</i></b></a>." },
     { date: "2025-09-19", html: "Our paper has been accepted for <b class='accent'>Spotlight</b> at <b><i>NeurIPS 2025</i></b> (acceptance rate = <b class='accent'>3.19%</b>)." },
     { date: "2025-09-19", html: "<b class='accent'>Two papers</b> were accepted to <b><i>NeurIPS 2025</i></b>." },
     { date: "2025-09-01", html: "New B.S.-M.S. member \"Jeong-Eun Lee\", Integrated M.S.-Ph.D. member \"Jun-Woo Heo\", M.S. member \"Chang-Sik Woo\", and Post-M.S. member \"Joonhyuk Kim\" join our lab. Welcome!" },
