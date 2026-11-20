@@ -109,6 +109,7 @@ window.VGI_DATA = {
   ],
   // Add new news items at the top, newest date first.
   news: [
+    { date: "2026-10-27", html: "Prof. Gyeong-Moon Park will serve as an <b>Invited Session Chair</b> for <a href='https://2026.iccas.org/committee/' target='_blank' rel='noopener noreferrer' class='news-link'><b><i>ICCAS 2026</i></b></a>." },
     { date: "2026-10-27", html: "Prof. Gyeong-Moon Park will serve as an <b>Area Chair</b> for <a href='https://aclrollingreview.org/' target='_blank' rel='noopener noreferrer' class='news-link'><b><i>ARR 2026 October Cycle</i></b></a>." },
     { date: "2026-10-15", html: "<b>One paper</b> was accepted to <b><i>WACV 2027</i></b>." },
     { date: "2026-09-26", html: "<b>One paper</b> was accepted to <b><i>NeurIPS 2026</i></b>." },
